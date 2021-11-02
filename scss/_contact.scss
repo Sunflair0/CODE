@@ -1,5 +1,3 @@
-@import 'config';
-
 .contact {
 height: 100%;
 padding-top: 40vh;
@@ -10,11 +8,13 @@ align-items: center;
 background:
     linear-gradient( 
     to right,
-    rgba($primary-color, .4),
+    rgba($primary-color, .9),
     rgba($primary-color, 0)
      ),
     url('/dist/img/bo.jpg');
 background-size: cover;
+
+
 
 h2 {
     font-size: 3rem;

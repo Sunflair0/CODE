@@ -1,6 +1,6 @@
 $primary-color: #272727;
-$secondary-color: #ff652f;
-
+$secondary-color: #f57b09;
+$primary-accent-color: rgb(248, 242, 233);
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,7 +15,7 @@ $secondary-color: #ff652f;
     @if (lightness($color) > 40%) {
         @return #000;
         } @else {
-         @return #fff;
+             @return antiquewhite;
     }
  }
 
