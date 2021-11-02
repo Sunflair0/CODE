@@ -75,14 +75,8 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
-        background:
-        linear-gradient( 
-        to right,
-        rgba($primary-color, .4),
-        rgba($primary-color, 00)
-         ),
-        url('/dist/img/beebalm.jpg');
-    background-size: cover;
+        background:radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #000000 60%, #000000 100%);
+background-blend-mode: multiply, overlay, color-dodge, darken, difference, difference, normal;
         list-style-type: none;
         padding-right: 1rem;
         transform: translateY(-100%);
@@ -112,16 +106,28 @@
         padding: 2rem 0;
         font-weight: 300;
         @include transition-ease;
+        position: relative;
+     
+        &:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 0%; 
+            height: 0;
+            border-bottom: 2px solid $secondary-color;
+            background: rgb(247, 243, 39);
+            transition: width .3s ease-in-out;
+        }
 
-        &:hover {
-            color: $secondary-color;
+        &:hover:after {
+            width: 100%;
+            height: 1px;
+           }
         }
-    }
-        }
-        
+    }        
 }
 
-@for $i from 1 through 5 { 
+@for $i from 1 through 4 { 
     .menu-nav__item:nth-child(#{$i}) {
         transition-delay: ($i * .1s) + .15s;
     }

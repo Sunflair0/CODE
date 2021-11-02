@@ -7,7 +7,7 @@
         background:
     linear-gradient( 
     to right,
-    rgba($primary-color, .4),
+    rgba($primary-color, .9),
     rgba($primary-color, 0)
      ),
     url('/dist/img/bo.jpg');
@@ -27,6 +27,7 @@ align-items: center;
 
       .text-secondary {
           padding-bottom: 1rem;
+          font-weight: 500;
       }
   }
 
@@ -41,6 +42,8 @@ align-items: center;
           background: lighten($primary-color, 10%);
           padding: 0.5rem;
           border-bottom: 5px solid $secondary-color;
+          outline: 3px solid lighten($primary-color, 10%);
+          outline-offset: 5px;
 
           h2, h3 {
               margin: .6rem 0;
