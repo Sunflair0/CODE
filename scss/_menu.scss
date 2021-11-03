@@ -60,8 +60,6 @@
     width: 100vw;
     opacity: .98;
     visibility: hidden;
-  
-    
 
     &.open {
         visibility: visible;   
@@ -75,8 +73,7 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
-        background:radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #000000 60%, #000000 100%);
-background-blend-mode: multiply, overlay, color-dodge, darken, difference, difference, normal;
+        background:radial-gradient(circle at -50% 152%, #FFF506 34%, #FF5D00 38%, #ff5100 44%, #851c04 50%, #000000 52%, #1d1b1b 100%);
         list-style-type: none;
         padding-right: 1rem;
         transform: translateY(-100%);
