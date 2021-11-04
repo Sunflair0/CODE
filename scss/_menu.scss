@@ -73,8 +73,7 @@
         justify-content: center;
         height: 100vh;
         overflow: hidden;
-        background:radial-gradient(circle at -50% 152%, #fff7067e 34%, #ff5e007e 38%, #ff51007a 44%, #851c047a 50%, #0000007c 50%, #1d1b1b7a 100%);
-        list-style-type: none;
+        background:radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #000000 60%, #000000 100%);        list-style-type: none;
         padding-right: 1rem;
         transform: translateY(-100%);
         @include transition-ease;
