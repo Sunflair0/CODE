@@ -55,7 +55,6 @@
   width: 28px;
   height: 3px;
   background: #f8f2e9;
-  text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.7), 1px -1px 0 rgba(39, 39, 39, 0.7), -1px 1px 0 rgba(39, 39, 39, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -67,7 +66,6 @@
   width: 28px;
   height: 3px;
   background: #f8f2e9;
-  text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.7), 1px -1px 0 rgba(39, 39, 39, 0.7), -1px 1px 0 rgba(39, 39, 39, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -79,7 +77,6 @@
   width: 20px;
   height: 3px;
   background: #f8f2e9;
-  text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.7), 1px -1px 0 rgba(39, 39, 39, 0.7), -1px 1px 0 rgba(39, 39, 39, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -166,6 +163,7 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
+  text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.35), 1px -1px 0 rgba(39, 39, 39, 0.35), -1px 1px 0 rgba(39, 39, 39, 0.35), 1px 1px 0 rgba(39, 39, 39, 0.35);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -487,9 +485,7 @@
     font-size: 3rem;
   }
   .contact__list {
-    -ms-grid-columns: (1fr)
-    (2)
-      ;
+    -ms-grid-columns: (1fr)(2);
         grid-template-columns: repeat(2, 1fr);
   }
 }

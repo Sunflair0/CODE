@@ -1,4 +1,4 @@
-@import 'config';
+@use 'config';
 
 .contact {
 height: 100%;
@@ -20,10 +20,10 @@ h2 {
     font-size: 3rem;
     margin-bottom: 2rem;
     text-shadow:
-    -1px -1px 0 rgba($primary-color, .7),
-    1px -1px 0 rgba($primary-color, .7),
-    -1px 1px 0 rgba($primary-color, .7),
-    1px 1px 0 rgba($primary-color, .7); 
+    -1px -1px 0 rgba($primary-color, .1),
+    1px -1px 0 rgba($primary-color, .1),
+    -1px 1px 0 rgba($primary-color, .1),
+    1px 1px 0 rgba($primary-color, .1); 
 }
 
 &__list {

@@ -1,10 +1,10 @@
-@import 'home';
-@import 'config';
-@import 'menu';
-@import 'about';
-@import 'projects';
-@import 'contact';
-@import 'responsive';
+@use 'home';
+@use 'config';
+@use 'menu';
+@use 'about';
+@use 'projects';
+@use 'contact';
+@use 'responsive';
 
 body,html {
     background:$primary-color;
