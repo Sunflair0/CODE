@@ -20,6 +20,11 @@ align-items: center;
 .text-secondary {
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-shadow:
+    -1px -1px 0 rgba($primary-color, .7),
+    1px -1px 0 rgba($primary-color, .7),
+    -1px 1px 0 rgba($primary-color, .7),
+    1px 1px 0 rgba($primary-color, .7); 
     }
 }
 
@@ -70,10 +75,11 @@ align-items: center;
       height: 100%;
       width: 100%;
       z-index: 1;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
       align-items: center;
       text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+     
   }
 
    &__btn {

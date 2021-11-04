@@ -14,6 +14,11 @@
         width: 28px;
         height: 3px;
         background:  set-text-color($primary-color);
+        text-shadow:
+        -1px -1px 0 rgba($primary-color, .7),
+        1px -1px 0 rgba($primary-color, .7),
+        -1px 1px 0 rgba($primary-color, .7),
+        1px 1px 0 rgba($primary-color, .7); 
         @include transition-ease;
 
         &::before {
@@ -23,6 +28,11 @@
             width: 28px;
             height: 3px;
             background: set-text-color($primary-color);
+            text-shadow:
+            -1px -1px 0 rgba($primary-color, .7),
+            1px -1px 0 rgba($primary-color, .7),
+            -1px 1px 0 rgba($primary-color, .7),
+            1px 1px 0 rgba($primary-color, .7); 
             @include transition-ease;
         }
         
@@ -33,6 +43,11 @@
             width: 20px;
             height: 3px;
             background: set-text-color($primary-color);
+            text-shadow:
+            -1px -1px 0 rgba($primary-color, .7),
+            1px -1px 0 rgba($primary-color, .7),
+            -1px 1px 0 rgba($primary-color, .7),
+            1px 1px 0 rgba($primary-color, .7); 
             @include transition-ease;
         }
 
