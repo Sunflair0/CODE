@@ -7,11 +7,17 @@ overflow: hidden;
 display: flex;
 flex-direction: column;
 align-items: center;
-background:
-radial-gradient(( rgba($primary-color, 0),
-rgba($primary-color, .8))      
- ),
-    url('/dist/img/bo.jpg');
+background: 
+linear-gradient(32deg,
+rgba($primary-color, 1) 0%,
+rgba($primary-color, .9) 15%,
+rgba($primary-color, .6) 27%,
+rgba($primary-color, .4) 35%,
+rgba($primary-color, .4) 63%,
+rgba($primary-color, .5) 75%,
+rgba($primary-color, 1) 100%),
+url('/dist/img/bo.jpg');
+background-size: cover;
 background-size: cover;
 
 

@@ -4,14 +4,17 @@
     &__bio-image {
         height: 50vh;
         width: 100%;
-        background:
-    linear-gradient( 
-    to right,
-    rgba($primary-color, .9),
-    rgba($primary-color, 0)
-     ),
-    url('/dist/img/bo.jpg');
-    z-index: 2;
+        background: 
+        linear-gradient(32deg,
+        rgba($primary-color, 1) 0%,
+        rgba($primary-color, .9) 15%,
+        rgba($primary-color, .6) 27%,
+        rgba($primary-color, .4) 35%,
+        rgba($primary-color, .4) 63%,
+        rgba($primary-color, .5) 75%,
+        rgba($primary-color, 1) 100%),
+        url('/dist/img/bo.jpg');
+        background-size: cover;
 background-size: cover;
 display: flex;
 flex-direction: column;
@@ -20,6 +23,24 @@ align-items: center;
     
     p {
       margin-bottom: 2rem;
+
+       a {   
+           color:blue;
+           text-decoration: underline blue; 
+           background-color: rgba(99, 88, 88, 0.904);
+           font-weight: normal;        
+            }
+
+         a:visited {
+          color:rgb(148, 147, 247);
+          text-decoration: underline rgb(148, 147, 247);
+          background-color: rgba(99, 88, 88, 0.904);
+            }
+        
+        a:hover {
+          color: rgb(124, 0, 0);
+          text-decoration: underline rgb(124, 0, 0);
+            }
       }
     }
   &__bio {

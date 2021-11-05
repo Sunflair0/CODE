@@ -13,7 +13,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: radial-gradient(rgba(39, 39, 39, 0), rgba(39, 39, 39, 0.8)), url("/dist/img/bo.jpg");
+  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
   background-size: cover;
 }
 
@@ -101,13 +101,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  padding-left: 20px;
   opacity: .98;
   visibility: hidden;
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .nav.open {
   visibility: visible;
+  margin-left: -20px;
 }
 
 .nav .menu-nav {
@@ -124,6 +126,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 100vw;
   height: 100vh;
   overflow: hidden;
   background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #000000 60%, #000000 100%);
@@ -162,7 +165,6 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.35), 1px -1px 0 rgba(39, 39, 39, 0.35), -1px 1px 0 rgba(39, 39, 39, 0.35), 1px 1px 0 rgba(39, 39, 39, 0.35);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -183,6 +185,13 @@
 .nav .menu-nav__link:hover:after {
   width: 100%;
   height: 1px;
+}
+
+.nav .menu-nav__link:visited {
+  color: #9493f7;
+  -webkit-text-decoration: underline #9493f7;
+          text-decoration: underline #9493f7;
+  background-color: rgba(99, 88, 88, 0.904);
 }
 
 .menu-nav__item:nth-child(1) {
@@ -212,9 +221,8 @@
 .about__bio-image {
   height: 50vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0))), url("/dist/img/bo.jpg");
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0)), url("/dist/img/bo.jpg");
-  z-index: 2;
+  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
+  background-size: cover;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -233,6 +241,27 @@
 
 .about__bio-image p {
   margin-bottom: 2rem;
+}
+
+.about__bio-image p a {
+  color: blue;
+  -webkit-text-decoration: underline blue;
+          text-decoration: underline blue;
+  background-color: rgba(99, 88, 88, 0.904);
+  font-weight: normal;
+}
+
+.about__bio-image p a:visited {
+  color: #9493f7;
+  -webkit-text-decoration: underline #9493f7;
+          text-decoration: underline #9493f7;
+  background-color: rgba(99, 88, 88, 0.904);
+}
+
+.about__bio-image p a:hover {
+  color: #7c0000;
+  -webkit-text-decoration: underline #7c0000;
+          text-decoration: underline #7c0000;
 }
 
 .about__bio {
@@ -295,8 +324,7 @@
 .projects__bio-image {
   height: 30vh;
   width: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(39, 39, 39, 0.9)), to(rgba(39, 39, 39, 0))), url("/dist/img/bo.jpg");
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0)), url("/dist/img/bo.jpg");
+  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -424,7 +452,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: radial-gradient(rgba(39, 39, 39, 0), rgba(39, 39, 39, 0.8)), url("/dist/img/bo.jpg");
+  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
+  background-size: cover;
   background-size: cover;
 }
 
@@ -454,6 +483,7 @@
   }
   .nav {
     visibility: visible;
+    max-width: 80vw;
   }
   .nav .menu-nav {
     display: block;
@@ -461,7 +491,7 @@
             transform: translateY(0);
     height: 100%;
     background: transparent;
-    text-align: right;
+    text-align: left;
   }
   .nav .menu-nav__item {
     display: inline;
