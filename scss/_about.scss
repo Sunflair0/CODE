@@ -29,12 +29,7 @@ align-items: center;
       .text-secondary {
           padding-bottom: 1rem;
           font-size: 2rem;        
-          text-shadow:
-          -1px -1px 0 rgba($primary-color, .7),
-          1px -1px 0 rgba($primary-color, .7),
-          -1px 1px 0 rgba($primary-color, .7),
-          1px 1px 0 rgba($primary-color, .7); 
-      }
+         }
   }
 
   .jobs {
@@ -55,7 +50,9 @@ align-items: center;
               margin: .6rem 0;
           }
           h6 {
-              margin: .4rem 0;                          
+              margin: .4rem 0;  
+              color: lighten($secondary-color, 7%);   
+              letter-spacing: .3px;               
           }    
       }
   }

@@ -1,4 +1,4 @@
-@use 'config';
+@import 'config';
 
 .contact {
 height: 100%;
@@ -8,11 +8,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background:
-    linear-gradient( 
-    to right,
-    rgba($primary-color, .9),
-    rgba($primary-color, 0)
-     ),
+radial-gradient(( rgba($primary-color, 0),
+rgba($primary-color, .8))      
+ ),
     url('/dist/img/bo.jpg');
 background-size: cover;
 

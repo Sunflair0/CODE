@@ -1,10 +1,10 @@
-@use 'home';
-@use 'config';
-@use 'menu';
-@use 'about';
-@use 'projects';
-@use 'contact';
-@use 'responsive';
+@import 'home';
+@import 'config';
+@import 'menu';
+@import 'about';
+@import 'projects';
+@import 'contact';
+@import 'responsive';
 
 body,html {
     background:$primary-color;
@@ -25,7 +25,13 @@ a {
 
 .text-secondary {
     color: $secondary-color;
+    text-shadow:
+    -1px -1px 0 rgba($primary-color, .4),
+    1px -1px 0 rgba($primary-color, .4),
+    -1px 1px 0 rgba($primary-color, .4),
+    1px 1px 0 rgba($primary-color, .4); 
 }
+
 
 header {
     position: fixed;
