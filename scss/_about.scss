@@ -2,7 +2,8 @@
     padding-bottom: 2rem;
     min-height: 100vh;
     position: relative;
-    color: $primary-accent-color;
+    color: white;
+    font-weight: 400;
     text-shadow: 0 0 4px rgb(44, 17, 21), 
     3px 3px 5px rgba($primary-color, .9); 
 
@@ -14,8 +15,8 @@
         rgba($primary-color, 1) 0%,
         rgba($primary-color, .9) 15%,
         rgba($primary-color, .6) 27%,
-        rgba($primary-color, .4) 35%,
-        rgba($primary-color, .4) 63%,
+        rgba($primary-color, .5) 35%,
+        rgba($primary-color, .5) 63%,
         rgba($primary-color, .5) 75%,
         rgba($primary-color, 1) 100%),
         url('/dist/img/bo.jpg');
@@ -29,10 +30,11 @@
         z-index: 1;
     
     p {
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+      line-height: 1.2em;
 
       &:first-child {
-          margin-top: 0vh;
+          margin-top: -1vh;
           }
 
        a {   

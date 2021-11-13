@@ -15,12 +15,13 @@
   text-align: center;
   background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
   background-size: cover;
+  position: relative;
 }
 
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 7rem;
   border-bottom: 3px solid #ff652f;
 }
 
@@ -219,14 +220,15 @@
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
-  color: antiquewhite;
+  color: white;
+  font-weight: 400;
   text-shadow: 0 0 4px #2c1115, 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
 
 .about__bio-image {
   min-height: 50vh;
   width: 100%;
-  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
+  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.5) 35%, rgba(39, 39, 39, 0.5) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
   background-size: cover;
   position: fixed;
   top: 0%;
@@ -247,11 +249,12 @@
 }
 
 .about__bio-image p {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2em;
 }
 
 .about__bio-image p:first-child {
-  margin-top: 0vh;
+  margin-top: -1vh;
 }
 
 .about__bio-image p a {
@@ -495,7 +498,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 42vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,13 +510,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
   background-size: cover;
+  position: relative;
 }
 
 .contact h2 {
+  margin-top: -10vh;
   font-size: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.1), 1px -1px 0 rgba(39, 39, 39, 0.1), -1px 1px 0 rgba(39, 39, 39, 0.1), 1px 1px 0 rgba(39, 39, 39, 0.1);
 }
 
@@ -537,7 +543,7 @@
   }
   .nav {
     visibility: visible;
-    max-width: 80vw;
+    width: 80vw;
   }
   .nav .menu-nav {
     display: block;
