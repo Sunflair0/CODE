@@ -21,7 +21,7 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #f8f2e9;
+  border-bottom: 3px solid #ff652f;
 }
 
 .home__name--last {
@@ -53,7 +53,7 @@
   top: .5rem;
   width: 28px;
   height: 3px;
-  background: #f8f2e9;
+  background: antiquewhite;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -64,7 +64,7 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background: #f8f2e9;
+  background: antiquewhite;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -75,7 +75,7 @@
   top: 8px;
   width: 20px;
   height: 3px;
-  background: #f8f2e9;
+  background: antiquewhite;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -104,7 +104,8 @@
   padding-left: 20px;
   opacity: .98;
   visibility: hidden;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 3px 3px 2px #000000;
 }
 
 .nav.open {
@@ -216,14 +217,19 @@
 
 .about {
   padding-bottom: 2rem;
+  min-height: 100vh;
+  position: relative;
+  color: antiquewhite;
+  text-shadow: 0 0 4px #2c1115, 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
 
 .about__bio-image {
-  height: 50vh;
+  min-height: 50vh;
   width: 100%;
   background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
   background-size: cover;
-  background-size: cover;
+  position: fixed;
+  top: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,10 +243,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .about__bio-image p {
   margin-bottom: 2rem;
+}
+
+.about__bio-image p:first-child {
+  margin-top: 0vh;
 }
 
 .about__bio-image p a {
@@ -255,26 +266,49 @@
   color: #9493f7;
   -webkit-text-decoration: underline #9493f7;
           text-decoration: underline #9493f7;
-  background-color: rgba(99, 88, 88, 0.904);
 }
 
 .about__bio-image p a:hover {
-  color: #7c0000;
-  -webkit-text-decoration: underline #7c0000;
-          text-decoration: underline #7c0000;
+  color: #f81313;
+  -webkit-text-decoration: underline #f81313;
+          text-decoration: underline #f81313;
+}
+
+.about__bio-image .orange-line {
+  height: 5px;
+  width: 100%;
+  background-color: #ff652f;
+}
+
+.about__bio-image .gray-line {
+  height: 10px;
+  width: 100%;
+  background: #272727;
 }
 
 .about__bio {
+  min-height: 50vh;
   width: 80%;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .about__bio .text-secondary {
   padding-bottom: 1rem;
   font-size: 2rem;
+  text-shadow: 1px 1px 1px #000, 3px 3px 5px #3d3891;
 }
 
-.about .jobs {
+.about__bio .text-secondary:first-child {
+  margin-top: 7vh;
+}
+
+.about .bottom {
+  position: relative;
+  margin-top: 53vh;
+}
+
+.about .bottom .jobs {
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
@@ -284,7 +318,7 @@
   grid-gap: 2rem;
 }
 
-.about .jobs__job {
+.about .bottom .jobs__job {
   background: #414141;
   padding: 0.5rem;
   border-bottom: 5px solid #ff652f;
@@ -292,11 +326,11 @@
   outline-offset: 5px;
 }
 
-.about .jobs__job h2, .about .jobs__job h3 {
+.about .bottom .jobs__job h2, .about .bottom .jobs__job h3 {
   margin: .6rem 0;
 }
 
-.about .jobs__job h6 {
+.about .bottom .jobs__job h6 {
   margin: .4rem 0;
   color: #ff7f53;
   letter-spacing: .3px;
@@ -322,10 +356,12 @@
 }
 
 .projects__bio-image {
-  height: 30vh;
+  min-height: 30vh;
   width: 100%;
   background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
   background-size: cover;
+  position: fixed;
+  top: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -339,15 +375,34 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 5;
 }
 
-.projects__bio-image .text-secondary {
+.projects .text-secondary {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.7), 1px -1px 0 rgba(39, 39, 39, 0.7), -1px 1px 0 rgba(39, 39, 39, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
 }
 
+.projects .orange-line {
+  height: 5px;
+  width: 100%;
+  background-color: #ff652f;
+}
+
+.projects .gray-line {
+  height: 10px;
+  width: 100%;
+  background: #272727;
+}
+
+.projects .bottom {
+  position: relative;
+  margin-top: 30vh;
+}
+
 .projects__items {
+  min-height: 40vh;
   width: 60vw;
   margin: 2rem auto 0 auto;
   display: -ms-grid;
@@ -413,7 +468,7 @@
 }
 
 .projects__btn:hover {
-  color: #f8f2e9;
+  color: antiquewhite;
 }
 
 .projects .social-icons {
@@ -453,7 +508,6 @@
       -ms-flex-align: center;
           align-items: center;
   background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
-  background-size: cover;
   background-size: cover;
 }
 
@@ -503,6 +557,9 @@
   .about__bio {
     font-size: 1.5rem;
   }
+  .about__bio .text-secondary:first-child {
+    margin-top: 12vh;
+  }
   .projects__bio-image {
     height: 40vh;
   }
@@ -512,6 +569,9 @@
   }
   .projects .text-secondary {
     font-size: 3rem;
+  }
+  .projects__items {
+    margin-top: 40vh;
   }
   .contact__list {
     -ms-grid-columns: (1fr)[2];
@@ -523,6 +583,8 @@
   .projects__items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    margin-top: 50vh;
+    min-height: 30vh;
   }
   .contact__list {
     -ms-grid-columns: (1fr)[3];
@@ -531,15 +593,18 @@
 }
 
 @media screen and (min-width: 1600px) {
-  .project__bio-image {
-    height: 50vh;
+  .projects {
+    max-height: 100vh;
+  }
+  .projects__bio-image {
+    height: 40vh;
   }
 }
 
 body, html {
   background: #272727;
-  color: #f8f2e9;
-  height: 100vh;
+  color: antiquewhite;
+  max-height: 121vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
@@ -549,7 +614,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #f8f2e9;
+  color: antiquewhite;
   text-decoration: none;
 }
 
@@ -593,6 +658,6 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem;
-  color: #f8f2e9;
+  color: antiquewhite;
 }
 /*# sourceMappingURL=main.css.map */
