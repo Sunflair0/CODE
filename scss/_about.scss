@@ -10,16 +10,8 @@
     &__bio-image {
         min-height: 50vh;
         width: 100%;
-        background: 
-        linear-gradient(32deg,
-        rgba($primary-color, 1) 0%,
-        rgba($primary-color, .9) 15%,
-        rgba($primary-color, .6) 27%,
-        rgba($primary-color, .5) 35%,
-        rgba($primary-color, .5) 63%,
-        rgba($primary-color, .5) 75%,
-        rgba($primary-color, 1) 100%),
-        url('/dist/img/bo.jpg');
+        background: black;
+        background: $primary-color;
         background-size: cover;
         position: fixed;
         top: 0%;
