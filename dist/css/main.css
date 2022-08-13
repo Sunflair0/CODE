@@ -175,17 +175,12 @@
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
 .about__bio-image {
-  min-height: 50vh;
-  width: 100%;
-  background: black;
-  background: #272727;
-  background-size: cover;
+  background: rgba(153, 205, 50, 0.712);
   position: fixed;
-  top: 0%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+  height: 60vh;
+  width: 80vw;
+  -webkit-clip-path: circle(180% at 120% 250%);
+          clip-path: circle(180% at 120% 250%);
   z-index: 1;
 }
 .about__bio-image p {
