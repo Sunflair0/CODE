@@ -4,13 +4,13 @@
     position: relative;
     color: white;
     font-weight: 400;
-    text-shadow: 0 0 4px rgb(44, 17, 21), 
-    3px 3px 5px rgba($primary-color, .9); 
+    text-shadow: 0 0 4px rgb(44, 17, 21),
+        3px 3px 5px rgba($primary-color, .9);
 
     &__bio-image {
         // min-height: 50vh;
         // width: 100%;
-        background: rgba(153, 205, 50, 0.712);
+        // background: rgba(153, 205, 50, 0.712);
         // background-size: cover;
         position: fixed;
         // top: 0%;
@@ -20,101 +20,104 @@
         // align-items: center;
         height: 60vh;
         width: 80vw;
-        clip-path: circle(180% at 120% 250%);
         z-index: 1;
-    
-    p {
-      margin-bottom: 1rem;
-      line-height: 1.2em;
 
-      &:first-child {
-          margin-top: -1vh;
-          }
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.2em;
 
-       a {   
-           color:blue;
-           text-decoration: underline blue; 
-           background-color: rgba(99, 88, 88, 0.904);
-           font-weight: normal;        
+            &:first-child {
+                margin-top: -1vh;               
             }
 
-         a:visited {
-          color:rgb(148, 147, 247);
-          text-decoration: underline rgb(148, 147, 247);
-             }
-        
-        a:hover {
-          color: rgb(248, 19, 19);
-          text-decoration: underline rgb(248, 19, 19);
-         }
-     }
-            .orange-line {
-                height: 5px;
-                width: 100%;
-                background-color: $secondary-color;
+            a {
+                text-decoration: underline #f39f10 2px;
+                background-color: rgba(99, 88, 88, 0.904);
+                font-weight: normal;
             }
-            .gray-line {
-                height: 10px;
-                width: 100%;
-                background: $primary-color;
+
+            a:visited {
+                color: rgb(236, 59, 59);
+                text-decoration: underline rgb(236, 59, 59);
+            }
+
+            a:hover {
+                color: rgb(247, 179, 123);
+                text-decoration: underline rgb(247, 179, 123);
             }
         }
 
-  &__bio {
-      min-height: 50vh;
-      width: 80%;
-      text-align: center; 
-      font-size: 1.4rem;
-       
-      .text-secondary {
-          padding-bottom: 1rem;
-          font-size: 2rem;   
-          text-shadow: 1px 1px 1px #000, 
-          3px 3px 5px rgb(61, 56, 145); 
-          
-          &:first-child {
-            margin-top: 7vh;
-          }
-      }
-  }
+        .orange-line {
+            height: 5px;
+            width: 100%;
+            background-color: $secondary-color;
+        }
 
-  .bottom {
-    position: relative;
-    margin-top: 53vh;    
+        .gray-line {
+            height: 10px;
+            width: 100%;
+            background: $primary-color;
+        }
+    }
 
-  .jobs {
-      width: 60vw;
-      margin: 2rem auto 0 auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
-      
-       
+    &__bio {
+        min-height: 50vh;
+        width: 80%;
+        text-align: center;
+        font-size: 1.4rem;
 
-      &__job {
-          background: lighten($primary-color, 10%);
-          padding: 0.5rem;
-          border-bottom: 5px solid $secondary-color;
-          outline: 3px solid lighten($primary-color, 10%);
-          outline-offset: 5px;
+        .text-secondary {
+            padding-bottom: 1rem;
+            font-size: 2rem;
+            text-shadow: 1px 1px 1px #000,
+                3px 3px 5px rgb(61, 56, 145);
 
-          h2, h3 {
-              margin: .6rem 0;
-          }
-          h6 {
-              margin: .4rem 0;  
-              color: lighten($secondary-color, 7%);   
-              letter-spacing: .3px;               
-          }    
-      }
-  }
-}
-  .social-icons {
-      display: flex;
-      flex-direction: column;
-  }
-  footer {
-      transform: rotate(90deg)
-      translate(-3rem, -5rem);
-  }
+            &:first-child {
+                margin-top: 7vh;
+            }
+        }
+    }
+
+    .bottom {
+        position: relative;
+        margin-top: 3vh;
+
+        .jobs {
+            width: 60vw;
+            margin: 2rem auto 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 2rem;
+
+
+
+            &__job {
+                background: lighten($primary-color, 10%);
+                padding: 0.5rem;
+                border-bottom: 5px solid $secondary-color;
+                outline: 3px solid lighten($primary-color, 10%);
+                outline-offset: 5px;
+
+                h2,
+                h3 {
+                    margin: .6rem 0;
+                }
+
+                h6 {
+                    margin: .4rem 0;
+                    color: lighten($secondary-color, 7%);
+                    letter-spacing: .3px;
+                }
+            }
+        }
+    }
+
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        transform: rotate(90deg) translate(-3rem, -5rem);
+    }
 }
