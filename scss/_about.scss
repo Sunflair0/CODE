@@ -8,7 +8,7 @@
         3px 3px 5px rgba($primary-color, .9);
 
     &__bio-image {
-        background: rgb(60, 73, 35);
+        background: $secondary-accent-color;
         position: fixed;
         top: 0;
         height: 50vh;
@@ -60,10 +60,27 @@
         text-align: center;
         font-size: 1.4rem;
         padding: 1rem 2rem;
+        overflow: auto;
+
+        &::-webkit-scrollbar {
+            width: 15px;
+
+            &-thumb {
+                background-color: $secondary-color;
+                box-shadow: inset 0 0 7px #000000;
+                border-radius: 5px;
+                border: 2px solid #3c4923;
+                background-clip: content-box;
+            }
+
+            &-track {
+                background: $secondary-accent-color;
+            }
+        }
 
         .text-secondary {
-            padding-bottom: 1rem;
-            font-size: 2rem;
+            padding-bottom: .75rem;
+            font-size: clamp(40px, 10vw, 70px);
             text-shadow: 1px 1px 1px #000,
                 3px 3px 5px rgb(61, 56, 145);
 

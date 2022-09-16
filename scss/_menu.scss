@@ -65,9 +65,7 @@
     
     &.open {
         visibility: visible;   
-        margin-left: -20px;
-
-        
+        margin-left: -20px;        
     }
 
     .menu-nav {
@@ -133,7 +131,7 @@
     }        
 }
 
-@for $i from 1 through 4 { 
+@for $i from 1 through 5 { 
     .menu-nav__item:nth-child(#{$i}) {
         transition-delay: ($i * .1s) + .15s;
     }

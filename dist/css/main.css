@@ -34,7 +34,7 @@
 }
 
 .logo {
-  right: 0;
+  width: 100px;
 }
 
 * {
@@ -194,6 +194,10 @@
   transition-delay: 0.55s;
 }
 
+.menu-nav__item:nth-child(5) {
+  transition-delay: 0.65s;
+}
+
 .about {
   padding-bottom: 2rem;
   min-height: 100vh;
@@ -234,6 +238,20 @@
   text-decoration: underline rgb(148, 147, 247);
 }
 
+.about__bio::-webkit-scrollbar {
+  width: 15px;
+}
+.about__bio::-webkit-scrollbar-thumb {
+  background-color: #a7c56e;
+  box-shadow: inset 0 0 7px #000000;
+  border-radius: 5px;
+  border: 2px solid #3c4923;
+  background-clip: content-box;
+}
+.about__bio::-webkit-scrollbar-track {
+  background: #3c4923;
+}
+
 .about__bio-image p a:hover {
   color: rgb(248, 19, 19);
   -webkit-text-decoration: underline rgb(248, 19, 19);
@@ -259,12 +277,18 @@
   text-align: center;
   font-size: 1.4rem;
   padding: 1rem 2rem;
+  overflow: auto;
 }
 
 .about__bio .text-secondary {
-  padding-bottom: 1rem;
-  font-size: 2rem;
+  padding-bottom: .75rem;
+  font-size: clamp(40px, 10vw, 70px);
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(61, 56, 145);
+}
+
+.about__bio .text-secondary p {
+  padding-bottom: .75rem;
+  font-size: 1.5rem;
 }
 
 .about__bio .text-secondary:first-child {
@@ -464,6 +488,14 @@
   position: initial;
   margin-top: 2rem;
 }
+
+@media screen and (min-width: 650px) {
+  .about__bio .text-secondary {
+    font-size: 2rem;
+  }
+
+}
+
 
 @media screen and (min-width: 768px) {
   .menu-btn {
