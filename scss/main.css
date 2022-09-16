@@ -6,7 +6,6 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -14,11 +13,16 @@
   background-size: cover;
   position: relative;
 }
+.home__top {
+  margin-top: 30vh;
+  height: 20vh;
+  border-bottom: 3px solid #ed7019;
+  margin-bottom: 3rem;
+}
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 7rem;
-  border-bottom: 3px solid #ed7019;
 }
 .home__name--last {
   color: #ed7019;

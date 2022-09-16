@@ -6,7 +6,6 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -15,11 +14,18 @@
   position: relative;
 }
 
+.home__top {
+  margin-top: 30vh;
+  height: 20vh;
+  border-bottom: 3px solid #ed7019;
+  margin-bottom: 3rem;
+}
+
 .home__name {
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 7rem;
-  border-bottom: 3px solid #ed7019;
+
 }
 
 .home__name--last {
@@ -338,14 +344,14 @@
 }
 
 .projects .gray-line {
- top: 50vh;
+  top: 50vh;
   height: 10px;
   width: 100%;
   background: #272727;
 }
 
 .projects .bottom {
-top: 0%;
+  top: 0%;
   position: relative;
   margin-top: 50vh;
 }
