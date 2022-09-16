@@ -1,7 +1,7 @@
 $primary-color: #272727;
 $secondary-color: #ed7019;
 $primary-accent-color: antiquewhite;
-$secondary-accent-color:#df4e98;
+$secondary-accent-color:#3c4923;
 
 * {
     box-sizing: border-box;
@@ -21,6 +21,11 @@ $secondary-accent-color:#df4e98;
     }
  }
 
+ @mixin  media-sm {
+     @media screen and (min-width: 650px) {
+         @content;
+     }
+ }
  @mixin  media-md {
      @media screen and (min-width: 768px) {
          @content;
