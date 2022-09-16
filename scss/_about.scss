@@ -8,18 +8,11 @@
         3px 3px 5px rgba($primary-color, .9);
 
     &__bio-image {
-        // min-height: 50vh;
-        // width: 100%;
-        // background: rgba(153, 205, 50, 0.712);
-        // background-size: cover;
+        background: rgb(60, 73, 35);
         position: fixed;
-        // top: 0%;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: flex-end;
-        // align-items: center;
-        height: 60vh;
-        width: 80vw;
+        top: 0;
+        height: 50vh;
+        width: 100%;
         z-index: 1;
 
         p {
@@ -27,7 +20,7 @@
             line-height: 1.2em;
 
             &:first-child {
-                margin-top: -1vh;               
+                margin-top: -1vh;
             }
 
             a {
@@ -48,6 +41,7 @@
         }
 
         .orange-line {
+            top: 60vh;
             height: 5px;
             width: 100%;
             background-color: $secondary-color;
@@ -62,9 +56,10 @@
 
     &__bio {
         min-height: 50vh;
-        width: 80%;
+        width: 100%;
         text-align: center;
         font-size: 1.4rem;
+        padding: 1rem 2rem;
 
         .text-secondary {
             padding-bottom: 1rem;
@@ -80,11 +75,11 @@
 
     .bottom {
         position: relative;
-        margin-top: 3vh;
+        margin-top: 54vh;
 
         .jobs {
             width: 60vw;
-            margin: 2rem auto 0 auto;
+            margin: 2rem auto;
             display: grid;
             grid-template-columns: 1fr;
             grid-gap: 2rem;

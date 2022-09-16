@@ -2,7 +2,7 @@
     padding-bottom: 2rem;
 
     &__bio-image {
-        min-height: 30vh;
+        min-height: 50vh;
         width: 100%;
         background: $primary-color;
         background-size: cover;
@@ -25,19 +25,22 @@
     }
 
 .orange-line {
+top: 50vh;
     height: 5px;
     width: 100%;
     background-color: $secondary-color;
 }
 .gray-line {
+top: 50vh;
     height: 10px;
     width: 100%;
     background: $primary-color;
     }
 
 .bottom {
+top: 0%;
     position: relative;
-    margin-top: 30vh;    
+    margin-top: 50vh;    
   }
 
   &__items {

@@ -179,9 +179,11 @@
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
 .about__bio-image {
+  background: rgb(60, 73, 35);
   position: fixed;
-  height: 60vh;
-  width: 80vw;
+  top: 0;
+  height: 50vh;
+  width: 100%;
   z-index: 1;
 }
 .about__bio-image p {
@@ -208,6 +210,7 @@
           text-decoration: underline rgb(247, 179, 123);
 }
 .about__bio-image .orange-line {
+  top: 60vh;
   height: 5px;
   width: 100%;
   background-color: #ed7019;
@@ -219,9 +222,10 @@
 }
 .about__bio {
   min-height: 50vh;
-  width: 80%;
+  width: 100%;
   text-align: center;
   font-size: 1.4rem;
+  padding: 1rem 2rem;
 }
 .about__bio .text-secondary {
   padding-bottom: 1rem;
@@ -233,11 +237,11 @@
 }
 .about .bottom {
   position: relative;
-  margin-top: 3vh;
+  margin-top: 54vh;
 }
 .about .bottom .jobs {
   width: 60vw;
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
@@ -270,7 +274,7 @@
   padding-bottom: 2rem;
 }
 .projects__bio-image {
-  min-height: 30vh;
+  min-height: 50vh;
   width: 100%;
   background: #272727;
   background-size: cover;
@@ -288,18 +292,21 @@
   text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.7), 1px -1px 0 rgba(39, 39, 39, 0.7), -1px 1px 0 rgba(39, 39, 39, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
 }
 .projects .orange-line {
+  top: 50vh;
   height: 5px;
   width: 100%;
   background-color: #ed7019;
 }
 .projects .gray-line {
+  top: 50vh;
   height: 10px;
   width: 100%;
   background: #272727;
 }
 .projects .bottom {
+  top: 0%;
   position: relative;
-  margin-top: 30vh;
+  margin-top: 50vh;
 }
 .projects__items {
   min-height: 40vh;
