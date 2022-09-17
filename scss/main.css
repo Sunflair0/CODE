@@ -545,6 +545,7 @@ a {
   color: #ed7019;
   text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.4), 1px -1px 0 rgba(39, 39, 39, 0.4), -1px 1px 0 rgba(39, 39, 39, 0.4), 1px 1px 0 rgba(39, 39, 39, 0.4);
   background-image: url("/dist/img/mepic.jpg");
+  background-size: cover;
 }
 
 header {
