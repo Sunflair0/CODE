@@ -1,12 +1,25 @@
 $primary-color: #272727;
 $secondary-color: #ed7019;
 $primary-accent-color: antiquewhite;
-$secondary-accent-color:#3c4923;
+$secondary-accent-color:#df4e98;
+$secondary-accent-color2:#635264;
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+@mixin social_icons_vertical {
+       .social-icons {
+      display: flex;
+      flex-direction: column;
+  }  
+  footer {
+      transform:
+      rotate(90deg)
+      translate(-3rem, -5rem);
+  }
 }
 
 @mixin transition-ease {
@@ -21,11 +34,6 @@ $secondary-accent-color:#3c4923;
     }
  }
 
- @mixin  media-sm {
-     @media screen and (min-width: 650px) {
-         @content;
-     }
- }
  @mixin  media-md {
      @media screen and (min-width: 768px) {
          @content;

@@ -1,9 +1,3 @@
-@include media-sm {
-    .about__bio .text-secondary p {
-        padding-bottom: .75rem;
-    }
-}
-
 @include media-md {
     .menu-btn {
         visibility: hidden;

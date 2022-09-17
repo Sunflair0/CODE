@@ -104,7 +104,7 @@
   padding-left: 20px;
   opacity: 0.98;
   visibility: hidden;
-  background: hsla(0deg, 0%, 0%, 0.6);
+ background: black;
   text-shadow: 3px 3px 2px #000000;
 }
 
@@ -208,7 +208,7 @@
 }
 
 .about__bio-image {
-  background: rgb(60, 73, 35);
+  background: #635264;
   position: fixed;
   top: 0;
   height: 50vh;
@@ -241,15 +241,17 @@
 .about__bio::-webkit-scrollbar {
   width: 15px;
 }
+
 .about__bio::-webkit-scrollbar-thumb {
   background-color: #a7c56e;
   box-shadow: inset 0 0 7px #000000;
   border-radius: 5px;
-  border: 2px solid #3c4923;
+  border: 2px solid #635264;
   background-clip: content-box;
 }
+
 .about__bio::-webkit-scrollbar-track {
-  background: #3c4923;
+  background: #635264;
 }
 
 .about__bio-image p a:hover {
@@ -449,6 +451,29 @@
 
 .projects footer {
   transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.resumé {
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+}
+
+.resumé .social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.resumé footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.resumé__actual {
+  padding: 20px 5px;
+  color: black;
+  margin: 15vh auto;
+  width: 60%;
+  background: rgb(241, 241, 188);
+  border: 2px solid rgb(187, 160, 10);
 }
 
 * {
