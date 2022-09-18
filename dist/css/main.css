@@ -14,8 +14,8 @@
 
 .home__photo {
   height: 50vh;
-  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), 
-url("/dist/img/mepic.jpg");
+  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%),
+    url("/dist/img/mepic.jpg");
   background-size: cover;
   position: relative;
 
@@ -228,7 +228,7 @@ url("/dist/img/mepic.jpg");
 }
 
 .about__bio-image {
-  background: #7c787c5e;
+  background: rgb(38, 49, 37);
   position: fixed;
   top: 0;
   height: 50vh;
@@ -248,7 +248,7 @@ url("/dist/img/mepic.jpg");
 .about__bio-image p a {
   -webkit-text-decoration: underline #f39f10 2px;
   text-decoration: underline #f39f10 2px;
-  background-color: rgba(99, 88, 88, 0.9);
+  background-color: rgb(99, 88, 88);
   font-weight: normal;
 }
 
@@ -265,13 +265,14 @@ url("/dist/img/mepic.jpg");
 .about__bio::-webkit-scrollbar-thumb {
   background-color: #a7c56e;
   box-shadow: inset 0 0 7px #000000;
-  border-radius: 5px;
-  border: 2px solid #635264;
+  border-radius: 10px;
+  border: 2px solid rgb(38, 49, 37);
+  ;
   background-clip: content-box;
 }
 
 .about__bio::-webkit-scrollbar-track {
-  background: #635264;
+  background: rgb(38, 49, 37);
 }
 
 .about__bio-image p a:hover {
@@ -646,7 +647,7 @@ html::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track,
 html::-webkit-scrollbar-track {
-  background: #262626;
+  background: linear-gradient(to bottom, rgb(38, 49, 37) 51%, transparent 50%, #262626) 51%;
 }
 
 h1,

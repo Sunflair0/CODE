@@ -198,7 +198,7 @@
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
 .about__bio-image {
-  background: #df4e98;
+  background: rgb(38, 49, 37);
   position: fixed;
   top: 0;
   height: 50vh;
@@ -543,7 +543,7 @@ html::-webkit-scrollbar-thumb {
 }
 body::-webkit-scrollbar-track,
 html::-webkit-scrollbar-track {
-  background: #262626;
+  background: linear-gradient(to bottom, rgb(38, 49, 37) 51%, transparent 50%, #262626) 51%;
 }
 
 h1,
