@@ -1,8 +1,8 @@
 $primary-color: #272727;
 $secondary-color: #ed7019;
 $primary-accent-color: antiquewhite;
-$secondary-accent-color:#df4e98;
-$secondary-accent-color2:#635264;
+$secondary-accent-color: #df4e98;
+$secondary-accent-color2: #635264;
 
 * {
     box-sizing: border-box;
@@ -11,15 +11,22 @@ $secondary-accent-color2:#635264;
 }
 
 @mixin social_icons_vertical {
-       .social-icons {
-      display: flex;
-      flex-direction: column;
-  }  
-  footer {
-      transform:
-      rotate(90deg)
-      translate(-3rem, -5rem);
-  }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        transform:
+            rotate(90deg) translate(-3rem, -5rem);
+    }
+}
+
+@mixin outline {
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
 }
 
 @mixin transition-ease {
@@ -29,24 +36,26 @@ $secondary-accent-color2:#635264;
 @function set-text-color($color) {
     @if (lightness($color) > 40%) {
         @return #000;
-        } @else {
-         @return $primary-accent-color;
     }
- }
 
- @mixin  media-md {
-     @media screen and (min-width: 768px) {
-         @content;
-     }
- }
+    @else {
+        @return $primary-accent-color;
+    }
+}
 
- @mixin  media-lg {
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
     @media screen and (min-width: 1024px) {
         @content;
     }
 }
 
-@mixin  media-xl {
+@mixin media-xl {
     @media screen and (min-width: 1600px) {
         @content;
     }

@@ -5,18 +5,22 @@
     overflow: hidden;
     align-items: center;
     text-align: center;
-    background:
-        linear-gradient(32deg,
-            rgba($primary-color, 1) 0%,
-            rgba($primary-color, .9) 15%,
-            rgba($primary-color, .6) 27%,
-            rgba($primary-color, .4) 35%,
-            rgba($primary-color, .4) 63%,
-            rgba($primary-color, .5) 75%,
-            rgba($primary-color, 1) 100%),
-        url('./img/mepic.jpg');
-    background-size: cover;
-    position: relative;
+
+    &__photo {
+        height: 50vh;
+        background:
+            linear-gradient(32deg,
+                rgba($primary-color, 1) 0%,
+                rgba($primary-color, .9) 15%,
+                rgba($primary-color, .6) 27%,
+                rgba($primary-color, .4) 35%,
+                rgba($primary-color, .4) 63%,
+                rgba($primary-color, .5) 75%,
+                rgba($primary-color, 1) 100%),
+            url('./img/mepic.jpg');
+        background-size: cover;
+        position: relative;
+    }
 
     &__top {
         margin-top: 30vh;
@@ -26,14 +30,22 @@
     }
 
     &__name {
-        font-size: 5rem;
+        font-size: clamp(40px, 10vw, 5rem);
         padding-bottom: 1rem;
         margin-bottom: 7rem;
+        @include outline;
 
         &--last {
             color: $secondary-color;
             font-weight: 700;
+            @include outline;
         }
+    }
+
+    &__bottom {
+        padding-top: 3rem;
+        align-items: center;
+        text-align: center;
     }
 }
 
