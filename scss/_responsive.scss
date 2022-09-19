@@ -1,3 +1,16 @@
+@include media-sm {
+.home__photo {
+  height: 50vh;
+background:
+ radial-gradient(circle,
+      transparent 50%,     
+      #272727 65%),
+    url("/dist/img/mepic.jpg") no-repeat center;
+  background-size: contain;
+  position: relative;
+}
+}
+
 @include media-md {
     .menu-btn {
         visibility: hidden;

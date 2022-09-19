@@ -9,19 +9,19 @@
   overflow: hidden;
   align-items: center;
   text-align: center;
-  background-image: radial-gradient(circle,
-      transparent 40%,
-      #272727 48%);
 }
 
 .home__photo {
   height: 50vh;
-
-
-  background:
-    radial-gradient(circle,
-      transparent 50%,
-      #272727 65%),
+  background: linear-gradient(180deg,
+      rgb(39, 39, 39) 0%,
+      rgba(39, 39, 39, 0.9) 7%,
+      rgba(39, 39, 39, 0.5) 10%,
+      rgba(39, 39, 39, 0.25) 15%,
+      transparent 25%,
+      transparent 65%,
+      rgba(39, 39, 39, 0.5) 80%,
+      rgb(39, 39, 39) 100%),
     url("/Portfolio2021/dist/img/mepic.jpg") no-repeat center;
   background-size: contain;
   position: relative;

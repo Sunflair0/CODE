@@ -7,19 +7,19 @@
     text-align: center;
 
     &__photo {
-        height: 50vh;
-        background:
-            linear-gradient(32deg,
-                rgba($primary-color, 1) 0%,
-                rgba($primary-color, .9) 15%,
-                rgba($primary-color, .6) 27%,
-                rgba($primary-color, .4) 35%,
-                rgba($primary-color, .4) 63%,
-                rgba($primary-color, .5) 75%,
-                rgba($primary-color, 1) 100%);
-        background-image: url('./img/mepic.jpg');
-        background-size: cover;
-        position: relative;
+     height: 50vh;
+   background: linear-gradient(180deg,
+      rgb(39, 39, 39) 0%,
+      rgba(39, 39, 39, 0.9) 7%,
+      rgba(39, 39, 39, 0.5) 10%,
+      rgba(39, 39, 39, 0.25) 15%,
+      transparent 25%,
+      transparent 65%,
+      rgba(39, 39, 39, 0.5) 80%,
+      rgb(39, 39, 39) 100%),
+    url("/Portfolio2021/dist/img/mepic.jpg") no-repeat center;
+  background-size: contain;
+  position: relative;
     }
 
     &__top {
