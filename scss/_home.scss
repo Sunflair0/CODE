@@ -16,8 +16,8 @@
                 rgba($primary-color, .4) 35%,
                 rgba($primary-color, .4) 63%,
                 rgba($primary-color, .5) 75%,
-                rgba($primary-color, 1) 100%),
-            url('./img/mepic.jpg');
+                rgba($primary-color, 1) 100%);
+        background-image: url('./img/mepic.jpg');
         background-size: cover;
         position: relative;
     }
@@ -27,18 +27,17 @@
         height: 20vh;
         border-bottom: 3px solid #ed7019;
         margin-bottom: 3rem;
+        @include outline;
     }
 
     &__name {
         font-size: clamp(40px, 10vw, 5rem);
         padding-bottom: 1rem;
         margin-bottom: 7rem;
-        @include outline;
 
         &--last {
             color: $secondary-color;
             font-weight: 700;
-            @include outline;
         }
     }
 
