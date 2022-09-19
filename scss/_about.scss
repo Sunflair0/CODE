@@ -127,6 +127,7 @@
     .social-icons {
         display: flex;
         flex-direction: column;
+        font-size: clamp(10px, 3vw, 15px);
     }
 
     footer {

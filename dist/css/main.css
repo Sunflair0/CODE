@@ -353,6 +353,8 @@
 .about .social-icons {
   display: flex;
   flex-direction: column;
+  font-size: clamp(10px, 3vw, 15px);
+
 }
 
 .about footer {
@@ -468,6 +470,8 @@
 .projects .social-icons {
   display: flex;
   flex-direction: column;
+  font-size: clamp(10px, 3vw, 15px);
+
 }
 
 .projects footer {
@@ -482,6 +486,8 @@
 .resumé .social-icons {
   display: flex;
   flex-direction: column;
+  font-size: clamp(10px, 3vw, 15px);
+
 }
 
 .resumé footer {
@@ -533,6 +539,8 @@
 .contact .social-icons {
   position: initial;
   margin-top: 2rem;
+  font-size: clamp(10px, 3vw, 15px);
+
 }
 
 @media screen and (min-width: 650px) {
@@ -682,6 +690,8 @@ main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
+  font-size: clamp(10px, 3vw, 15px);
+
 }
 
 main .social-icons a {
