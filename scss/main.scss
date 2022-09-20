@@ -28,8 +28,7 @@ html {
         }
 
         &-track {
-            background: linear-gradient(to bottom, rgb(38, 49, 37) 51%, transparent 50%, #262626) 51%;
-
+  background: #262626;
         }
     }
 }
@@ -59,9 +58,11 @@ header {
     z-index: 2;
     width: 100%;
     padding: 1rem;
+    height: 88px;
 }
 
 main {
+top: 88px;
     height: 100%;
     width: 100%;
 

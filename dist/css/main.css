@@ -5,6 +5,7 @@
 }
 
 .home {
+  margin-top: 88px;
   height: 100%;
   overflow: hidden;
   align-items: center;
@@ -22,13 +23,13 @@
       transparent 65%,
       rgba(39, 39, 39, 0.5) 80%,
       rgb(39, 39, 39) 100%),
-    url("/Portfolio2021/dist/img/mepic.jpg") no-repeat center;
+    url("/dist/img/mepic1.jpg") no-repeat center;
   background-size: contain;
   position: relative;
 }
 
 .home__top {
-  margin-top: 30vh;
+  margin-top: 20vh;
   height: 20vh;
   border-bottom: 3px solid #ed7019;
   margin-bottom: 3rem;
@@ -505,11 +506,12 @@
 
 .resumé__actual {
   padding: 20px 5px;
-  color: black;
+  color: white;
   margin: 15vh auto;
   width: 60%;
-  background: rgb(241, 241, 188);
-  border: 2px solid rgb(187, 160, 10);
+  background: rgb(65, 65, 65);
+  outline: 5px solid rgb(65, 65, 65);
+  outline-offset: 5px;
 }
 
 * {
@@ -664,7 +666,7 @@ html::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-track,
 html::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, rgb(38, 49, 37) 51%, transparent 50%, #262626) 51%;
+  background: #262626;
 }
 
 h1,
@@ -688,9 +690,11 @@ header {
   z-index: 2;
   width: 100%;
   padding: 1rem;
+  height: 88px;
 }
 
 main {
+  top: 88px;
   height: 100%;
   width: 100%;
 }
