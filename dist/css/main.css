@@ -239,7 +239,7 @@
 }
 
 .about__bio-image {
-  background: rgb(38, 49, 37);
+  background: rgb(65, 65, 65);
   position: fixed;
   top: 0;
   height: 50vh;
@@ -274,16 +274,15 @@
 }
 
 .about__bio::-webkit-scrollbar-thumb {
-  background-color: #a7c56e;
+  background-color: #464646;
   box-shadow: inset 0 0 7px #000000;
   border-radius: 10px;
   border: 2px solid rgb(38, 49, 37);
-  ;
   background-clip: content-box;
 }
 
 .about__bio::-webkit-scrollbar-track {
-  background: rgb(38, 49, 37);
+  background: rgb(65, 65, 65);
 }
 
 .about__bio-image p a:hover {

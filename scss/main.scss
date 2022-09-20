@@ -19,16 +19,15 @@ html {
         width: 20px;
 
         &-thumb {
-            background-color: $secondary-color;
-            box-shadow: inset 0 0 10px black;
-            border-radius: 20px;
-            border: 1px solid transparent;
+            background-color: #464646;
+            box-shadow: inset 0 0 7px #000000;
+            border-radius: 10px;
+            border: 2px solid rgb(38, 49, 37);
             background-clip: content-box;
-            border: 2px solid $primary-color;
         }
 
         &-track {
-  background: #262626;
+            background: #262626;
         }
     }
 }
@@ -62,7 +61,7 @@ header {
 }
 
 main {
-top: 88px;
+    top: 88px;
     height: 100%;
     width: 100%;
 

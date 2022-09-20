@@ -8,12 +8,12 @@
         3px 3px 5px rgba($primary-color, .9);
 
     &__bio-image {
-        background: rgb(38, 49, 37);
-        position: fixed;
-        top: 0;
-        height: 50vh;
-        width: 100%;
-        z-index: 1;
+     background: rgb(65, 65, 65);
+  position: fixed;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  z-index: 1;
 
         p {
             margin-bottom: 1rem;
@@ -74,7 +74,7 @@
             }
 
             &-track {
-                background: $secondary-accent-color;
+                background: rgb(65, 65, 65);
             }
         }
 
