@@ -199,7 +199,7 @@
   background: rgb(65, 65, 65);
   position: fixed;
   top: 0;
-  height: 49vh;
+  height: 47.8vh;
   width: 100%;
   z-index: 1;
 }
@@ -227,7 +227,7 @@
           text-decoration: underline rgb(247, 179, 123);
 }
 .about__bio-image .orange-line {
-  top: 49vh;
+  top: 47.8vh;
   height: 3px;
   width: 100%;
   background-color: #ed7019;
@@ -238,7 +238,7 @@
   background: #272727;
 }
 .about__bio {
-  min-height: 49vh;
+  height: 47.8vh;
   width: 100%;
   text-align: center;
   font-size: clamp(1.3rem, 2vw, 2rem);
@@ -298,7 +298,7 @@
   padding-bottom: 2rem;
 }
 .projects__bio-image {
-  min-height: 50vh;
+  height: 47.8vh;
   width: 100%;
   background: #272727;
   background-size: cover;
@@ -502,9 +502,6 @@
   }
   .about__bio .text-secondary:first-child {
     margin-top: 12vh;
-  }
-  .projects__bio-image {
-    height: 40vh;
   }
   .projects__items {
     grid-template-columns: repeat(2, 1fr);

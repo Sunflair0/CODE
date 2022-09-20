@@ -12,7 +12,7 @@
         background: rgb(65, 65, 65);
         position: fixed;
         top: 0;
-        height: 49vh;
+        height: 47.8vh;
         width: 100%;
         z-index: 1;
 
@@ -42,7 +42,7 @@
         }
 
         .orange-line {
-            top: 49vh;
+            top: 47.8vh;
             height: 3px;
             width: 100%;
             background-color: $secondary-color;
@@ -56,7 +56,7 @@
     }
 
     &__bio {
-        min-height: 49vh;
+        height: 47.8vh;
         width: 100%;
         text-align: center;
         font-size: clamp(1.3rem, 2vw, 2rem);
@@ -103,14 +103,12 @@
             grid-gap: 2rem;
 
 
-
             &__job {
                 background: lighten($primary-color, 10%);
                 padding: 0.5rem;
                 border-bottom: 5px solid $secondary-color;
                 outline: 3px solid lighten($primary-color, 10%);
                 outline-offset: 5px;
-
                 h2,
                 h3 {
                     margin: .6rem 0;
