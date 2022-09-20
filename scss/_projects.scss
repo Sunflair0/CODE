@@ -13,99 +13,103 @@
         justify-content: flex-end;
         align-items: center;
         z-index: 5;
-}
-.text-secondary {
-    font-size: 2rem;
-    margin-bottom: 2rem;    
-    text-shadow:
-    -1px -1px 0 rgba($primary-color, .7),
-    1px -1px 0 rgba($primary-color, .7),
-    -1px 1px 0 rgba($primary-color, .7),
-    1px 1px 0 rgba($primary-color, .7); 
     }
 
-.orange-line {
-top: 50vh;
-    height: 5px;
-    width: 100%;
-    background-color: $secondary-color;
-}
-.gray-line {
-top: 50vh;
-    height: 10px;
-    width: 100%;
-    background: $primary-color;
+    .text-secondary {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-shadow:
+            -1px -1px 0 rgba($primary-color, .7),
+            1px -1px 0 rgba($primary-color, .7),
+            -1px 1px 0 rgba($primary-color, .7),
+            1px 1px 0 rgba($primary-color, .7);
     }
 
-.bottom {
-top: 0%;
-    position: relative;
-    margin-top: 50vh;    
-  }
+    .orange-line {
+        top: 50vh;
+        height: 5px;
+        width: 100%;
+        background-color: $secondary-color;
+    }
 
-  &__items {
-      min-height: 40vh;
-      width: 60vw;
-      margin: 2rem auto 0 auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
-  }
+    .gray-line {
+        top: 50vh;
+        height: 10px;
+        width: 100%;
+        background: $primary-color;
+    }
 
-  &__item {
-         position: relative;
-         border-bottom: 5px solid $secondary-color;
-         overflow: hidden;
+    .bottom {
+        top: 0%;
+        position: relative;
+        margin-top: 50vh;
+    }
 
-        
-         img {
-             width: 100%;
-         }
-         
+    &__items {
+        min-height: 40vh;
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+
+    &__item {
+        position: relative;
+        border-bottom: 5px solid $secondary-color;
+        overflow: hidden;
+
+
+        img {
+            width: 100%;
+        }
+
         &::after {
-             content: '';
-             position: absolute;
-             top: 100%;
-             left: 0;
-             height: 100%;
-             width: 100%;
-             background: $secondary-color;
-             opacity: 0;
-             @include transition-ease;
-         }
- 
- &:hover {
-             &::after {
-                 top: 0;
-                 opacity: .9;
-             }
-             .projects__btn {
-                 opacity: 1;
-             }
-         }     
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $secondary-color;
+            opacity: 0;
+            @include transition-ease;
+        }
+
+        &:hover {
+            &::after {
+                top: 0;
+                opacity: .9;
+            }
+
+            .projects__btn {
+                opacity: 1;
+            }
+        }
     }
 
-  &__btns {
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      z-index: 1;
-      align-items: center;
-      text-align: center;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-     
-  }
+    &__btns {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+        align-items: center;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
-   &__btn {
-      opacity: 0;
-      color: set-text-color($secondary-color);
-      @include transition-ease;
-    
-   &:hover {
-      color:set-text-color(set-text-color($secondary-color));
-      }   
-}  
-@include social_icons_vertical;
+    }
+
+    &__btn {
+        opacity: 0;
+        color: set-text-color($secondary-color);
+        @include transition-ease;
+
+        &:hover {
+            color:set-text-color(set-text-color($secondary-color));
+        }
+    }
+
+    @include social_icons_vertical;
 }
