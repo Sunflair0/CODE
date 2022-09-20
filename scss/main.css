@@ -13,9 +13,6 @@
 }
 .home__photo {
   height: 50vh;
-  background: linear-gradient(180deg, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9) 7%, rgba(39, 39, 39, 0.5) 10%, rgba(39, 39, 39, 0.25) 15%, transparent 25%, transparent 65%, rgba(39, 39, 39, 0.5) 80%, rgb(39, 39, 39) 100%), url("/Portfolio2021/dist/img/mepic.jpg") no-repeat center;
-  background-size: contain;
-  position: relative;
 }
 .home__top {
   margin-top: 30vh;
@@ -34,7 +31,7 @@
   font-weight: 700;
 }
 .home__bottom {
-  padding-top: 3rem;
+  padding-top: 1rem;
   align-items: center;
   text-align: center;
 }
@@ -193,6 +190,7 @@
 }
 
 .about {
+  transition: all 0.3s ease-in-out;
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
@@ -265,7 +263,7 @@
 }
 .about__bio .text-secondary {
   padding-bottom: 0.75rem;
-  font-size: clamp(40px, 10vw, 70px);
+  font-size: clamp(40px, 10vw, 10px);
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(61, 56, 145);
 }
 .about__bio .text-secondary:first-child {
@@ -393,10 +391,47 @@
 
 .resumé {
   transition: all 0.3s ease-in-out;
-  height: 100%;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  font-weight: 400;
+  text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
+}
+.resumé__resumé-image {
+  position: fixed;
+  background: rgb(65, 65, 65);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.resumé__resumé-image p {
+  margin-bottom: 1rem;
+  line-height: 1.2em;
+}
+.resumé__resumé-image p:first-child {
+  margin-top: -1vh;
+}
+.resumé__resumé-image p a {
+  -webkit-text-decoration: underline #f39f10 2px;
+          text-decoration: underline #f39f10 2px;
+  background-color: rgba(99, 88, 88, 0.904);
+  font-weight: normal;
+}
+.resumé__resumé-image p a:visited {
+  color: rgb(236, 59, 59);
+  -webkit-text-decoration: underline rgb(236, 59, 59);
+          text-decoration: underline rgb(236, 59, 59);
+}
+.resumé__resumé-image p a:hover {
+  color: rgb(247, 179, 123);
+  -webkit-text-decoration: underline rgb(247, 179, 123);
+          text-decoration: underline rgb(247, 179, 123);
 }
 
 .resumé__actual {
+  position: fixed;
   padding: 20px 5px;
   color: white;
   margin: 15vh auto;
@@ -420,8 +455,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: linear-gradient(32deg, #272727 0%, rgba(39, 39, 39, 0.9) 15%, rgba(39, 39, 39, 0.6) 27%, rgba(39, 39, 39, 0.4) 35%, rgba(39, 39, 39, 0.4) 63%, rgba(39, 39, 39, 0.5) 75%, #272727 100%), url("/dist/img/bo.jpg");
-  background-size: cover;
   position: relative;
 }
 .contact h2 {
@@ -437,6 +470,76 @@
   font-size: 1.5rem;
 }
 
+@media screen and (min-width: 650px) {
+  .thin {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  .social-vertical {
+    flex-direction: row;
+  }
+  .about__bio .text-secondary {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+    width: 80vw;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: left;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .about__bio {
+    font-size: 1.5em;
+  }
+  .about__bio .text-secondary:first-child {
+    margin-top: 12vh;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .projects__items {
+    margin-top: 40vh;
+  }
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50vh;
+    min-height: 30vh;
+  }
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1600px) {
+  .projects {
+    max-height: 100vh;
+  }
+  .projects__bio-image {
+    max-height: 40vh;
+  }
+}
 body,
 html {
   background: #272727;

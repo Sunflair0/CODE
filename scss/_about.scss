@@ -1,4 +1,5 @@
 .about {
+    @include transition-ease;
     padding-bottom: 2rem;
     min-height: 100vh;
     position: relative;
@@ -8,12 +9,12 @@
         3px 3px 5px rgba($primary-color, .9);
 
     &__bio-image {
-     background: rgb(65, 65, 65);
-  position: fixed;
-  top: 0;
-  height: 50vh;
-  width: 100%;
-  z-index: 1;
+        background: rgb(65, 65, 65);
+        position: fixed;
+        top: 0;
+        height: 50vh;
+        width: 100%;
+        z-index: 1;
 
         p {
             margin-bottom: 1rem;
@@ -80,7 +81,7 @@
 
         .text-secondary {
             padding-bottom: .75rem;
-            font-size: clamp(40px, 10vw, 70px);
+            font-size: clamp(40px, 10vw, 10px);
             text-shadow: 1px 1px 1px #000,
                 3px 3px 5px rgb(61, 56, 145);
 

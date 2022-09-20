@@ -59,7 +59,7 @@
 }
 
 .home__bottom {
-  padding-top: 3rem;
+  padding-top: 1rem;
   align-items: center;
   text-align: center;
 }
@@ -234,6 +234,7 @@
 }
 
 .about {
+  transition: all 0.3s ease-in-out;
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
@@ -319,7 +320,7 @@
 
 .about__bio .text-secondary {
   padding-bottom: .75rem;
-  font-size: clamp(40px, 10vw, 70px);
+  font-size: clamp(40px, 10vw, 10px);
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(61, 56, 145);
 }
 
@@ -487,13 +488,50 @@
   display: flex;
   flex-direction: column;
   font-size: clamp(10px, 3vw, 15px);
-
 }
 
 .resumé {
   transition: all 0.3s ease-in-out;
-  height: 100%;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  position: relative;
+  color: rgb(238, 237, 237);
+  font-weight: 400;
+  text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
+
+.resumé__resumé-image {
+  position: fixed;
+  background: rgb(65, 65, 65);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.resumé__resumé-image p {
+  margin-bottom: 1rem;
+  line-height: 1.2em;
+}
+
+.resumé__resumé-image p:first-child {
+  margin-top: -1vh;
+}
+
+
+.resumé__resumé-image p a {
+  -webkit-text-decoration: underline #f39f10 2px;
+  text-decoration: underline #f39f10 2px;
+  background-color: rgb(99, 88, 88);
+  font-weight: normal;
+}
+
+.resumé__resumé-image p a:visited {
+  color: rgb(148, 147, 247);
+  -webkit-text-decoration: underline rgb(148, 147, 247);
+  text-decoration: underline rgb(148, 147, 247);
+}
+
 
 .resumé .social-icons {
   display: flex;

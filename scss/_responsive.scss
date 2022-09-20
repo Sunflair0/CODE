@@ -1,99 +1,87 @@
 @include media-sm {
-.home__photo {
-  height: 50vh;
-background:
- radial-gradient(circle,
-      transparent 50%,     
-      #272727 65%),
-    url("/dist/img/mepic.jpg") no-repeat center;
-  background-size: contain;
-  position: relative;
-}
+	.thin {
+		transform: rotate(0deg) translate(0, 0);
+	}
+
+	.social-vertical {
+		flex-direction: row;
+	}
+
+	.about__bio .text-secondary {
+		font-size: 2.5rem;
+	}
 }
 
 @include media-md {
-    .menu-btn {
-        visibility: hidden;
-    }
+	.menu-btn {
+		visibility: hidden;
+	}
 
-    .nav {
-        visibility: visible;
-        width: 80vw;
+	.nav {
+		visibility: visible;
+		width: 80vw;
+	}
 
-        .menu-nav {
-            display: block;
-            transform: translateY(0);
-            height: 100%;
-            background: transparent;
-            text-align: left;
+	.nav .menu-nav {
+		display: block;
+		transform: translateY(0);
+		height: 100%;
+		background: transparent;
+		text-align: left;
+	}
 
-            &__item {
-                display: inline;
-                padding-right: 1.5rem;
-            }
+	.nav .menu-nav__item {
+		display: inline;
+		padding-right: 1.5rem;
+	}
 
-            &__link {
-                font-size: 1.5rem;
-            }
-        }
-    }
+	.about__bio {
+		font-size: 1.5em;
+	}
 
-    .about__bio {
-        font-size: 1.5rem;
+	.about__bio .text-secondary:first-child {
+		margin-top: 12vh;
+	}
 
-        & .text-secondary:first-child {
-            margin-top: 12vh;
-        }
+	.projects__bio-image {
+		height: 40vh;
+	}
 
-    }
+	.projects__items {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
-    .projects {
-        &__bio-image {
-            height: 40vh;
-        }
+	.projects .text-secondary {
+		font-size: 3rem;
+	}
 
-        &__items {
-            grid-template-columns: repeat(2, 1fr);
-        }
+	.projects__items {
+		margin-top: 40vh;
+	}
 
-        .text-secondary {
-            font-size: 3rem;
-        }
-
-        &__items {
-            margin-top: 40vh;
-        }
-
-    }
-
-    .contact__list {
-        grid-template-columns: repeat(2, 1fr);
-    }
+	.contact__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
-
 @include media-lg {
-    .projects {
-        &__items {
-            grid-template-columns: repeat(3, 1fr);
-            margin-top: 50vh;
-            min-height: 30vh;
+	.projects__items {
+		grid-template-columns: repeat(3, 1fr);
+		margin-top: 50vh;
+		min-height: 30vh;
+	}
 
-        }
-    }
-
-    .contact__list {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
+	.contact__list {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @include media-xl {
-    .projects {
-        max-height: 100vh;
+	.projects {
+		max-height: 100vh;
+	}
 
-        &__bio-image {
-            height: 40vh;
-        }
-    }
+	.projects__bio-image {
+		max-height: 40vh;
+	}
 }

@@ -1,10 +1,50 @@
 .resumé {
-	@include social_icons_vertical;
-	@include transition-ease;
-	height: 100%;
+  @include transition-ease;
+  padding-bottom: 2rem;
+  min-height: 100vh;
+  position: relative;
+  color: white;
+  font-weight: 400;
+  text-shadow: 0 0 4px rgb(44, 17, 21),
+    3px 3px 5px rgba($primary-color, .9);
+
+  &__resumé-image {
+    position: fixed;
+    background: rgb(65, 65, 65);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.2em;
+
+      &:first-child {
+        margin-top: -1vh;
+      }
+
+      a {
+        text-decoration: underline #f39f10 2px;
+        background-color: rgba(99, 88, 88, 0.904);
+        font-weight: normal;
+      }
+
+      a:visited {
+        color: rgb(236, 59, 59);
+        text-decoration: underline rgb(236, 59, 59);
+      }
+
+      a:hover {
+        color: rgb(247, 179, 123);
+        text-decoration: underline rgb(247, 179, 123);
+      }
+    }
+  }
 }
 
 .resumé__actual {
+  position: fixed;
   padding: 20px 5px;
   color: white;
   margin: 15vh auto;
