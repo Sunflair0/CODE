@@ -40,10 +40,6 @@
   width: 20px;
 }
 
-.logo:hover {
-  width: 25px;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
