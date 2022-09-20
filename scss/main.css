@@ -15,10 +15,10 @@
   height: 50vh;
 }
 .home__top {
-  margin-top: 30vh;
+  margin-top: 15vh;
   height: 20vh;
   border-bottom: 3px solid #ed7019;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
 }
 .home__name {
@@ -34,10 +34,7 @@
   padding-top: 1rem;
   align-items: center;
   text-align: center;
-}
-
-.logo {
-  width: 20px;
+  font-size: clamp(20px, 3vw, 30px);
 }
 
 * {
@@ -165,6 +162,10 @@
   background-color: rgba(99, 88, 88, 0.904);
 }
 
+.logo {
+  width: 20px;
+}
+
 .menu-nav__item:nth-child(1) {
   transition-delay: 0.25s;
 }
@@ -198,7 +199,7 @@
   background: rgb(65, 65, 65);
   position: fixed;
   top: 0;
-  height: 50vh;
+  height: 49vh;
   width: 100%;
   z-index: 1;
 }
@@ -226,8 +227,8 @@
           text-decoration: underline rgb(247, 179, 123);
 }
 .about__bio-image .orange-line {
-  top: 60vh;
-  height: 5px;
+  top: 49vh;
+  height: 3px;
   width: 100%;
   background-color: #ed7019;
 }
@@ -237,10 +238,10 @@
   background: #272727;
 }
 .about__bio {
-  min-height: 50vh;
+  min-height: 49vh;
   width: 100%;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: clamp(1.3rem, 2vw, 2rem);
   padding: 1rem 2rem;
   overflow: auto;
 }
@@ -258,8 +259,8 @@
   background: rgb(65, 65, 65);
 }
 .about__bio .text-secondary {
-  padding-bottom: 0.75rem;
-  font-size: clamp(40px, 10vw, 10px);
+  padding-bottom: 2rem;
+  font-size: clamp(1.7rem, 2vw, 2rem);
   text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(61, 56, 145);
 }
 .about__bio .text-secondary:first-child {
@@ -316,7 +317,7 @@
 }
 .projects .orange-line {
   top: 50vh;
-  height: 5px;
+  height: 3px;
   width: 100%;
   background-color: #ed7019;
 }
@@ -341,7 +342,7 @@
 }
 .projects__item {
   position: relative;
-  border-bottom: 5px solid #ed7019;
+  border-bottom: 3px solid #ed7019;
   overflow: hidden;
 }
 .projects__item img {
@@ -594,7 +595,7 @@ main .social-icons {
   position: fixed;
   bottom: 1rem;
   left: 1rem;
-  font-size: clamp(10px, 3vw, 15px);
+  font-size: clamp(5px, 2vw, 15px);
 }
 main .social-icons a {
   padding: 0.4rem;

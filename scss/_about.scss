@@ -12,7 +12,7 @@
         background: rgb(65, 65, 65);
         position: fixed;
         top: 0;
-        height: 50vh;
+        height: 49vh;
         width: 100%;
         z-index: 1;
 
@@ -42,8 +42,8 @@
         }
 
         .orange-line {
-            top: 60vh;
-            height: 5px;
+            top: 49vh;
+            height: 3px;
             width: 100%;
             background-color: $secondary-color;
         }
@@ -56,10 +56,10 @@
     }
 
     &__bio {
-        min-height: 50vh;
+        min-height: 49vh;
         width: 100%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: clamp(1.3rem, 2vw, 2rem);
         padding: 1rem 2rem;
         overflow: auto;
 
@@ -80,8 +80,8 @@
         }
 
         .text-secondary {
-            padding-bottom: .75rem;
-            font-size: clamp(40px, 10vw, 10px);
+            padding-bottom: 2rem;
+            font-size: clamp(1.7rem, 2vw, 2rem);
             text-shadow: 1px 1px 1px #000,
                 3px 3px 5px rgb(61, 56, 145);
 

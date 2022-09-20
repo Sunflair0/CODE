@@ -134,6 +134,10 @@
     }
 }
 
+.logo {
+    width: 20px;
+}
+
 @for $i from 1 through 5 {
     .menu-nav__item:nth-child(#{$i}) {
         transition-delay: ($i * .1s) + .15s;

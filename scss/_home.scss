@@ -12,10 +12,10 @@
     }
 
     &__top {
-        margin-top: 30vh;
+        margin-top: 15vh;
         height: 20vh;
         border-bottom: 3px solid #ed7019;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         @include outline;
     }
 
@@ -34,9 +34,6 @@
         padding-top: 1rem;
         align-items: center;
         text-align: center;
+        font-size: clamp(20px, 3vw, 30px);
     }
-}
-
-.logo {
-    width: 20px;
 }
