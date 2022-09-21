@@ -206,6 +206,10 @@
 .about__bio-image p {
   margin-bottom: 1rem;
   line-height: 1.2em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .about__bio-image p:first-child {
   margin-top: -1vh;
@@ -409,6 +413,10 @@
 .resumé__resumé-image p {
   margin-bottom: 1rem;
   line-height: 1.2em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .resumé__resumé-image p:first-child {
   margin-top: -1vh;

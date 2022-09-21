@@ -19,6 +19,7 @@
         p {
             margin-bottom: 1rem;
             line-height: 1.2em;
+            user-select: none;
 
             &:first-child {
                 margin-top: -1vh;
@@ -109,6 +110,7 @@
                 border-bottom: 5px solid $secondary-color;
                 outline: 3px solid lighten($primary-color, 10%);
                 outline-offset: 5px;
+
                 h2,
                 h3 {
                     margin: .6rem 0;

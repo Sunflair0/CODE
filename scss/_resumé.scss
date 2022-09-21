@@ -19,6 +19,7 @@
     p {
       margin-bottom: 1rem;
       line-height: 1.2em;
+      user-select: none;
 
       &:first-child {
         margin-top: -1vh;
