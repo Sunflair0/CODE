@@ -32,8 +32,8 @@
             }
 
             a:visited {
-                color: rgb(236, 59, 59);
-                text-decoration: underline rgb(236, 59, 59);
+                color: set-text-color($secondary-accent-color);
+                text-decoration: underline set-text-color($secondary-accent-color);
             }
 
             a:hover {

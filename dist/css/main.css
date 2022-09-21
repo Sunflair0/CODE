@@ -204,9 +204,9 @@
 
 .nav .menu-nav__link:visited {
   color: rgb(148, 147, 247);
-  -webkit-text-decoration: underline rgb(148, 147, 247);
-  text-decoration: underline rgb(148, 147, 247);
-  background-color: rgba(99, 88, 88, 0.904);
+  -webkit-text-decoration: underline #7119ed;
+  text-decoration: underline #7119ed;
+  background-color: rgba(98, 98, 98, 0.5);
 }
 
 .menu-nav__item:nth-child(1) {
@@ -529,7 +529,7 @@
 .resumé__resumé-image p a {
   -webkit-text-decoration: underline #f39f10 2px;
   text-decoration: underline #f39f10 2px;
-  background-color: rgb(99, 88, 88);
+  background-color: rgba(99, 88, 88, 0.5);
   font-weight: normal;
 }
 

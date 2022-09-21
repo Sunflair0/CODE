@@ -127,9 +127,9 @@
         }
 
         &__link:visited {
-            color: rgb(148, 147, 247);
-            text-decoration: underline rgb(148, 147, 247);
-            background-color: rgba(99, 88, 88, 0.904);
+            color: set-text-color($secondary-accent-color);
+            text-decoration: underline set-text-color($secondary-accent-color);
+            background-color: rgba(98, 98, 98, 0.5);
         }
     }
 }
