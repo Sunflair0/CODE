@@ -7,6 +7,7 @@
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21),
     3px 3px 5px rgba($primary-color, .9);
+  user-select: none;
 
   &__resumé-image {
     position: fixed;

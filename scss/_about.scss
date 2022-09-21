@@ -110,6 +110,7 @@
                 border-bottom: 5px solid $secondary-color;
                 outline: 3px solid lighten($primary-color, 10%);
                 outline-offset: 5px;
+                user-select: none;
 
                 h2,
                 h3 {

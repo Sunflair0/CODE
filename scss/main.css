@@ -287,6 +287,10 @@
   border-bottom: 5px solid #ed7019;
   outline: 3px solid #414141;
   outline-offset: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .about .bottom .jobs__job h2,
 .about .bottom .jobs__job h3 {
@@ -401,6 +405,10 @@
   color: white;
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .resumé__resumé-image {
   position: fixed;
