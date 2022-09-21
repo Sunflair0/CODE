@@ -50,9 +50,14 @@
         }
 
         .gray-line {
-            height: 10px;
+            height: 5px;
             width: 100%;
             background: $primary-color;
+        }
+        .gray-line1 {
+            height: 5px;
+            width: 100%;
+            background: rgb(65,65,65);
         }
     }
 
@@ -83,8 +88,7 @@
         .text-secondary {
             padding-bottom: 2rem;
             font-size: clamp(1.7rem, 2vw, 2rem);
-            text-shadow: 1px 1px 1px #000,
-                3px 3px 5px rgb(61, 56, 145);
+            text-shadow: 1px 1px 1px #000;
 
             &:first-child {
                 margin-top: 7vh;

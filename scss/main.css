@@ -11,9 +11,6 @@
   align-items: center;
   text-align: center;
 }
-.home__photo {
-  height: 50vh;
-}
 .home__top {
   margin-top: 15vh;
   height: 20vh;
@@ -31,7 +28,6 @@
   font-weight: 700;
 }
 .home__bottom {
-  padding-top: 1rem;
   align-items: center;
   text-align: center;
   font-size: clamp(20px, 3vw, 30px);
@@ -237,9 +233,14 @@
   background-color: #ed7019;
 }
 .about__bio-image .gray-line {
-  height: 10px;
+  height: 5px;
   width: 100%;
   background: #272727;
+}
+.about__bio-image .gray-line1 {
+  height: 5px;
+  width: 100%;
+  background: rgb(65, 65, 65);
 }
 .about__bio {
   height: 47.8vh;
@@ -265,7 +266,7 @@
 .about__bio .text-secondary {
   padding-bottom: 2rem;
   font-size: clamp(1.7rem, 2vw, 2rem);
-  text-shadow: 1px 1px 1px #000, 3px 3px 5px rgb(61, 56, 145);
+  text-shadow: 1px 1px 1px #000;
 }
 .about__bio .text-secondary:first-child {
   margin-top: 7vh;
@@ -308,7 +309,7 @@
 .projects__bio-image {
   height: 47.8vh;
   width: 100%;
-  background: #272727;
+  background: repeating-linear-gradient(60deg, rgb(65, 65, 65) 10%, rgb(10, 10, 10) 15%, transparent 25%), repeating-linear-gradient(150deg, rgb(80, 80, 80) 10%, rgba(9, 1, 80, 0.2) 14%, rgb(0, 0, 0) 15%, rgba(87, 40, 1, 0.25) 17%, transparent 25%);
   background-size: cover;
   position: fixed;
   top: 0%;
@@ -321,7 +322,7 @@
 .projects .text-secondary {
   font-size: 2rem;
   margin-bottom: 2rem;
-  text-shadow: -1px -1px 0 rgba(39, 39, 39, 0.7), 1px -1px 0 rgba(39, 39, 39, 0.7), -1px 1px 0 rgba(39, 39, 39, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 4px -1px rgb(0, 0, 0), 6px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
 }
 .projects .orange-line {
   top: 50vh;
@@ -560,7 +561,7 @@ body,
 html {
   background: #272727;
   color: antiquewhite;
-  max-height: 121vh;
+  max-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
 }
@@ -585,6 +586,7 @@ h1,
 h2,
 h3 {
   font-weight: 400;
+  margin-bottom: 1em;
 }
 
 a {

@@ -7,7 +7,7 @@
     text-align: center;
 
     &__photo {
-        height: 50vh;
+        // height: 45vh;
 
     }
 
@@ -31,7 +31,6 @@
     }
 
     &__bottom {
-        padding-top: 1rem;
         align-items: center;
         text-align: center;
         font-size: clamp(20px, 3vw, 30px);
