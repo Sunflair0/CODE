@@ -244,7 +244,7 @@
   background: rgb(65, 65, 65);
   position: fixed;
   top: 0;
-  height: 47.8vh;
+  height: 49vh;
   width: 100%;
   z-index: 1;
 }
@@ -294,7 +294,7 @@
 }
 
 .about__bio-image .orange-line {
-  height: 47.8vh;
+  top: 49vh;
   height: 3px;
   width: 100%;
   background-color: #ed7019;
@@ -307,7 +307,7 @@
 }
 
 .about__bio {
-  height: 47.8vh;
+  height: 49vh;
   width: 100%;
   text-align: center;
   font-size: clamp(1.3rem, 2vw, 2rem);
@@ -379,7 +379,7 @@
 }
 
 .projects__bio-image {
-  height: 47.8vh;
+  min-height: 49vh;
   width: 100%;
   background: #272727;
   background-size: cover;
@@ -399,14 +399,14 @@
 }
 
 .projects .orange-line {
-  height: 47.8vh;
+  top: 35vh;
   height: 3px;
   width: 100%;
   background-color: #ed7019;
 }
 
 .projects .gray-line {
-  height: 47.8vh;
+  top: 35vh;
   height: 10px;
   width: 100%;
   background: #272727;
@@ -431,6 +431,7 @@
   position: relative;
   border-bottom: 3px solid #ed7019;
   overflow: hidden;
+  height: fit-content
 }
 
 .projects__item img {
@@ -537,7 +538,7 @@
 .resumé__actual {
   padding: 20px 5px;
   color: white;
-  margin: 15vh auto;
+  margin: 20vh auto;
   width: 60%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
@@ -628,6 +629,10 @@
     margin-top: 12vh;
   }
 
+  .projects__bio-image {
+    height: 40vh;
+  }
+
   .projects__items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -658,9 +663,17 @@
 }
 
 @media screen and (min-width: 1600px) {
-  .projects {
-    max-height: 100vh;
-  }
+.projects {
+		max-height: 100vh;
+	}
+
+	.projects__items {
+		min-height: 40vh;
+	}
+
+	.projects__bio-image {
+		max-height: 40vh;
+	}
 }
 
 body,

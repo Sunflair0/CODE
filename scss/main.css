@@ -344,6 +344,9 @@
   position: relative;
   border-bottom: 3px solid #ed7019;
   overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .projects__item img {
   width: 100%;
@@ -431,7 +434,7 @@
   position: fixed;
   padding: 20px 5px;
   color: white;
-  margin: 15vh auto;
+  margin: 20vh auto;
   width: 60%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
@@ -529,6 +532,9 @@
 @media screen and (min-width: 1600px) {
   .projects {
     max-height: 100vh;
+  }
+  .projects__items {
+    min-height: 40vh;
   }
   .projects__bio-image {
     max-height: 40vh;
