@@ -234,7 +234,7 @@
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
-  color: rgb(238, 237, 237);
+  color: antiquewhite;
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
@@ -545,9 +545,43 @@
   font-size: clamp(10px, 3vw, 15px);
 }
 
+
+.resumé__design p {
+  color: antiquewhite;
+text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.2em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.resumé__design p:first-child {
+  margin-top: -1vh;
+}
+
+.resumé__design p a {
+  -webkit-text-decoration: underline #f39f10 2px;
+  text-decoration: underline #f39f10 2px;
+  background-color: rgba(99, 88, 88, 0.904);
+  font-weight: normal;
+}
+
+.resumé__design p a:visited {
+  color: rgb(236, 59, 59);
+  -webkit-text-decoration: underline rgb(236, 59, 59);
+  text-decoration: underline rgb(236, 59, 59);
+}
+
+.resumé__design p a:hover {
+  color: rgb(247, 179, 123);
+  -webkit-text-decoration: underline rgb(247, 179, 123);
+  text-decoration: underline rgb(247, 179, 123);
+}
+
 .resumé__actual {
-  padding: 20px 5px;
-  color: white;
+  padding: 40px 35px;
   margin: 20vh auto;
   width: 60%;
   background: rgb(65, 65, 65);
