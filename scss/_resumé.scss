@@ -7,55 +7,72 @@
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21),
     3px 3px 5px rgba($primary-color, .9);
-  user-select: none;
 
   &__resumé-image {
     background: rgb(65, 65, 65);
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;   
+    z-index: 1;
   }
 }
 
-.resumé__design{
-h3 {
-color: #272727;
-padding: 10px;
-border-top: #272727 solid 5px;
-border-bottom: #272727 solid 5px;
-background-color: rgb(202, 202, 202);
-width: 100%;
-height: auto;
-text-shadow: none;
-}
-p {
-color: #f39f10;
-      margin-bottom: 1rem;
-      line-height: 1.2em;
+.resumé__design {
+  h3 {
+    color: #272727;
+    padding: 0.5rem;
+    background-color: #272727;
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    color: rgb(237, 112, 25);
+    filter: drop-shadow(3px 3px 2px rgb(0, 0, 0));
+    text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
+    z-index: -1;
+  }
 
-      user-select: none;
+  ul {
+    list-style: square;
+  }
 
-      &:first-child {
-        margin-top: -1vh;
-      }
+  p {
+    color: #f39f10;
+    margin-bottom: 1rem;
+    line-height: 1.2em;
 
-      a {
-        text-decoration: underline #f39f10 2px;
-        background-color: rgba(99, 88, 88, 0.904);
-        font-weight: normal;
-      }
-
-      a:visited {
-        color: rgb(236, 59, 59);
-        text-decoration: underline rgb(236, 59, 59);
-      }
-
-      a:hover {
-        color: rgb(247, 179, 123);
-        text-decoration: underline rgb(247, 179, 123);
-      }
+    &:first-child {
+      margin-top: -1vh;
     }
+
+    a {
+      text-decoration: underline #f39f10 2px;
+      background-color: rgba(99, 88, 88, 0.904);
+      font-weight: normal;
+    }
+
+    a:visited {
+      color: rgb(236, 59, 59);
+      text-decoration: underline rgb(236, 59, 59);
+    }
+
+    a:hover {
+      color: rgb(247, 179, 123);
+      text-decoration: underline rgb(247, 179, 123);
+    }
+  }
+}
+
+.sub_design {
+  width: 100%;
+  font-weight: 400;
+  font-size: small;
+  color: antiquewhite;
+  text-shadow: none;
+}
+
+.position_design {
+  color: rgb(237, 112, 25);
+  margin: -1rem .5rem 1rem;
 }
 
 .resumé__actual {

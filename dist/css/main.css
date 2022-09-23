@@ -137,6 +137,7 @@
   visibility: hidden;
   background: black;
   text-shadow: 3px 3px 2px #5e5d5d;
+  z-index: 20;
 }
 
 .nav.open {
@@ -251,7 +252,7 @@
 .about__bio-image p {
   margin-bottom: 1rem;
   line-height: 1.2em;
-  user-select: none;
+
 }
 
 .about__bio-image p:first-child {
@@ -330,7 +331,7 @@
 .about__bio .text-secondary p {
   padding-bottom: .75rem;
   font-size: 1.5rem;
-  user-select: none;
+
 }
 
 .about__bio .text-secondary:first-child {
@@ -355,8 +356,8 @@
   padding: 0.5rem;
   border-bottom: 3px solid #ed7019;
   outline: 3px solid #414141;
+  text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
   outline-offset: 5px;
-  user-select: none;
 }
 
 .about .bottom .jobs__job h2,
@@ -366,7 +367,7 @@
 
 .about .bottom .jobs__job h6 {
   margin: 0.4rem 0;
-  color: #ff7f53;
+  color: #ef7f31;
   letter-spacing: 0.3px;
 }
 
@@ -503,7 +504,6 @@
   color: rgb(238, 237, 237);
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
-  user-select: none;
 }
 
 .resumé__resumé-image {
@@ -518,7 +518,6 @@
 .resumé__resumé-image p {
   margin-bottom: 1rem;
   line-height: 1.2em;
-  user-select: none;
 }
 
 
@@ -544,24 +543,39 @@
 
 .resumé__design p {
   color: antiquewhite;
-text-align: justify;
+  text-align: justify;
   margin-bottom: 1rem;
   line-height: 1.2em;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .resumé__design h3 {
-color: #272727;
-padding: 10px;
-border-top: #272727 solid 5px;
-border-bottom: #272727 solid 5px;
-background-color: rgb(202, 202, 202);
-width: 100%;
-height: auto;
-text-shadow: none;
+  color: #272727;
+  padding: 0.5rem;
+  background-color: #272727;
+  width: 100%;
+  height: auto;
+  font-weight: 600;
+  color: rgb(237, 112, 25);
+  filter: drop-shadow(3px 3px 2px rgb(0, 0, 0));
+  text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
+  z-index: -1;
+}
+
+.resumé__design ul {
+  list-style: square;
+}
+
+.sub_design {
+  width: 100%;
+  font-weight: 400;
+  font-size: small;
+  color: antiquewhite;
+  text-shadow: none;
+}
+
+.position_design {
+  color: rgb(237, 112, 25);
+  margin: -1rem .5rem 1rem;
 }
 
 .resumé__design p:first-child {
@@ -727,6 +741,7 @@ html {
   max-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+  user-select: none;
 }
 
 body::-webkit-scrollbar,

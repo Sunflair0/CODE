@@ -54,10 +54,11 @@
             width: 100%;
             background: $primary-color;
         }
+
         .gray-line1 {
             height: 5px;
             width: 100%;
-            background: rgb(65,65,65);
+            background: rgb(65, 65, 65);
         }
     }
 
@@ -111,10 +112,10 @@
             &__job {
                 background: lighten($primary-color, 10%);
                 padding: 0.5rem;
-                border-bottom: 5px solid $secondary-color;
+                border-bottom: 3px solid $secondary-color;
                 outline: 3px solid lighten($primary-color, 10%);
+                text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
                 outline-offset: 5px;
-                user-select: none;
 
                 h2,
                 h3 {
@@ -123,7 +124,7 @@
 
                 h6 {
                     margin: .4rem 0;
-                    color: lighten($secondary-color, 7%);
+                    color: lighten($secondary-color, 5%);
                     letter-spacing: .3px;
                 }
             }
