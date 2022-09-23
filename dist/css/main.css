@@ -136,7 +136,7 @@
   opacity: 0.98;
   visibility: hidden;
   background: black;
-  text-shadow: 3px 3px 2px #000000;
+  text-shadow: 3px 3px 2px #5e5d5d;
 }
 
 .nav.open {
@@ -415,7 +415,7 @@
 
 .projects .gray-line {
   top: 35vh;
-  height: 10px;
+  height: 5px;
   width: 100%;
   background: #272727;
 }
@@ -521,10 +521,6 @@
   user-select: none;
 }
 
-.resumé__resumé-image p:first-child {
-  margin-top: -1vh;
-}
-
 
 .resumé__resumé-image p a {
   -webkit-text-decoration: underline #f39f10 2px;
@@ -555,6 +551,17 @@ text-align: justify;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.resumé__design h3 {
+color: #272727;
+padding: 10px;
+border-top: #272727 solid 5px;
+border-bottom: #272727 solid 5px;
+background-color: rgb(202, 202, 202);
+width: 100%;
+height: auto;
+text-shadow: none;
 }
 
 .resumé__design p:first-child {
@@ -646,6 +653,7 @@ text-align: justify;
   .nav {
     visibility: visible;
     width: 80vw;
+    max-width: 684px;
   }
 
   .nav .menu-nav {

@@ -10,7 +10,6 @@
   user-select: none;
 
   &__resumé-image {
-    position: fixed;
     background: rgb(65, 65, 65);
     position: fixed;
     top: 0;
@@ -20,7 +19,17 @@
 }
 
 .resumé__design{
- p {
+h3 {
+color: #272727;
+padding: 10px;
+border-top: #272727 solid 5px;
+border-bottom: #272727 solid 5px;
+background-color: rgb(202, 202, 202);
+width: 100%;
+height: auto;
+text-shadow: none;
+}
+p {
 color: #f39f10;
       margin-bottom: 1rem;
       line-height: 1.2em;
@@ -52,7 +61,7 @@ color: #f39f10;
 .resumé__actual {
   position: fixed;
   padding: 20px 5px;
-  color: white;
+  color: antiquewhite;
   margin: 20vh auto;
   width: 60%;
   background: rgb(65, 65, 65);
