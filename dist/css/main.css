@@ -534,7 +534,7 @@
   line-height: 1.2em;
 }
 
-.resumé__design h3 {
+h3 .resumé__design  {
   padding: 0.5rem;
   background-color: #272727;
   width: 100%;

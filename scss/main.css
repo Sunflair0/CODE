@@ -424,7 +424,7 @@
   margin: 0 0 1rem 2rem;
   line-height: 1.2em;
 }
-.resumé__design h3 {
+h3 .resumé__design  {
   color: #272727;
   padding: 0.5rem;
   background-color: #272727;

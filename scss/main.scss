@@ -14,7 +14,7 @@ html {
     max-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1;
-user-select: none;
+    user-select: none;
 
     &::-webkit-scrollbar {
         width: 20px;
@@ -37,7 +37,7 @@ h1,
 h2,
 h3 {
     font-weight: 400;
-margin-bottom: 1em;
+    margin-bottom: 1em;
 }
 
 a {
