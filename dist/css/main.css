@@ -534,7 +534,7 @@
   line-height: 1.2em;
 }
 
-h3 .resumé__design  {
+.resumé__design h3 {
   padding: 0.5rem;
   background-color: #272727;
   width: 100%;
@@ -548,7 +548,7 @@ h3 .resumé__design  {
 
 .resumé__design ul {
   list-style: square;
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 .sub_design {
@@ -557,7 +557,6 @@ h3 .resumé__design  {
   font-size: small;
   color: antiquewhite;
   text-shadow: none;
-
 }
 
 .position_design {
@@ -576,16 +575,29 @@ h3 .resumé__design  {
 
 .resumé__design p:first-child {
   margin-top: -1vh;
-  text-shadow: -1px -1px 1px #7119ed80, 1px -1px 1px #7119ed80, -1px 1px 1px #7119ed80, 1px 1px 1px #7119ed80;
+  color: #afb6f0
 }
 
 .resumé__actual {
-  padding: 40px 35px;
+  padding: 40px 15px;
   margin: 20vh auto;
-  width: 60%;
+  width: 75%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
   outline-offset: 5px;
+}
+
+.intro_margin {
+  margin-left: -20px;
+  font-weight: 600;
+}
+
+.intro_margin .line {
+  height: 5px;
+  width: 110%;
+  background: #272727;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
 }
 
 * {
@@ -638,6 +650,15 @@ h3 .resumé__design  {
 }
 
 @media screen and (min-width: 768px) {
+  .resumé__design ul {
+    margin-left: 80px;
+  }
+
+  .resumé__actual {
+    padding: 40px 15px;
+    width: 60%;
+  }
+
   .menu-btn {
     visibility: hidden;
   }
