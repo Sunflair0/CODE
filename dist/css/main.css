@@ -501,7 +501,7 @@
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
-  color: rgb(238, 237, 237);
+  color: antiquewhite;
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
@@ -520,20 +520,6 @@
   line-height: 1.2em;
 }
 
-
-.resumé__resumé-image p a {
-  -webkit-text-decoration: underline #f39f10 2px;
-  text-decoration: underline #f39f10 2px;
-  background-color: rgba(99, 88, 88, 0.5);
-  font-weight: normal;
-}
-
-.resumé__resumé-image p a:visited {
-  color: rgb(148, 147, 247);
-  -webkit-text-decoration: underline rgb(148, 147, 247);
-  text-decoration: underline rgb(148, 147, 247);
-}
-
 .resumé .social-icons {
   display: flex;
   flex-direction: column;
@@ -542,14 +528,13 @@
 
 
 .resumé__design p {
-  color: antiquewhite;
+  color: rgb(247, 125, 38);
   text-align: justify;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 2rem;
   line-height: 1.2em;
 }
 
 .resumé__design h3 {
-  color: #272727;
   padding: 0.5rem;
   background-color: #272727;
   width: 100%;
@@ -563,6 +548,7 @@
 
 .resumé__design ul {
   list-style: square;
+  margin-left: 80px;
 }
 
 .sub_design {
@@ -571,34 +557,26 @@
   font-size: small;
   color: antiquewhite;
   text-shadow: none;
+
 }
 
 .position_design {
   color: rgb(237, 112, 25);
-  margin: -1rem .5rem 1rem;
+  margin: -1rem 0 .5rem 1rem;
+  padding: 1rem;
+  background-color: #383838;
+  filter: drop-shadow(3px 3px 2px rgb(29, 18, 3));
+  width: auto;
+  height: auto;
+  font-weight: 600;
+  color: rgb(255, 106, 0);
+  text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
+  z-index: -1;
 }
 
 .resumé__design p:first-child {
   margin-top: -1vh;
-}
-
-.resumé__design p a {
-  -webkit-text-decoration: underline #f39f10 2px;
-  text-decoration: underline #f39f10 2px;
-  background-color: rgba(99, 88, 88, 0.904);
-  font-weight: normal;
-}
-
-.resumé__design p a:visited {
-  color: rgb(236, 59, 59);
-  -webkit-text-decoration: underline rgb(236, 59, 59);
-  text-decoration: underline rgb(236, 59, 59);
-}
-
-.resumé__design p a:hover {
-  color: rgb(247, 179, 123);
-  -webkit-text-decoration: underline rgb(247, 179, 123);
-  text-decoration: underline rgb(247, 179, 123);
+  text-shadow: -1px -1px 1px #7119ed80, 1px -1px 1px #7119ed80, -1px 1px 1px #7119ed80, 1px 1px 1px #7119ed80;
 }
 
 .resumé__actual {
