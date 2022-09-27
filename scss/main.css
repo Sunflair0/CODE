@@ -599,10 +599,12 @@
   }
 }
 .story {
-  background-image: url("/dist/img/tea.png");
+  background: rgb(39, 39, 39);
+  background-image: url("/Portfolio2021/dist/img/tea.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  background-attachment: fixed;
   max-height: 100vh;
   width: 100%;
 }
@@ -623,13 +625,15 @@
   color: rgb(0, 0, 0);
   border-radius: 20px;
   text-align: center;
-  padding: 5px 10px;
+  padding: 3px 7px;
   height: auto;
-  width: 70px;
+  width: 50px;
   background-color: #7e7db9;
   border: #000000 2px solid;
   font-weight: 600;
   transition: 0.2s all;
+  bottom: 0;
+  position: fixed;
 }
 .story__link__link:hover {
   scale: 1.1;
