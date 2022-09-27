@@ -519,12 +519,17 @@
   font-weight: 600;
 }
 
+.story table {
+width: 60%;
+}
+
 .story table,
 tr,
 td {
   border: 3px solid rgba(65, 65, 65, 0.7);
   margin: 0 auto;
   padding: 4px;
+
 }
 
 .story tr:nth-child(even) {
