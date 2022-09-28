@@ -60,3 +60,9 @@
         opacity: 1;
     }
 }
+
+.social-vertical {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(10px, 2vw, 15px);
+}

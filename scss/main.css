@@ -63,6 +63,12 @@
     opacity: 1;
   }
 }
+.social-vertical {
+  display: flex;
+  flex-direction: row;
+  font-size: clamp(10px, 2vw, 15px);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -516,7 +522,7 @@
 
 .resumé__actual {
   padding: 40px 15px;
-  margin: 40vh auto 7vh;
+  margin: 38vh auto 7vh;
   width: 70%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
@@ -527,14 +533,14 @@
   position: fixed;
   background-color: #262626;
   top: 0;
-  height: 6vh;
+  height: 8vh;
   width: 100%;
   z-index: 2;
 }
 
 .intro_margin {
   position: fixed;
-  margin-top: 6vh;
+  margin-top: 8vh;
   padding: 20px;
   padding-right: 0;
   height: auto;
