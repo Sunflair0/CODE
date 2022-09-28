@@ -548,6 +548,8 @@ td {
   background-attachment: fixed;
   opacity: .3;
   z-index: -1;
+	height: 90vh;
+	width: 100%;
 }
 
 .story__link {
