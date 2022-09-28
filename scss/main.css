@@ -599,12 +599,8 @@
   }
 }
 .story {
-  background: rgb(39, 39, 39);
-  background-image: url("/Portfolio2021/dist/img/tea.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  background-attachment: fixed;
+  position: relative;
+  isolation: isolate;
   max-height: 100vh;
   width: 100%;
 }
@@ -640,6 +636,18 @@
 }
 .story__link a:visited {
   color: #000;
+}
+.story__link a:visited::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/dist/img/tea.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-attachment: fixed;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 .story_content p {

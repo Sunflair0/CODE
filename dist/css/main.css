@@ -496,11 +496,8 @@
 }
 
 .story {
-  background-image: url('/Portfolio2021/dist/img/tea.png');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  background-attachment: fixed;
+  position: relative;
+  isolation: isolate;
   max-height: 100vh;
   width: 100%;
 }
@@ -520,7 +517,7 @@
 }
 
 .story table {
-width: 60%;
+  width: 60%;
 }
 
 .story table,
@@ -538,6 +535,19 @@ td {
 
 .story tr:nth-child(odd) {
   background-color: rgba(110, 109, 109, .5);
+}
+
+.story::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/Portfolio2021/dist/img/tea.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-attachment: fixed;
+  opacity: .3;
+  z-index: -1;
 }
 
 .story__link {
