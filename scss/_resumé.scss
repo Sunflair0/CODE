@@ -8,7 +8,16 @@
   text-shadow: 0 0 4px rgb(44, 17, 21),
     3px 3px 5px rgba($primary-color, .9);
 
-  &__resumé-image {
+&_link {
+  text-decoration: underline;
+  color: antiquewhite;
+
+&:visited {
+  color: #9493f7;
+}
+}
+
+&__resumé-image {
     position: fixed;
     background: rgb(65, 65, 65);
     position: fixed;
@@ -56,9 +65,8 @@
     line-height: 1.2em;
 
     &:first-child {
-      margin-top: -1vh;
-      color: antiquewhite;
-      text-shadow: -1px -1px 1px #7119ed80, 1px -1px 1px #7119ed80, -1px 1px 1px #7119ed80, 1px 1px 1px #7119ed80;
+  margin-top: -1vh;
+  color: #afb6f0;
     }
   }
 }
@@ -96,7 +104,7 @@
 
 .resumé__actual {
   padding: 40px 15px;
-  margin: 20vh auto 7vh;
+  margin: 43vh auto 7vh;
   width: 70%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
