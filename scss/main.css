@@ -483,10 +483,6 @@
   margin: 0 0 1rem 2rem;
   line-height: 1.2em;
 }
-.resumé__design p:first-child {
-  margin-top: -1vh;
-  color: #afb6f0;
-}
 
 .resumé_link {
   text-decoration: underline;
@@ -520,7 +516,7 @@
 
 .resumé__actual {
   padding: 40px 15px;
-  margin: 43vh auto 7vh;
+  margin: 40vh auto 7vh;
   width: 70%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
@@ -561,7 +557,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 42vh;
+  padding-top: 30vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
