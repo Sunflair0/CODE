@@ -36,7 +36,7 @@
   font-weight: 700;
 }
 .home__bottom {
-  margin-top: 4vh;
+  margin-top: 3vh;
   align-items: center;
   text-align: center;
   font-size: clamp(20px, 3vw, 30px);
@@ -352,6 +352,12 @@
   margin-bottom: 2rem;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
 }
+.projects .orange-line {
+  top: 50vh;
+  height: 3px;
+  width: 100%;
+  background-color: #ed7019;
+}
 .projects .gray-line {
   top: 50vh;
   height: 5px;
@@ -508,8 +514,8 @@
 
 .resumé__actual {
   padding: 40px 15px;
-  margin: 20vh auto 7vh;
-  width: 75%;
+  margin: 39vh auto 7vh;
+  width: 70%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
   outline-offset: 5px;
@@ -519,14 +525,14 @@
   position: fixed;
   background-color: #262626;
   top: 0;
-  height: 5vh;
+  height: 6vh;
   width: 100%;
   z-index: 2;
 }
 
 .intro_margin {
   position: fixed;
-  margin-top: -15vh;
+  margin-top: 6vh;
   padding: 20px;
   padding-right: 0;
   height: auto;
