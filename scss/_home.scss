@@ -1,23 +1,38 @@
 @import 'config';
 
 .home {
+    margin-top: 88px;
     height: 100%;
     overflow: hidden;
     align-items: center;
     text-align: center;
 
+    &__photo {
+        background: linear-gradient(180deg,
+                rgb(39, 39, 39) 0%,
+                rgba(39, 39, 39, 0.9) 7%,
+                rgba(39, 39, 39, 0.5) 10%,
+                rgba(39, 39, 39, 0.25) 15%,
+                transparent 25%,
+                transparent 65%,
+                rgba(39, 39, 39, 0.5) 80%,
+                rgb(39, 39, 39) 100%);
+        background-size: contain;
+        position: relative;
+    }
+
     &__top {
         margin-top: 15vh;
         height: 20vh;
-        border-bottom: 3px solid #ed7019;
-        margin-bottom: 2rem;
         @include outline;
+        animation: fade__up 1.5s forwards ease-in-out;
     }
 
     &__name {
         font-size: clamp(40px, 10vw, 5rem);
         padding-bottom: 1rem;
         margin-bottom: 7rem;
+        animation: fade__up 1.5s forwards ease-in-out;
 
         &--last {
             color: $secondary-color;
@@ -26,8 +41,22 @@
     }
 
     &__bottom {
+        margin-top: 4vh;
         align-items: center;
         text-align: center;
         font-size: clamp(20px, 3vw, 30px);
+    }
+}
+
+@keyframes fade__up {
+
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }

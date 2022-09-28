@@ -95,3 +95,9 @@ footer {
     color: set-text-color($primary-color);
     transform: rotate(90deg) translate(-3rem, -5rem);
 }
+    .orange-line {
+        top: 47vh;
+        height: 3px;
+        width: 100%;
+        background-color: $secondary-color;
+    }

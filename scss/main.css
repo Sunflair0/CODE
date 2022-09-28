@@ -6,33 +6,63 @@
 }
 
 .home {
+  margin-top: 88px;
   height: 100%;
   overflow: hidden;
   align-items: center;
   text-align: center;
 }
+.home__photo {
+  background: linear-gradient(180deg, rgb(39, 39, 39) 0%, rgba(39, 39, 39, 0.9) 7%, rgba(39, 39, 39, 0.5) 10%, rgba(39, 39, 39, 0.25) 15%, transparent 25%, transparent 65%, rgba(39, 39, 39, 0.5) 80%, rgb(39, 39, 39) 100%);
+  background-size: contain;
+  position: relative;
+}
 .home__top {
   margin-top: 15vh;
   height: 20vh;
-  border-bottom: 3px solid #ed7019;
-  margin-bottom: 2rem;
   text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  -webkit-animation: fade__up 1.5s forwards ease-in-out;
+          animation: fade__up 1.5s forwards ease-in-out;
 }
 .home__name {
   font-size: clamp(40px, 10vw, 5rem);
   padding-bottom: 1rem;
   margin-bottom: 7rem;
+  -webkit-animation: fade__up 1.5s forwards ease-in-out;
+          animation: fade__up 1.5s forwards ease-in-out;
 }
 .home__name--last {
   color: #ed7019;
   font-weight: 700;
 }
 .home__bottom {
+  margin-top: 4vh;
   align-items: center;
   text-align: center;
   font-size: clamp(20px, 3vw, 30px);
 }
 
+@-webkit-keyframes fade__up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade__up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -321,12 +351,6 @@
   font-size: 2rem;
   margin-bottom: 2rem;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7);
-}
-.projects .orange-line {
-  top: 50vh;
-  height: 3px;
-  width: 100%;
-  background-color: #ed7019;
 }
 .projects .gray-line {
   top: 50vh;
@@ -781,4 +805,11 @@ footer {
   padding: 1rem;
   color: antiquewhite;
   transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
+.orange-line {
+  top: 47vh;
+  height: 3px;
+  width: 100%;
+  background-color: #ed7019;
 }/*# sourceMappingURL=main.css.map */
