@@ -431,7 +431,71 @@
 .projects__btn:hover {
   color: antiquewhite;
 }
+.projects .social-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(10px, 2vw, 15px);
+}
 
+.skills {
+  font-weight: 600;
+  letter-spacing: -1.3px;
+  margin-bottom: 1rem;
+}
+.skills span {
+  opacity: 0;
+  display: inline-block;
+  -webkit-animation: letter_line 4s forwards linear;
+          animation: letter_line 4s forwards linear;
+  -webkit-animation-delay: calc(0.1s * var(--i));
+          animation-delay: calc(0.1s * var(--i));
+}
+
+@-webkit-keyframes letter_line {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0;
+    scale: 2;
+  }
+  5% {
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+  }
+  95% {
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+  }
+  100% {
+    transform: translateX(-1000%);
+    opacity: 0;
+    scale: 2;
+  }
+}
+
+@keyframes letter_line {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0;
+    scale: 2;
+  }
+  5% {
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+  }
+  95% {
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+  }
+  100% {
+    transform: translateX(-1000%);
+    opacity: 0;
+    scale: 2;
+  }
+}
 .resumé {
   transition: all 0.3s ease-in-out;
   padding-bottom: 2rem;

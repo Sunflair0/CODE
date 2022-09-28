@@ -75,11 +75,12 @@
     opacity: 1;
   }
 }
-  .social-vertical {
-    display: flex;
-    flex-direction: row;
-    font-size: clamp(10px, 2vw, 15px);
-  }
+
+.social-vertical {
+  display: flex;
+  flex-direction: row;
+  font-size: clamp(10px, 2vw, 15px);
+}
 
 .logo {
   width: 20px;
@@ -511,6 +512,45 @@
   display: flex;
   flex-direction: column;
   font-size: clamp(10px, 2vw, 15px);
+}
+
+.skills {
+  font-weight: 600;
+  letter-spacing: -1.3px;
+  margin-bottom: 1rem;
+}
+
+.skills span {
+  opacity: 0;
+  display: inline-block;
+  animation: letter_line 4s forwards linear;
+  animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes letter_line {
+  0% {
+    transform: translateX(1000%);
+    opacity: 0;
+    scale: 2;
+  }
+
+  5% {
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+  }
+
+  95% {
+    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
+  }
+
+  100% {
+    transform: translateX(-1000%);
+    opacity: 0;
+    scale: 2;
+  }
 }
 
 .story {
