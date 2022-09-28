@@ -13,6 +13,15 @@
 }
 
 @include media-md {
+	.intro_mask {
+		margin-top: 0vh;
+		height: 10vh;
+	}
+
+	.intro_margin {
+		top: 10vh;
+	}
+
 	.resumé__design ul {
 		margin-left: 80px;
 	}

@@ -452,6 +452,14 @@
   text-shadow: -1px -1px 1px rgba(113, 25, 237, 0.5019607843), 1px -1px 1px rgba(113, 25, 237, 0.5019607843), -1px 1px 1px rgba(113, 25, 237, 0.5019607843), 1px 1px 1px rgba(113, 25, 237, 0.5019607843);
 }
 
+.resumé_link {
+  text-decoration: underline;
+  color: antiquewhite;
+}
+.resumé_link:visited {
+  color: #9493f7;
+}
+
 .sub_design {
   width: 100%;
   font-weight: 400;
@@ -476,19 +484,37 @@
 
 .resumé__actual {
   padding: 40px 15px;
-  margin: 20vh auto;
+  margin: 20vh auto 7vh;
   width: 75%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
   outline-offset: 5px;
 }
 
-.intro_margin .line {
-  height: 5px;
-  width: 110%;
+.intro_mask {
+  position: fixed;
+  background-color: #262626;
+  top: 0;
+  height: 5vh;
+  width: 100%;
+  z-index: 2;
+}
+
+.intro_margin {
+  position: fixed;
+  margin-top: -15vh;
+  padding: 20px;
+  padding-right: 0;
+  height: auto;
+  background-color: #262626;
+  z-index: 2;
+}
+
+.line {
+  height: 2px;
+  width: 100%;
   background: #272727;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin: 5vh 0 3vh 0;
 }
 
 * {
@@ -532,6 +558,13 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .intro_mask {
+    margin-top: 0vh;
+    height: 10vh;
+  }
+  .intro_margin {
+    top: 10vh;
+  }
   .resumé__design ul {
     margin-left: 80px;
   }
