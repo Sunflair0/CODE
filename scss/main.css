@@ -653,6 +653,20 @@
   font-size: 1.5rem;
 }
 
+@media screen and (max-height: 500px) {
+  .home__top {
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+    font-size: smaller;
+  }
+  .home__name {
+    margin-top: -2.5vh;
+  }
+  .home__bottom {
+    margin-top: 2vh;
+    font-size: small;
+  }
+}
 @media screen and (min-width: 650px) {
   .resume__actual {
     margin: 26vh auto 7vh;

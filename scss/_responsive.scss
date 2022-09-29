@@ -1,3 +1,19 @@
+@include media-smh {
+  .home__top {
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+    font-size: smaller;
+  }
+
+  .home__name {
+    margin-top: -2.5vh;
+  }
+
+  .home__bottom {
+    margin-top: 2vh;
+    font-size: small;
+  }
+}
 @include media-sm {
 
 	.resume__actual {

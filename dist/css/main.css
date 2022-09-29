@@ -554,9 +554,9 @@
 }
 
 .preview__box {
-border: rgb(140, 26, 67) 2px solid;
-max-width: 80%;
-height: 25vh;
+  border: rgb(140, 26, 67) 2px solid;
+  max-width: 80%;
+  height: 25vh;
 }
 
 .story {
@@ -795,6 +795,23 @@ td {
   position: initial;
   margin-top: 2rem;
   font-size: clamp(10px, 2vw, 15px);
+}
+
+@media screen and (max-width: 500px) {
+  .home__top {
+    margin-top: 7vh;
+    margin-bottom: 2vh;
+    font-size: smaller;
+  }
+
+  .home__name {
+    margin-top: -2.5vh;
+  }
+
+  .home__bottom {
+    margin-top: 2vh;
+    font-size: small;
+  }
 }
 
 @media screen and (min-width: 650px) {
