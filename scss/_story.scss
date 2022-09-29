@@ -43,16 +43,16 @@
 
 			&::after {
 				content: "";
-				position: absolute;
+				position: fixed;
 				inset: 0;
 				background-image: url('/Portfolio2021/dist/img/tea.png');
 				background-repeat: no-repeat;
 				background-position: center center;
-				background-size: contain;
+				background-size:cover;
 				background-attachment: fixed;
 				opacity: .3;
 				z-index: -1;
-				height: 90vh;
+				height: 300vh;
 				width: 100%;
 			}
 

@@ -597,7 +597,7 @@ td {
 
 .story::after {
   content: "";
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-image: url('/Portfolio2021/dist/img/tea.png');
   background-repeat: no-repeat;
