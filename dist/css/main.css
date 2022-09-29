@@ -553,6 +553,12 @@
   }
 }
 
+.preview__box {
+border: rgb(140, 26, 67) 2px solid;
+max-width: 80%;
+height: 25vh;
+}
+
 .story {
   position: relative;
   isolation: isolate;
