@@ -315,7 +315,7 @@
 }
 .about .bottom .jobs {
   width: 60vw;
-  margin: 2rem auto;
+  margin: 1rem auto 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
