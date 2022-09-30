@@ -44,10 +44,20 @@ for (var i = 0; i < videoPlayOnSelect.length; i++) {
 
 ///// // scroll fade
 const fadeElements = document.querySelectorAll(".section_content");
+const fadeJobs = document.querySelectorAll(".job_content");
 
 revealOnScroll = () => {
     let windowHt = window.innerHeight;
     fadeElements.forEach(element => {
+        let elementPos = element.getBoundingClientRect().top;
+        if (elementPos <= windowHt / 1.3) {
+            element.classList.add("scroll_fade");
+        }
+        if (elementPos > windowHt / 1.3) {
+            element.classList.remove("scroll_fade");
+        }
+ });
+    fadeJobs.forEach(element => {
         let elementPos = element.getBoundingClientRect().top;
         if (elementPos <= windowHt / 1.2) {
             element.classList.add("scroll_fade");

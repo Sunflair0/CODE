@@ -359,7 +359,7 @@
 
 .about .bottom {
   position: relative;
-  margin-top: 54vh;
+  margin-top: 56vh;
 }
 
 .about .bottom .jobs {
@@ -718,6 +718,11 @@ td {
   font-size: clamp(10px, 2vw, 15px);
 }
 .section_content {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.6s ease-in-out;
+}
+.job_content {
   transform: translateY(20px);
   opacity: 0;
   transition: 0.6s ease-in-out;
