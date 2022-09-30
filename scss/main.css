@@ -782,6 +782,13 @@
 .story tr:nth-child(odd) {
   background-color: rgba(110, 109, 109, 0.5);
 }
+
+button {
+border: none;
+background-color: transparent;
+font-size: 16px;
+}
+
 .story__link {
   color: rgb(0, 0, 0);
   border-radius: 20px;

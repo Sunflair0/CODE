@@ -26,3 +26,18 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+const vid_select = document.getElementById('')
+
+function selectVid() {
+    player.src = this.getAttribute('data-video-url');
+    player.load();
+    player.play();
+}
+
+var videoPlayOnSelect = document.querySelectorAll("button"),
+    player = document.getElementById("player");
+
+for (var i = 0; i < videoPlayOnSelect.length; i++) {
+    videoPlayOnSelect[i].addEventListener("click", selectVid);
+}
