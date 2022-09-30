@@ -41,3 +41,28 @@ var videoPlayOnSelect = document.querySelectorAll("button"),
 for (var i = 0; i < videoPlayOnSelect.length; i++) {
     videoPlayOnSelect[i].addEventListener("click", selectVid);
 }
+
+///// // scroll fade
+
+const popElements = document.querySelectorAll(".section_title");
+const fadeElements = document.querySelectorAll(".section_content");
+
+revealOnScroll = () => {
+    let windowHt = window.innerHeight;
+    popElements.forEach(elements => {
+        let elementPos = elements.getBoundingClientRect().top;
+        if (elementPos <= windowHt / 1.3) {
+            elements.classList.add("popped");
+        }
+    });
+    fadeElements.forEach(element => {
+        let elementPos = element.getBoundingClientRect().top;
+        if (elementPos <= windowHt / 1.3) {
+            element.classList.add("scroll_fade");
+        }
+    });
+}
+
+document.addEventListener("DOMContentLoaded", revealOnScroll);
+window.addEventListener('scroll', revealOnScroll);
+
