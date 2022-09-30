@@ -717,25 +717,11 @@ td {
   flex-direction: column;
   font-size: clamp(10px, 2vw, 15px);
 }
-
-.section_title {
-  transform: translateY(60px);
-  opacity: 0;
-  transition: 0.3s ease-in;
-}
-
 .section_content {
-  transform: translateY(80px);
-  scale: 0.75;
+  transform: translateY(20px);
   opacity: 0;
   transition: 0.6s ease-in-out;
 }
-
-.popped {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .scroll_fade {
   transform: translateY(0);
   opacity: 1;
@@ -822,10 +808,6 @@ td {
     transform: rotate(0deg) translate(0, 0);
   }
 
-  .resume__actual {
-    margin: 34vh auto 7vh;
-  }
-
   .story__link {
     color: rgb(0, 0, 0);
     border-radius: 20px;
@@ -855,8 +837,6 @@ button {
   }
 
   .resume__actual {
-    margin: 34vh auto 7vh;
-    padding: 40px 15px;
     width: 60%;
   }
 

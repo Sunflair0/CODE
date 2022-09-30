@@ -82,22 +82,11 @@
   }
 }
 
-.section_title {
-  transform: translateY(60px);
-  opacity: 0;
-  transition: 0.3s ease-in;
-}
-
 .section_content {
   transform: translateY(80px);
   scale: 0.75;
   opacity: 0;
   transition: 0.6s ease-in-out;
-}
-
-.popped {
-  transform: translateY(0);
-  opacity: 1;
 }
 
 .scroll_fade {
