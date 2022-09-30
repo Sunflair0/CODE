@@ -17,7 +17,7 @@
 @include media-sm {
 
 	.resume__actual {
-		margin: 26vh auto 7vh;
+		margin: 34vh auto 7vh;
 	}
 
 	.intro_mask {
@@ -43,6 +43,10 @@
 }
 
 @include media-md {
+
+ .resume__actual {
+    margin: 34vh auto 7vh;
+  }
 	.intro_mask {
 		margin-top: 0vh;
 		height: 20vh;
@@ -57,7 +61,7 @@
 	}
 
 	.resumé__actual {
-		margin: 24vh auto 7vh;
+		margin: 34vh auto 7vh;
 		padding: 40px 15px;
 		width: 60%;
 	}
