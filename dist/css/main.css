@@ -76,9 +76,9 @@
   }
 }
 
-.social-vertical {
+.social-responsive {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-size: clamp(10px, 2vw, 15px);
 }
 
@@ -398,12 +398,6 @@
 }
 
 .about .social-icons {
-  display: flex;
-  flex-direction: column;
-  font-size: clamp(10px, 2vw, 15px);
-}
-
-.social-icons {
   display: flex;
   flex-direction: column;
   font-size: clamp(10px, 2vw, 15px);
@@ -803,8 +797,8 @@ td {
 }
 
 .contact .social-icons {
-  position: initial;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
   font-size: clamp(10px, 2vw, 15px);
 }
 
@@ -840,6 +834,9 @@ button {
   .home__name {
     margin-top: 0vh;
   }
+.contact .social-icons {
+  flex-direction: row;
+}
 
   .thin {
     transform: rotate(0deg) translate(0, 0);

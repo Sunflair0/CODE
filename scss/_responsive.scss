@@ -13,6 +13,12 @@
 		margin-top: 2vh;
 		font-size: small;
 	}
+  .social-responsive {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(10px, 2vw, 15px);
+  }
+
 }
 
 @include media-sm {
@@ -27,10 +33,6 @@
 
 	.thin {
 		transform: rotate(0deg) translate(0, 0);
-	}
-
-	.social-vertical {
-		flex-direction: row;
 	}
 
 	.about__bio .text-secondary {

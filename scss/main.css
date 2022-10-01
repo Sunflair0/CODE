@@ -63,7 +63,7 @@
     opacity: 1;
   }
 }
-.social-vertical {
+.social-responsive {
   display: flex;
   flex-direction: row;
   font-size: clamp(10px, 2vw, 15px);
@@ -659,6 +659,11 @@
     margin-top: 2vh;
     font-size: small;
   }
+  .social-responsive {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(10px, 2vw, 15px);
+  }
 }
 @media screen and (min-width: 650px) {
   .intro_mask {
@@ -670,9 +675,6 @@
   }
   .thin {
     transform: rotate(0deg) translate(0, 0);
-  }
-  .social-vertical {
-    flex-direction: row;
   }
   .about__bio .text-secondary {
     font-size: 2.5rem;
