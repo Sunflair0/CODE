@@ -2,29 +2,19 @@
 
 .home {
     margin-top: 88px;
-    height: 100%;
     overflow: hidden;
     align-items: center;
     text-align: center;
 
     &__photo {
-        background: linear-gradient(180deg,
-                rgb(39, 39, 39) 0%,
-                rgba(39, 39, 39, 0.9) 7%,
-                rgba(39, 39, 39, 0.5) 10%,
-                rgba(39, 39, 39, 0.25) 15%,
-                transparent 25%,
-                transparent 65%,
-                rgba(39, 39, 39, 0.5) 80%,
-                rgb(39, 39, 39) 100%);
+        background: rgb(39, 39, 39);
         background-size: contain;
         position: relative;
     }
 
-    &__top {
-        margin-top: 15vh;
+    &____top {
+        margin-top: 23.8vh;
         height: 20vh;
-        @include outline;
         animation: fade__up 1.5s forwards ease-in-out;
     }
 
@@ -32,10 +22,10 @@
         font-size: clamp(40px, 10vw, 5rem);
         padding-bottom: 1rem;
         margin-bottom: 7rem;
-        animation: fade__up 1.5s forwards ease-in-out;
+        animation: fade__up 1.5s forwards ease-out;
 
         &--last {
-            color: $secondary-color;
+            color: #ed7019;
             font-weight: 700;
         }
     }
@@ -47,12 +37,11 @@
         font-size: clamp(20px, 3vw, 30px);
     }
 
-    .social-icons {
+    &_ .social-icons {
         display: flex;
         flex-direction: column;
         font-size: clamp(10px, 2vw, 15px);
     }
-
 }
 
 @keyframes fade__up {

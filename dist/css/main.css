@@ -6,33 +6,20 @@
 
 .home {
   margin-top: 88px;
-  height: 100%;
   overflow: hidden;
   align-items: center;
   text-align: center;
 }
 
 .home__photo {
-  background: linear-gradient(180deg,
-      rgb(39, 39, 39) 0%,
-      rgba(39, 39, 39, 0.9) 7%,
-      rgba(39, 39, 39, 0.5) 10%,
-      rgba(39, 39, 39, 0.25) 15%,
-      transparent 25%,
-      transparent 65%,
-      rgba(39, 39, 39, 0.5) 80%,
-      rgb(39, 39, 39) 100%);
+  background: rgb(39, 39, 39);
   background-size: contain;
   position: relative;
 }
 
 .home__top {
-  margin-top: 15vh;
+  margin-top: 23.8vh;
   height: 20vh;
-  text-shadow: -1px 1px 0 #000,
-    1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
   animation: fade__up 1.5s forwards ease-in-out;
 }
 
@@ -40,20 +27,12 @@
   font-size: clamp(40px, 10vw, 5rem);
   padding-bottom: 1rem;
   margin-bottom: 7rem;
-  text-shadow: -1px 1px 0 #000,
-    1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
-  animation: fade__up 1.5s forwards ease-in-out;
+  animation: fade__up 1.5s forwards ease-out;
 }
 
 .home__name--last {
   color: #ed7019;
   font-weight: 700;
-  text-shadow: -1px 1px 0 #000,
-    1px 1px 0 #000,
-    1px -1px 0 #000,
-    -1px -1px 0 #000;
 }
 
 .home__bottom {
@@ -63,7 +42,7 @@
   font-size: clamp(20px, 2vw, 30px);
 }
 
-.home .social-icons {
+.home_ .social-icons {
   display: flex;
   flex-direction: column;
   font-size: clamp(10px, 2vw, 15px);
@@ -842,10 +821,11 @@ button {
     margin-top: 0vh;
   }
 
-  .home .social-icons{
+  .home_ .social-icons {
     flex-direction: row;
   }
-  .contact .social-icons{
+
+  .contact .social-icons {
     flex-direction: row;
   }
 
@@ -941,7 +921,7 @@ button {
 
 @media screen and (min-width: 1024px) {
   .home__top {
-    margin-top: 19vh;
+    margin-top: 17vh;
     height: 29vh;
     font-size: larger;
   }
