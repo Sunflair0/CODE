@@ -41,6 +41,11 @@
   text-align: center;
   font-size: clamp(20px, 3vw, 30px);
 }
+.home .social-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(10px, 2vw, 15px);
+}
 
 @-webkit-keyframes fade__up {
   from {
@@ -63,12 +68,6 @@
     opacity: 1;
   }
 }
-.social-responsive {
-  display: flex;
-  flex-direction: row;
-  font-size: clamp(10px, 2vw, 15px);
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -667,6 +666,9 @@
   .home__name {
     margin-top: 0vh;
   }
+  .home .social-icons {
+    flex-direction: row;
+  }
   .contact .social-icons {
     flex-direction: row;
   }
@@ -923,4 +925,16 @@ footer {
   height: 3px;
   width: 100%;
   background-color: #ed7019;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(10px, 2vw, 15px);
 }/*# sourceMappingURL=main.css.map */

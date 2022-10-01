@@ -24,6 +24,10 @@
 		margin-top: 0vh;
 	}
 
+	.home .social-icons {
+		flex-direction: row;
+	}
+
 	.contact .social-icons {
 		flex-direction: row;
 	}
@@ -32,7 +36,7 @@
 		transform: rotate(0deg) translate(0, 0);
 	}
 
-	.story__link {	
+	.story__link {
 		width: 75px;
 		padding: 5px 10px;
 	}

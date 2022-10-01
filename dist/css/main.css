@@ -63,6 +63,12 @@
   font-size: clamp(20px, 2vw, 30px);
 }
 
+.home .social-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(10px, 2vw, 15px);
+}
+
 @keyframes fade__up {
 
   from {
@@ -74,12 +80,6 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.social-responsive {
-  display: flex;
-  flex-direction: column;
-  font-size: clamp(10px, 2vw, 15px);
 }
 
 .logo {
@@ -809,6 +809,12 @@ button {
   font-size: 16px;
 }
 
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(10px, 2vw, 15px);
+}
+
 @media screen and (max-width: 500px),
 (max-height: 560px) {
   .home__top {
@@ -836,9 +842,13 @@ button {
     margin-top: 0vh;
   }
 
-  .contact .social-icons {
+  .home .social-icons{
     flex-direction: row;
   }
+  .contact .social-icons{
+    flex-direction: row;
+  }
+
 
   .thin {
     transform: rotate(0deg) translate(0, 0);
