@@ -343,6 +343,37 @@
   bottom: 6vh;
 }
 
+.skills {
+background: #414141;
+border: 3px #414141 solid;
+outline: 3px solid #414141;
+  outline-offset: 5px;
+display: flex;
+position: relative;
+height: auto;
+}
+
+.skills__tech {
+display: flex;
+position: absolute;
+background-color: #01e7ff;
+width: 50%;
+left: 0;
+ height: auto;
+}
+
+.skills ul{
+list-style: none;
+}
+
+.skills__graph {
+display: flex;
+position: absolute;
+background-color: #2fefc0;
+width: 50%;
+right: 0;
+}
+
 .about .bottom .jobs {
   width: 60vw;
   margin: 2rem auto;
@@ -495,13 +526,13 @@
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.skills {
+.project__greeting {
   font-weight: 600;
   letter-spacing: -1.3px;
   margin-bottom: 1rem;
 }
 
-.skills span {
+.project__greeting span {
   opacity: 0;
   display: inline-block;
   animation: letter_line 4s forwards linear;

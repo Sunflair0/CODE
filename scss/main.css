@@ -439,12 +439,12 @@
   font-size: clamp(10px, 2vw, 15px);
 }
 
-.skills {
+.project__greeting {
   font-weight: 600;
   letter-spacing: -1.3px;
   margin-bottom: 1rem;
 }
-.skills span {
+.project__greeting span {
   opacity: 0;
   display: inline-block;
   -webkit-animation: letter_line 4s forwards linear;
