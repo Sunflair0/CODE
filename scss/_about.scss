@@ -89,7 +89,8 @@
         .text-secondary {
             padding-bottom: 2rem;
             font-size: clamp(1.7rem, 2vw, 2rem);
-            text-shadow: 1px 1px 1px #000;
+            text-shadow: 3px 3px 4px rgb(46, 19, 0),
+                4px 4px 1px rgb(0, 0, 0);
 
             &:first-child {
                 margin-top: 7vh;
@@ -99,7 +100,8 @@
 
     .bottom {
         position: relative;
-        margin-top: 54vh;
+        margin-top: 62vh;
+        bottom: 6vh;
 
         .jobs {
             width: 60vw;
@@ -117,7 +119,12 @@
                 text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
                 outline-offset: 5px;
 
-                h2,
+                h2 {
+                    text-shadow: 3px 3px 4px rgb(46, 19, 0),
+                        4px 4px 1px rgb(27, 27, 27);
+                    margin: .6rem 0;
+                }
+
                 h3 {
                     margin: .6rem 0;
                 }

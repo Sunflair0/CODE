@@ -304,14 +304,15 @@
 .about__bio .text-secondary {
   padding-bottom: 2rem;
   font-size: clamp(1.7rem, 2vw, 2rem);
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 3px 3px 4px rgb(46, 19, 0), 4px 4px 1px rgb(0, 0, 0);
 }
 .about__bio .text-secondary:first-child {
   margin-top: 7vh;
 }
 .about .bottom {
   position: relative;
-  margin-top: 54vh;
+  margin-top: 62vh;
+  bottom: 6vh;
 }
 .about .bottom .jobs {
   width: 60vw;
@@ -328,7 +329,10 @@
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
   outline-offset: 5px;
 }
-.about .bottom .jobs__job h2,
+.about .bottom .jobs__job h2 {
+  text-shadow: 3px 3px 4px rgb(46, 19, 0), 4px 4px 1px rgb(27, 27, 27);
+  margin: 0.6rem 0;
+}
 .about .bottom .jobs__job h3 {
   margin: 0.6rem 0;
 }
@@ -644,12 +648,12 @@
 
 @media screen and (max-height: 500px) {
   .home__top {
-    margin-top: 7vh;
-    margin-bottom: 2vh;
+    margin-top: 5vh;
+    height: 29vh;
     font-size: smaller;
   }
   .home__name {
-    margin-top: -2.5vh;
+    margin-top: -1.5vh;
   }
   .home__bottom {
     margin-top: 2vh;
@@ -675,22 +679,20 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .resume__actual {
-    width: 60%;
+  .home__name {
+    margin-top: -2vh;
   }
   .intro_mask {
     margin-top: 0vh;
-    height: 20vh;
+    height: 15vh;
   }
   .intro_margin {
-    top: 20vh;
+    top: 15vh;
   }
-  .resumé__design ul {
+  .resume ul {
     margin-left: 80px;
   }
-  .resumé__actual {
-    margin: 34vh auto 7vh;
-    padding: 40px 15px;
+  .resume__actual {
     width: 60%;
   }
   .menu-btn {
@@ -732,6 +734,14 @@
   }
 }
 @media screen and (min-width: 1024px) {
+  .home__top {
+    margin-top: 19vh;
+    height: 29vh;
+    font-size: larger;
+  }
+  .home__name {
+    margin-top: 9vh;
+  }
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
     margin-top: 50vh;

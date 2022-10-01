@@ -1,19 +1,20 @@
 @include media-smh {
-  .home__top {
-    margin-top: 7vh;
-    margin-bottom: 2vh;
-    font-size: smaller;
-  }
+	.home__top {
+		margin-top: 5vh;
+		height: 29vh;
+		font-size: smaller;
+	}
 
-  .home__name {
-    margin-top: -2.5vh;
-  }
+	.home__name {
+		margin-top: -1.5vh;
+	}
 
-  .home__bottom {
-    margin-top: 2vh;
-    font-size: small;
-  }
+	.home__bottom {
+		margin-top: 2vh;
+		font-size: small;
+	}
 }
+
 @include media-sm {
 	.intro_mask {
 		margin-top: 0vh;
@@ -39,25 +40,24 @@
 
 @include media-md {
 
- .resume__actual {
-    width: 60%;
-  }
+	.home__name {
+		margin-top: -2vh;
+	}
+
 	.intro_mask {
 		margin-top: 0vh;
-		height: 20vh;
+		height: 15vh;
 	}
 
 	.intro_margin {
-		top: 20vh;
+		top: 15vh;
 	}
 
-	.resumé__design ul {
+	.resume ul {
 		margin-left: 80px;
 	}
 
-	.resumé__actual {
-		margin: 34vh auto 7vh;
-		padding: 40px 15px;
+	.resume__actual {
 		width: 60%;
 	}
 
@@ -110,6 +110,16 @@
 }
 
 @include media-lg {
+	.home__top {
+		margin-top: 19vh;
+		height: 29vh;
+		font-size: larger;
+	}
+
+	.home__name {
+		margin-top: 9vh;
+	}
+
 	.projects__items {
 		grid-template-columns: repeat(3, 1fr);
 		margin-top: 50vh;
