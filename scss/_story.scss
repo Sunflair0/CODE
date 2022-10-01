@@ -24,11 +24,11 @@
 		color: rgb(0, 0, 0);
 		border-radius: 20px;
 		text-align: center;
-		padding: 3px 7px;
 		height: auto;
 		width: 50px;
-		background-color: #7e7db9;
-		border: #000000 2px solid;
+		padding: 3px 7px;
+		background-color: #ed7019;
+		box-shadow: inset 0 0 10px black;
 		font-weight: 600;
 		transition: .2s all;
 		bottom: 0;
@@ -36,10 +36,11 @@
 
 		&__link:hover {
 			scale: 1.1;
+			border: #000000 solid 1px;
 		}
 
-		a:visited {
-			color: set-text-color($secondary-accent-color);
+		a {
+			color: black;
 
 			&::after {
 				content: "";
@@ -48,7 +49,7 @@
 				background-image: url('/Portfolio2021/dist/img/tea.png');
 				background-repeat: no-repeat;
 				background-position: center center;
-				background-size:cover;
+				background-size: cover;
 				background-attachment: fixed;
 				opacity: .3;
 				z-index: -1;

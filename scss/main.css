@@ -659,25 +659,26 @@
     margin-top: 2vh;
     font-size: small;
   }
-  .social-responsive {
-    display: flex;
-    flex-direction: row;
-    font-size: clamp(10px, 2vw, 15px);
-  }
 }
 @media screen and (min-width: 650px) {
-  .intro_mask {
-    margin-top: 0vh;
-    height: 16vh;
+  .home__top {
+    margin-top: 23vh;
   }
-  .intro_margin {
-    top: 16vh;
+  .home__name {
+    margin-top: 0vh;
+  }
+  .contact .social-icons {
+    flex-direction: row;
   }
   .thin {
     transform: rotate(0deg) translate(0, 0);
   }
-  .about__bio .text-secondary {
-    font-size: 2.5rem;
+  .story__link {
+    width: 75px;
+    padding: 5px 10px;
+  }
+  .resumé__actual {
+    margin: 34vh auto 7vh;
   }
 }
 @media screen and (min-width: 768px) {
@@ -715,6 +716,9 @@
   .nav .menu-nav__item {
     display: inline;
     padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
   }
   .about__bio {
     font-size: 1.5em;
@@ -760,9 +764,6 @@
   .projects__items {
     min-height: 40vh;
   }
-  .projects__bio-image {
-    max-height: 40vh;
-  }
 }
 .story {
   position: relative;
@@ -787,11 +788,11 @@
   color: rgb(0, 0, 0);
   border-radius: 20px;
   text-align: center;
-  padding: 3px 7px;
   height: auto;
   width: 50px;
-  background-color: #7e7db9;
-  border: #000000 2px solid;
+  padding: 3px 7px;
+  background-color: #ed7019;
+  box-shadow: inset 0 0 10px black;
   font-weight: 600;
   transition: 0.2s all;
   bottom: 0;
@@ -799,11 +800,12 @@
 }
 .story__link__link:hover {
   scale: 1.1;
+  border: #000000 solid 1px;
 }
-.story__link a:visited {
-  color: #000;
+.story__link a {
+  color: black;
 }
-.story__link a:visited::after {
+.story__link a::after {
   content: "";
   position: fixed;
   inset: 0;
