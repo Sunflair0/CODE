@@ -1,0 +1,133 @@
+
+.skills {
+  background: #414141;
+  border: 3px #414141 solid;
+  outline: 3px solid #414141;
+  outline-offset: 5px;
+  display: flex;
+  position: relative;
+  height: auto;
+  border-bottom: 3px solid #ed7019;
+}
+
+.skills__tech-side {
+color: #a1f5ee;
+  display: block;
+  flex-direction: row;
+  background: repeating-linear-gradient(45deg, #202020e3, transparent, #41414167, #202020d8);
+  width: 50%;
+  left: 0;
+  padding: 5px;
+  border-left: solid 5px rgba(92, 90, 87, 0.651);
+  border-bottom: solid 2px rgba(219, 12, 47, 0.548);
+  text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
+}
+
+ .side-one {
+  display: block;
+  width: 48%;
+  left: 0;
+border: none;
+}
+
+ .side-two {
+  display:block;
+  width: 48%;
+  right: 0;
+}
+
+input[type=radio]{
+
+opacity: 0;
+width: 100%; 
+border: none;
+transform: translateY(31px);
+}
+
+.curved__line {
+  display: flex;
+  height: 100%;
+  width: 1.5%;
+  background: repeating-linear-gradient(110deg, transparent 10px, #021af5 10px, #8fcf17 20px);
+  border: #414141 solid 2px;
+  border-radius: 50%;
+  z-index: 1;
+  transform: translate(-50%, -1%);
+}
+
+.skills__graph-side {
+  display: flex;
+  position: absolute;
+  background-color: #414141;
+  width: 50%;
+  right: 0;
+  height: 100%;
+  padding: 5px;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.skills__graph__box {
+  display: inline;
+  position: absolute;
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, #3b3b3b 40%, #000000e3 100%);
+  width: 99%;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  border: 2px solid #8b8b8baf;
+  border-bottom: 3px solid #000000;
+}
+
+.skills__graph {
+  display: inline-flex;
+  position: relative;
+  width: 50%;
+  border: 1px solid #1f1f1ff6;
+  background: linear-gradient(120deg, #02ffff, #17ffa6, #02ffff);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  line-height: 0%;
+  left: 25%;
+  top: 25%;
+}
+
+.skills__graph::after {
+  content: "98";
+  color: #02ffff;
+  display: block;
+  transform: translateY(50%);
+  font-size: clamp(14px, 4vw, 100px);
+  padding-bottom: 100%;
+  text-shadow: 4px 4px 3px black;
+}
+
+.graph__center {
+  display: flex;
+  position: absolute;
+  border: 2px solid #00000094;
+  height: 90%;
+  width: 90%;
+  background: radial-gradient(circle, rgb(124, 124, 124) 0%, #444444 40%, #000000 100%);
+  border-radius: 50%;
+  margin: auto;
+}
+.table_skill table, tr, td{
+ cursor: pointer;
+}
+
+ input[type=checkbox]+label {
+
+border: none;
+  color: #a1f5ee;
+ 
+
+  /* margin-bottom: 1rem; */
+}
+ input:hover {
+  color: #ffffff;
+}
+ input:visited {
+  color: #220de6;
+}

@@ -354,21 +354,23 @@
 }
 
 .skills__tech-side {
+color: #a1f5ee;
   display: block;
-  flex-direction: row;
   background: repeating-linear-gradient(45deg, #202020e3, transparent, #41414167, #202020d8);
   width: 50%;
   left: 0;
-  padding: 5px;
+  
   border-left: solid 5px rgba(92, 90, 87, 0.651);
-  border-bottom: solid 2px rgba(219, 12, 47, 0.904);
+  border-bottom: solid 2px rgba(219, 12, 47, 0.548);
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
 }
 
  .side-one {
+
   display: block;
   width: 48%;
   left: 0;
+border: none;
 }
 
  .side-two {
@@ -380,8 +382,10 @@
 input[type=radio]{
 
 opacity: 0;
-width: 0;
+width: 100%; 
 border: none;
+transform: translateY(15px);
+cursor: pointer;
 }
 
 .curved__line {
@@ -419,8 +423,6 @@ border: none;
   border-bottom: 3px solid #000000;
 }
 
-
-
 .skills__graph {
   display: inline-flex;
   position: relative;
@@ -456,16 +458,20 @@ border: none;
   margin: auto;
 }
 
-.skills__tech-side input {
-  color: #a1f5ee;
-  cursor: pointer;
-  margin-bottom: 1rem;
+ input[type=checkbox]+label  {
+color: #220de6;
 }
-.skills__tech-side input:hover {
+
+.table_skill {
+margin-top: -13px; 
+}
+
+ .table_skill td:hover {
   color: #ffffff;
 }
-.skills__tech-side input:visited {
-  color: #220de6;
+ .table_skill td {
+  margin-right: 5px;
+border-bottom: #02ffff 3px solid;
 }
 
 .about .bottom .jobs {
@@ -686,17 +692,16 @@ border: none;
   font-weight: 600;
 }
 
-.story table {
-  width: 60%;
-}
-
-.story table,
-tr,
-td {
+.table_story{
   border: 3px solid rgba(65, 65, 65, 0.7);
   margin: 0 auto;
   padding: 4px;
+ width: 60%;
+}
 
+.table_story td, tr {
+padding: 4px;
+margin: 0 auto;
 }
 
 .story tr:nth-child(even) {
