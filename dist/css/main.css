@@ -354,38 +354,28 @@
 }
 
 .skills__tech-side {
-color: #a1f5ee;
+  color: #a1f5ee;
   display: block;
   background: repeating-linear-gradient(45deg, #202020e3, transparent, #41414167, #202020d8);
   width: 50%;
   left: 0;
-  
+  font-size: clamp(8px, 3vw, 32px);
   border-left: solid 5px rgba(92, 90, 87, 0.651);
   border-bottom: solid 2px rgba(219, 12, 47, 0.548);
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
 }
 
- .side-one {
-
+.side-one {
   display: block;
   width: 48%;
   left: 0;
-border: none;
+  border: none;
 }
 
- .side-two {
-  display:block;
+.side-two {
+  display: block;
   width: 48%;
   right: 0;
-}
-
-input[type=radio]{
-
-opacity: 0;
-width: 100%; 
-border: none;
-transform: translateY(15px);
-cursor: pointer;
 }
 
 .curved__line {
@@ -458,20 +448,29 @@ cursor: pointer;
   margin: auto;
 }
 
- input[type=checkbox]+label  {
-color: #220de6;
+input[type=checkbox]+label {
+  color: #220de6;
+}
+
+input[type=radio] {
+  /* opacity: 0; */
+  width: 100%;
+  border: none;
+  transform: translateY(15px);
+  cursor: pointer;
 }
 
 .table_skill {
-margin-top: -13px; 
+  margin-top: -13px;
 }
 
- .table_skill td:hover {
+.table_skill td:hover {
   color: #ffffff;
 }
- .table_skill td {
+
+.table_skill td {
   margin-right: 5px;
-border-bottom: #02ffff 3px solid;
+  border-bottom: #02ffff 3px solid;
 }
 
 .about .bottom .jobs {
@@ -692,16 +691,17 @@ border-bottom: #02ffff 3px solid;
   font-weight: 600;
 }
 
-.table_story{
+.table_story {
   border: 3px solid rgba(65, 65, 65, 0.7);
   margin: 0 auto;
   padding: 4px;
- width: 60%;
+  width: 60%;
 }
 
-.table_story td, tr {
-padding: 4px;
-margin: 0 auto;
+.table_story td,
+tr {
+  padding: 4px;
+  margin: 0 auto;
 }
 
 .story tr:nth-child(even) {
