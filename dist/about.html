@@ -71,85 +71,113 @@
             <div class="bottom">
                 <div class="jobs">
                     <div class="skills">
+
                         <div class="skills__tech-side">
-                            <form>
+                            <form class="side-one">
                                 <table class="table_skill">
                                     <tr>
-                                        <td><input type="radio" class="side-one" id="sk_a" name="skill"
-                                                onchange="skillChoice()" value="HTML5" checked>
-                                            <label for="sk_a">HTML5</label>
-                                        </td>
-                                        <td><input type="radio" class="side-one" id="sk_b" name="skill"
-                                                onchange="skillChoice()" value="Sass">
-                                            <label for="sk_b">Sass</label>
+                                        <td><input type="radio" id="sk_a" name="skill" onchange="skillChoice()"
+                                                value="100" checked>
+                                            <label for="sk_a">HTML5/<br> CSS</label>
+                                            <div class="progress_line" style="width:100%;" data-percent="100" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="radio" class="side-one" id="sk_c" name="skill"
-                                                onchange="skillChoice()" value="JavaScript">
-                                            <label for="sk_c">JavaScript</label>
-                                        </td>
-                                        <td><input type="radio" class="side-one" id="sk_d" name="skill"
-                                                onchange="skillChoice()" value="Greensock">
-                                            <label for="sk_d">Greensock</label>
+                                        <td><input type="radio" id="sk_c" name="skill" onchange="skillChoice()"
+                                                value="95">
+                                            <label for="sk_c">Sass</label>
+                                            <div class="progress_line" style="width:95%;" data-percent="95" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="radio" class="side-one" id="sk_e" name="skill"
-                                                onchange="skillChoice()" value="React.js">
-                                            <label for="sk_e">React.js</label>
-                                        </td>
-                                        <td><input type="radio" class="side-one" id="sk_f" name="skill"
-                                                onchange="skillChoice()" value="CSS">
-                                            <label for="sk_f">CSS</label>
+                                        <td><input type="radio" id="sk_e" name="skill" onchange="skillChoice()"
+                                                value="90">
+                                            <label for="sk_e">Javascript</label>
+                                            <div class="progress_line" style="width:90%;" data-percent="90" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="radio" class="side-one" id="sk_g" name="skill"
-                                                onchange="skillChoice()" value="Express.js">
-                                            <label for="sk_g">Express.js</label>
-                                        </td>
-                                        <td><input type="radio" class="side-two" id="sk_h" name="skill"
-                                                onchange="skillChoice()" value="NODE.js">
-                                            <label for="sk_h">NODE.js</label>
+                                        <td><input type="radio" id="sk_g" name="skill" onchange="skillChoice()"
+                                                value="85">
+                                            <label for="sk_g">Greensock</label>
+                                            <div class="progress_line" style="width:85%;" data-percent="85" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="radio" class="side-two" id="sk_i" name="skill"
-                                                onchange="skillChoice()" value="SQL">
-                                            <label for="sk_i">SQL</label>
-                                        </td>
-                                        <td><input type="radio" class="side-two" id="sk_j" name="skill"
-                                                onchange="skillChoice()" value="Github">
-                                            <label for="sk_j">Github</label>
+                                        <td><input type="radio" id="sk_i" name="skill" onchange="skillChoice()"
+                                                value="95">
+                                            <label for="sk_i">Github</label>
+                                            <div class="progress_line" style="width:95%;" data-percent="95" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="radio" class="side-two" id="sk_k" name="skill"
-                                                onchange="skillChoice()" value="Redux.js">
-                                            <label for="sk_k">Redux.js</label>
-                                        </td>
-                                        <td><input type="radio" class="side-two" id="sk_l" name="skill"
-                                                onchange="skillChoice()" value="RTK">
-                                            <label for="sk_l">RTK</label>
+                                        <td><input type="radio" id="sk_k" name="skill" onchange="skillChoice()"
+                                                value="80">
+                                            <label for="sk_k">Agile</label>
+                                            <div class="progress_line" style="width:80%;" data-percent="80" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><input type="radio" class="side-two" id="sk_m" name="skill"
-                                                onchange="skillChoice()" value="Agile">
-                                            <label for="sk_m">Agile</label>
+                                        <td><input type="radio" id="sk_n" name="skill" onchange="skillChoice()"
+                                                value="85">
+                                            <label for="sk_n">phpMyAdmin</label>
+                                            <div class="progress_line" style="width:85%;" data-percent="85" />
                                         </td>
-                                        <td><input type="radio" class="side-two" id="sk_n" name="skill"
-                                                onchange="skillChoice()" value="MyPHP">
-                                            <label for="sk_n">MyPHP</label>
-                                        </td>
-                                    </tr>    <tr>
-                                        <td><input type="radio" class="side-two" id="sk_o" name="skill"
-                                                onchange="skillChoice()" value="RESTful APIs">
-                                            <label for="sk_o">RESTful APIs</label>
-                                        </td>
-</tr>
+                                    </tr>
+                                </table>
+                            </form>
 
+                            <form class="side-two">
+                                <table class="table_skill">
+                                    <tr>
+                                        <td><input type="radio" id="sk_b" name="skill" onchange="skillChoice()"
+                                                value="85">
+                                            <label for="sk_b">RESTful<br>APIs</label>
+                                            <div class="progress_line" style="width:85%;" data-percent="85" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" id="sk_d" name="skill" onchange="skillChoice()"
+                                                value="95">
+                                            <label for="sk_d">React.js</label>
+                                            <div class="progress_line" style="width:95%;" data-percent="95" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" id="sk_f" name="skill" onchange="skillChoice()"
+                                                value="80">
+                                            <label for="sk_f">Redux.js</label>
+                                            <div class="progress_line" style="width:80%;" data-percent="80" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" id="sk_h" name="skill" onchange="skillChoice()"
+                                                value="75">
+                                            <label for="sk_h">RTK</label>
+                                            <div class="progress_line" style="width:75%;" data-percent="75" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" id="sk_j" name="skill" onchange="skillChoice()"
+                                                value="90">
+                                            <label for="sk_j">NODE.js</label>
+                                            <div class="progress_line" style="width:90%;" data-percent="90" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" id="sk_l" name="skill" onchange="skillChoice()"
+                                                value="85">
+                                            <label for="sk_l">Express.js</label>
+                                            <div class="progress_line" style="width:85%;" data-percent="85" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><input type="radio" id="sk_m" name="skill" onchange="skillChoice()"
+                                                value="90">
+                                            <label for="sk_m">SQL</label>
+                                            <div class="progress_line" style="width:90%;" data-percent="90" />
+                                        </td>
+                                    </tr>
                                 </table>
                             </form>
                         </div>
@@ -157,54 +185,57 @@
                         <div class="skills__graph-side">
                             <div class="skills__graph__box">
                                 <div class="skills__graph">
+                                    <div id="skill_percent">95%</div>
                                     <div class="graph__center">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
+                </div>            
+            <div class="jobs">
+                <div class="jobs__job job_content">
+                    <h2 class="text-secondary">2021 October </h2>
+                    <h3>DoSpace</h3>
+                    <h6>Javascript Class</h6>
+                    <p>Five week in-person class on the basics of Javascript and form authentication. I took the
+                        class to
+                        improve my understanding of JS. It was my second time taking the class and I was able to
+                        pick up things I did not know before. The perspective of the class different every time.
+                    </p>
                 </div>
-                <div class="jobs">
-                    <div class="jobs__job job_content">
-                        <h2 class="text-secondary">2021 October </h2>
-                        <h3>DoSpace</h3>
-                        <h6>Javascript Class</h6>
-                        <p>Five week in-person class on the basics of Javascript and form authentication. I took the
-                            class to
-                            improve my understanding of JS. It was my second time taking the class and I was able to
-                            pick up things I did not know before. The perspective of the class different every time.
-                        </p>
-                    </div>
+            </div>
+            <div class="jobs">
+                <div class="jobs__job job_content">
+                    <h2 class="text-secondary">2021 May</h2>
+                    <h3>Midland Code Academy</h3>
+                    <h6>Cohort 7</h6>
+                    <p>Code school boot camp for 12 weeks. In person classes full time. SERN stack with Agile
+                        methodologies. HTML, CSS, JavaScript, React, SQL.
+                    </p>
                 </div>
-                <div class="jobs">
-                    <div class="jobs__job job_content">
-                        <h2 class="text-secondary">2021 May</h2>
-                        <h3>Midland Code Academy</h3>
-                        <h6>Cohort 7</h6>
-                        <p>Code school boot camp for 12 weeks. In person classes full time. SERN stack with Agile
-                            methodologies. HTML, CSS, JavaScript, React, SQL.
-                        </p>
-                    </div>
+            </div>
+            <div class="jobs">
+                <div class="jobs__job job_content">
+                    <h2 class="text-secondary">2020 March</h2>
+                    <h3>DoSpace</h3>
+                    <h6>Hello Code 2</h6>
+                    <p>In-person classes for 5 weeks. On-line class for an introduction to JavaScript focusing on
+                        function building, scope, closure, and hoisting via building a weather app.
+                    </p>
                 </div>
-                <div class="jobs">
-                    <div class="jobs__job job_content">
-                        <h2 class="text-secondary">2020 March</h2>
-                        <h3>DoSpace</h3>
-                        <h6>Hello Code 2</h6>
-                        <p>In-person classes for 5 weeks. On-line class for an introduction to JavaScript focusing on
-                            function building, scope, closure, and hoisting via building a weather app.
-                        </p>
-                    </div>
+            </div>
+            <div class="jobs">
+                <div class="jobs__job job_content">
+                    <h2 class="text-secondary">2020 February</h2>
+                    <h3>DoSpace</h3>
+                    <h6>Hello Code</h6>
+                    <p> In-person classes for 5 weeks. Introduction to CSS and HTML.
+                    </p>
                 </div>
-                <div class="jobs">
-                    <div class="jobs__job job_content">
-                        <h2 class="text-secondary">2020 February</h2>
-                        <h3>DoSpace</h3>
-                        <h6>Hello Code</h6>
-                        <p> In-person classes for 5 weeks. Introduction to CSS and HTML.
-                        </p>
-                    </div>
-                </div>
+            </div>
             </div>
 
             <div class="social-icons">

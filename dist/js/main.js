@@ -56,7 +56,7 @@ revealOnScroll = () => {
         if (elementPos > windowHt / 1.3) {
             element.classList.remove("scroll_fade");
         }
- });
+    });
     fadeJobs.forEach(element => {
         let elementPos = element.getBoundingClientRect().top;
         if (elementPos <= windowHt / 1.2) {
@@ -71,3 +71,25 @@ revealOnScroll = () => {
 document.addEventListener("DOMContentLoaded", revealOnScroll);
 window.addEventListener('scroll', revealOnScroll);
 
+// /////skills progress bars
+
+let value = 0;
+function skillChoice(){
+
+if (document.getElementById(sk_a).checked){
+let value = 60;
+}
+return;
+}
+
+let skill_percent = document.getElementById("skill_percent");
+let counter = 0;
+setInterval(() => {
+    if (counter == value || counter === 100){
+        clearInterval();
+return;
+    } 
+counter += 1;
+
+skill_percent.innerHTML = counter + "%";
+}, 20);
