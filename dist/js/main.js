@@ -82,18 +82,19 @@ function skillChoice() {
 
     let percent = document.querySelector('[name="skill"]:checked').value;
     skill_percent = document.querySelector(".skills__graph");
+    skill_readout = document.querySelector("#skill_readout");
 
     setInterval(() => {
-        if (counter == (10 * percent) || counter == 100) {
+        if (counter == percent) {
             clearInterval();
             return;
         }
         counter++
 
-        skill_percent.textContent = skill_percent.style.background = `conic-gradient(#02ffdd ${counter * 3.6}deg, transparent 0deg)`;
-        skill_percent.textContent = skill_percent.style.lineHeight = 11;
-        skill_percent.innerHTML = counter + "%";
-    }, percent);
+        skill_readout.textContent = skill_percent.style.background = `conic-gradient(#02ffdd ${counter * 3.6}deg, transparent 0deg)`;
+        
+        skill_readout.innerHTML = counter + "%";
+    }, percent / 10);
     return;
 }
 
