@@ -73,23 +73,30 @@ window.addEventListener('scroll', revealOnScroll);
 
 // /////skills progress bars
 
-let value = 0;
-function skillChoice(){
 
-if (document.getElementById(sk_a).checked){
-let value = 60;
+const percent = 0;
+function skillChoice() {
+
+    let percent = document.querySelector('[name="skill"]:checked').value;
+    skill_percent = document.querySelector(".skills__graph");
+    let counter = 0;
+
+
+    setInterval(() => {       
+        if (counter == percent || counter == 100) {
+            clearInterval();
+            return;
+        }
+        counter++
+
+skill_percent.textContent = skill_percent.style.background = `conic-gradient(#02ffdd ${counter * 3.6}deg, transparent 0deg)`;
+skill_percent.textContent = skill_percent.style.lineHeight = 11;
+
+
+        skill_percent.innerHTML = counter + "%";
+    }, percent);
+    return;
 }
-return;
-}
 
-let skill_percent = document.getElementById("skill_percent");
-let counter = 0;
-setInterval(() => {
-    if (counter == value || counter === 100){
-        clearInterval();
-return;
-    } 
-counter += 1;
 
-skill_percent.innerHTML = counter + "%";
-}, 20);
+
