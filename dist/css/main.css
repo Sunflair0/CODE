@@ -448,6 +448,7 @@
   bottom: 1vh;
   /* contain: "❤"; */
   justify-content: center;
+font-size: clamp(6px, 2vw, 28px);
 }
 
 .progress_line {
@@ -967,8 +968,18 @@ button {
     font-size: small;
   }
 
+.skills__graph::after {
+transform: translate(4.5px, 5px);
+}
+
+.skills__graph{
+height: 49px;
+width: 49px;
+transform: translate(8.5%, -110%);
+}
 
 }
+
 
 @media screen and (min-width: 650px) {
   .home__top {
