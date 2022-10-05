@@ -238,6 +238,7 @@
 }
 .about__bio-image p {
   margin-bottom: 1rem;
+  font-weight: 500;
   line-height: 1.2em;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -542,7 +543,7 @@
 }
 .resumé__actual {
   padding: 40px 15px;
-  margin: 26vh auto 7vh;
+  margin: 30vh auto 7vh;
   width: 70%;
   background: rgb(65, 65, 65);
   outline: 3px solid rgb(65, 65, 65);
@@ -960,7 +961,7 @@
 #skill_readout_percent {
   display: flex;
   color: #7affed;
-  font-size: clamp(1px, 2vw, 24px);
+  font-size: clamp(10px, 2vw, 24px);
   margin: auto;
   padding-top: 10px;
   height: 20px;
@@ -972,7 +973,7 @@
   color: #7affed;
   height: 20px;
   padding-top: 10px;
-  font-size: clamp(1px, 2vw, 24px);
+  font-size: clamp(10px, 2vw, 24px);
   text-shadow: -4px 4px 2px black;
 }
 

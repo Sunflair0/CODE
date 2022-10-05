@@ -104,7 +104,7 @@
 	&_percent {
 		display: flex;
 		color: #7affed;
-		font-size: clamp(1px, 2vw, 24px);
+		font-size: clamp(10px, 2vw, 24px);
 		margin: auto;
 		padding-top: 10px;
 		height: 20px;
@@ -117,7 +117,7 @@
 		color: #7affed;
 		height: 20px;
 		padding-top: 10px;
-		font-size: clamp(1px, 2vw, 24px);
+		font-size: clamp(10px, 2vw, 24px);
 		text-shadow: -4px 4px 2px black;
 	}
 }
