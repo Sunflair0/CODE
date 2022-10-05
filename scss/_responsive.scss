@@ -24,12 +24,16 @@
 		margin-top: 0vh;
 	}
 
-	.home .social-icons {
+	.home_ .social-icons {
 		flex-direction: row;
 	}
 
 	.contact .social-icons {
 		flex-direction: row;
+	}
+
+	.progress_line {
+		background-size: 14px;
 	}
 
 	.thin {
@@ -43,6 +47,18 @@
 
 	.resumé__actual {
 		margin: 34vh auto 7vh;
+	}
+
+	.skills__graph {
+		font-size: clamp(1px, 3vw, 32px);
+		height: 100px;
+		width: 100px;
+		margin-top: -7%;
+		transform: translateY(0%);
+	}
+
+	.skills__graph::after {
+		transform: translate(10px, 9.5px);
 	}
 }
 
@@ -116,6 +132,15 @@
 		margin-top: 40vh;
 	}
 
+	.skills__graph {
+		margin-top: -6%;
+		transform: translateY(-4%);
+	}
+
+	.skills__graph__box {
+		padding: 50px 0;
+	}
+
 	.contact__list {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -138,8 +163,17 @@
 		min-height: 30vh;
 	}
 
+	#skill_readout_percent {
+		padding-top: 7px;
+	}
+
 	.contact__list {
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.skills__graph {
+		margin-top: 0%;
+		transform: translateY(-11%);
 	}
 }
 

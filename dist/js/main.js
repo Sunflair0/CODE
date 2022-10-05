@@ -95,6 +95,8 @@ function skillChoice() {
 
         skill_readout_percent.textContent = skills__graph.style.background = `conic-gradient(#02ffdd ${counter * 3.6}deg, transparent 0deg)`;
         skill_readout_percent.innerHTML = counter + "%";
+
+       document.getElementById("skill_readout_label").hidden = false;
         skill_readout_label.innerHTML = skill_readout_label_id;
     }, percent / 10);
     return;
