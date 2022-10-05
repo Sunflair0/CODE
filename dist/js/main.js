@@ -80,9 +80,11 @@ function skillChoice() {
     clearInterval();
     let counter = 0;
 
-    let percent = document.querySelector('[name="skill"]:checked').value;
-    skill_percent = document.querySelector(".skills__graph");
-    skill_readout = document.querySelector("#skill_readout");
+    let percent = document.querySelector('[id]:checked').value;
+    let skill_readout_label_id = document.querySelector('[name="skill"]:checked').id;
+    skills__graph = document.querySelector(".skills__graph");
+    skill_readout_percent = document.querySelector("#skill_readout_percent");
+    skill_readout_label = document.querySelector("#skill_readout_label");
 
     setInterval(() => {
         if (counter == percent) {
@@ -91,9 +93,9 @@ function skillChoice() {
         }
         counter++
 
-        skill_readout.textContent = skill_percent.style.background = `conic-gradient(#02ffdd ${counter * 3.6}deg, transparent 0deg)`;
-        
-        skill_readout.innerHTML = counter + "%";
+        skill_readout_percent.textContent = skills__graph.style.background = `conic-gradient(#02ffdd ${counter * 3.6}deg, transparent 0deg)`;
+        skill_readout_percent.innerHTML = counter + "%";
+        skill_readout_label.innerHTML = skill_readout_label_id;
     }, percent / 10);
     return;
 }

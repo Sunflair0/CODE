@@ -393,7 +393,9 @@
 
 .skills__graph__box {
   display: flex;
+flex-direction: column;
   width: 100%;
+  /* margin-block-end: auto; */
   padding: 50px 0;
   align-items: center;
   background: radial-gradient(circle, #7a7a7a 0%, #000000e3 100%);
@@ -407,6 +409,8 @@
   position: relative;
   height: 120px;
   width: 120px;
+margin-top: 20%;
+  font-family: 'Times New Roman', Times, serif;
   border: 1px solid #1f1f1ff6;
   transform: translate(8.5%, -50%);
   border-radius: 50%;
@@ -416,7 +420,16 @@
     6px -6px 10px -1px #dbba8973;
 }
 
-#skill_readout {
+#skill_readout_percent {
+  display: flex;
+  color: #7affed;
+  font-size: clamp(1px, 4vw, 32px);
+  margin: auto;
+  text-shadow: -4px 4px 2px black;
+}
+
+#skill_readout_label {
+  display: flex;
   color: #7affed;
   font-size: clamp(1px, 4vw, 32px);
   margin: auto;
@@ -448,7 +461,7 @@
   bottom: 1vh;
   /* contain: "❤"; */
   justify-content: center;
-font-size: clamp(6px, 2vw, 28px);
+  font-size: clamp(6px, 2vw, 28px);
 }
 
 .progress_line {
@@ -778,7 +791,6 @@ tr {
   color: rgb(0, 0, 0);
 }
 
-
 .intro_mask {
   position: fixed;
   background-color: #262626;
@@ -968,15 +980,16 @@ button {
     font-size: small;
   }
 
-.skills__graph::after {
-transform: translate(4.5px, 5px);
-}
+  .skills__graph::after {
+    transform: translate(4.5px, 5px);
+  }
 
-.skills__graph{
-height: 49px;
-width: 49px;
-transform: translate(8.5%, -110%);
-}
+  .skills__graph {
+    height: 49px;
+    width: 49px;
+transform: translate(0%, -50%);
+ margin-top: 20%;
+  }
 
 }
 
