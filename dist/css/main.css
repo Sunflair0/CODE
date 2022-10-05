@@ -410,7 +410,7 @@
   border: 1px solid #1f1f1ff6;
   transform: translate(8.5%, -50%);
   border-radius: 50%;
-  background: conic-gradient(#02ffdd 0deg, transparent 0deg);
+  background: conic-gradient(#0f1312 0deg, transparent 0deg);
   box-shadow: -6px 6px 5px -1px rgb(0, 0, 0),
     3px -3px 3px -1px #c2a9796c,
     6px -6px 10px -1px #dbba8973;
