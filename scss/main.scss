@@ -45,6 +45,7 @@ h3 {
 a {
     color: set-text-color($primary-color);
     text-decoration: none;
+    text-shadow: none;
 }
 
 .text-secondary {
@@ -96,21 +97,22 @@ footer {
     color: set-text-color($primary-color);
     transform: rotate(90deg) translate(-3rem, -5rem);
 }
-    .orange-line {
-        top: 47vh;
-        height: 3px;
-        width: 100%;
-        background-color: $secondary-color;
-    }
+
+.orange-line {
+    top: 47vh;
+    height: 3px;
+    width: 100%;
+    background-color: $secondary-color;
+}
 
 button {
-  border: none;
-  background-color: transparent;
-  font-size: 16px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
 }
 
 .social-icons {
-  display: flex;
-  flex-direction: column;
-  font-size: clamp(10px, 2vw, 15px);
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(10px, 2vw, 15px);
 }

@@ -164,6 +164,7 @@
   color: #ed7019;
 }
 .nav .menu-nav__link {
+  text-shadow: none;
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -187,6 +188,7 @@
   height: 1px;
 }
 .nav .menu-nav__link:visited {
+  text-shadow: none;
   color: #000;
   -webkit-text-decoration: underline #000;
           text-decoration: underline #000;
@@ -547,6 +549,7 @@
   outline-offset: 5px;
 }
 .resumé_link {
+  text-shadow: none;
   text-decoration: underline;
   color: antiquewhite;
 }
@@ -812,6 +815,7 @@
   background-color: rgba(110, 109, 109, 0.5);
 }
 .story__link {
+  text-shadow: none;
   color: rgb(0, 0, 0);
   border-radius: 20px;
   text-align: center;
@@ -932,7 +936,7 @@
 }
 .skills__graph__words {
   color: #58e7bc;
-  font-size: clamp(14px, 3vw, 28px);
+  font-size: clamp(14px, 3vw, 24px);
 }
 
 .grid__container {
@@ -1056,6 +1060,7 @@ h3 {
 a {
   color: antiquewhite;
   text-decoration: none;
+  text-shadow: none;
 }
 
 .text-secondary {

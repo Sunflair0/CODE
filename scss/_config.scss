@@ -37,6 +37,7 @@ $secondary-accent-color2: #635264;
         @content;
     }
 }
+
 @mixin media-sm {
     @media screen and (min-width: 650px) {
         @content;
