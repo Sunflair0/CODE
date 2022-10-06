@@ -7,7 +7,7 @@
     text-align: center;
 
     &__photo {
-        background: rgb(39, 39, 39);
+        background: #23272a;
         background-size: contain;
         position: relative;
     }
@@ -25,7 +25,7 @@
         animation: fade__up 1.5s forwards ease-out;
 
         &--last {
-            color: #ed7019;
+            color: #ef7f31;
             font-weight: 700;
         }
     }

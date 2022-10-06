@@ -1,7 +1,7 @@
 .skills {
-	background: #414141;
-	border: 3px #414141 solid;
-	outline: 3px solid #414141;
+	background: #494e50;
+	border: 3px #494e50 solid;
+	outline: 3px solid #494e50;
 	outline-offset: 5px;
 	display: flex;
 	position: relative;
@@ -54,7 +54,7 @@
 			display: flex;
 			position: absolute;
 			border-bottom: solid 1px hwb(234 1% 4% / 0.75);
-			background: repeating-linear-gradient(45deg, #202020e3, transparent, #41414167, #202020d8);
+			background: repeating-linear-gradient(45deg, #202020e3, transparent, #494e5067, #202020d8);
 			width: 44%;
 			right: 0;
 			height: 100%;
@@ -94,7 +94,7 @@
 	height: 100%;
 	width: 7px;
 	background: repeating-linear-gradient(110deg, transparent 10px, #021af5 10px, #8fcf17 20px);
-	border: #414141 solid 2px;
+	border: #494e50 solid 2px;
 	transform: translateX(13px);
 	border-radius: 50%;
 	z-index: 1;

@@ -20,7 +20,7 @@
 .line {
   height: 2px;
   width: 100%;
-  background: #272727;
+  background: #23272a;
   margin: 5vh 0 3vh 0;
 }
 
@@ -37,8 +37,8 @@
     padding: 40px 15px;
     margin: 30vh auto 7vh;
     width: 70%;
-    background: rgb(65, 65, 65);
-    outline: 3px solid rgb(65, 65, 65);
+    background: 494e50;
+    outline: 3px solid 494e50;
     outline-offset: 5px;
   }
 
@@ -47,13 +47,24 @@
     text-decoration: underline;
     color: antiquewhite;
 
-    &:visited {
-      color: rgb(203, 202, 243);
-    }
+         a {
+                text-decoration: underline #ef7f31 1px;
+                font-weight: normal;
+            }
+
+            a:visited {
+                color: rgb(203, 202, 243);
+                text-decoration: underline rgb(203, 202, 243);
+            }
+
+            a:hover {
+                color: #ff6b6b;
+                text-decoration: underline #ff6b6b;
+            }
   }
 
   p {
-    color: rgb(247, 125, 38);
+    color: #ef7f31;
     text-align: justify;
     margin: 0 0 1rem 2rem;
     line-height: 1.2em;
@@ -61,7 +72,7 @@
 
   h3 {
     padding: 0.5rem;
-    background-color: #272727;
+    background-color: #23272a;
     width: 100%;
     height: auto;
     font-weight: 600;
