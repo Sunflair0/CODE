@@ -715,15 +715,15 @@ input[type=radio] {
   padding: 20px 15px;
   margin: 10vh auto 5vh;
   width: 75%;
-  background: rgba(65, 65, 65, 0.5);
-  outline: 3px solid #494e50;
+  background: #4d4d4d80;
+  outline: 3px solid #4d4d4d80;
   outline-offset: 5px;
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
   font-weight: 600;
 }
 
 .table_story {
-  border: 3px solid rgba(65, 65, 65, 0.7);
+  border: 3px solid #4d4d4d80;
   margin: 0 auto;
   padding: 4px;
   width: 60%;
@@ -736,11 +736,11 @@ tr {
 }
 
 .story tr:nth-child(even) {
-  background-color: rgba(38, 38, 38, .5);
+  background-color: #26262680;
 }
 
 .story tr:nth-child(odd) {
-  background-color: rgba(110, 109, 109, .5);
+  background-color: #4d4d4d80;
 }
 
 .story::after {
@@ -815,7 +815,7 @@ tr {
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
-  color: antiquewhite;
+  color: #ef7f31 ;
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
