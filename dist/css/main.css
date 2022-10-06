@@ -815,7 +815,7 @@ tr {
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
-  color: #ef7f31 ;
+  color: antiquewhite ;
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
@@ -832,11 +832,16 @@ tr {
 .resumé_link {
   text-shadow: none;
   text-decoration: underline;
+font-weight: normal;
+}
+
+.resumé_link a {
   color: #ef7f31;
 -webkit-text-decoration: underline #ef7f31 1px;
           text-decoration: underline #ef7f31 1px;
-  font-weight: normal;
+  
 }
+
 
 .resumé_link:visited {
   color: rgb(203, 202, 243);
@@ -1136,6 +1141,7 @@ button {
   #skill_readout_percent {
     padding-top: 7px;
   }
+
 
   .contact__list {
     grid-template-columns: repeat(3, 1fr);

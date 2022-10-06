@@ -37,28 +37,30 @@
     padding: 40px 15px;
     margin: 30vh auto 7vh;
     width: 70%;
-    background: 494e50;
-    outline: 3px solid 494e50;
+    background: #494e50;
+    outline: 3px solid #494e50;
     outline-offset: 5px;
   }
 
   &_link {
-     text-shadow: none;
-  text-decoration: underline;
-  color: #ef7f31;
--webkit-text-decoration: underline #ef7f31 1px;
-          text-decoration: underline #ef7f31 1px;
-  font-weight: normal;
+    text-shadow: none;
+    text-decoration: underline;
+    font-weight: normal;
 
-            a:visited {
-                color: rgb(203, 202, 243);
-                text-decoration: underline rgb(203, 202, 243);
-            }
+    a {
+      color: #ef7f31;
+      text-decoration: underline #ef7f31 1px;
+    }
 
-            a:hover {
-                color: #ff6b6b;
-                text-decoration: underline #ff6b6b;
-            }
+    a:visited {
+      color: rgb(203, 202, 243);
+      text-decoration: underline rgb(203, 202, 243);
+    }
+
+    a:hover {
+      color: #ff6b6b;
+      text-decoration: underline #ff6b6b;
+    }
   }
 
   p {
