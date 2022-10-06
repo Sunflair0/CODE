@@ -43,14 +43,12 @@
   }
 
   &_link {
-    text-shadow: none;
-    text-decoration: underline;
-    color: antiquewhite;
-
-         a {
-                text-decoration: underline #ef7f31 1px;
-                font-weight: normal;
-            }
+     text-shadow: none;
+  text-decoration: underline;
+  color: #ef7f31;
+-webkit-text-decoration: underline #ef7f31 1px;
+          text-decoration: underline #ef7f31 1px;
+  font-weight: normal;
 
             a:visited {
                 color: rgb(203, 202, 243);

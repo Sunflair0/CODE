@@ -832,29 +832,21 @@ tr {
 .resumé_link {
   text-shadow: none;
   text-decoration: underline;
-  color: antiquewhite;
-}
-
-.resumé_link:visited {
-  color: rgb(203, 202, 243);
-}
-
-.resumé_link {
-  -webkit-text-decoration: underline #ef7f31 1px;
+  color: #ef7f31;
+-webkit-text-decoration: underline #ef7f31 1px;
           text-decoration: underline #ef7f31 1px;
   font-weight: normal;
 }
+
 .resumé_link:visited {
   color: rgb(203, 202, 243);
   -webkit-text-decoration: underline rgb(203, 202, 243);
           text-decoration: underline rgb(203, 202, 243);
 }
 .resumé_link:hover {
-  color: antiquewhite;
-  -webkit-text-decoration: underline antiquewhite
-;
-          text-decoration: underline antiquewhite
-;
+  color: #ff6b6b;
+  -webkit-text-decoration: underline #ff6b6b;
+          text-decoration: underline #ff6b6b;
 }
 
 .resumé p {

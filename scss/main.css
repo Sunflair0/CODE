@@ -551,11 +551,9 @@
 .resumé_link {
   text-shadow: none;
   text-decoration: underline;
-  color: antiquewhite;
-}
-.resumé_link a {
+  color: #ef7f31;
   -webkit-text-decoration: underline #ef7f31 1px;
-          text-decoration: underline #ef7f31 1px;
+  text-decoration: underline #ef7f31 1px;
   font-weight: normal;
 }
 .resumé_link a:visited {
@@ -816,15 +814,15 @@
 .story table,
 .story tr,
 .story td {
-  border: 3px solid rgba(65, 65, 65, 0.7);
+  border: 3px solid rgba(77, 77, 77, 0.5019607843);
   margin: 0 auto;
   padding: 4px;
 }
 .story tr:nth-child(even) {
-  background-color: rgba(38, 38, 38, 0.5);
+  background-color: rgba(38, 38, 38, 0.5019607843);
 }
 .story tr:nth-child(odd) {
-  background-color: rgba(110, 109, 109, 0.5);
+  background-color: rgba(77, 77, 77, 0.5019607843);
 }
 .story__link {
   text-shadow: none;
@@ -870,8 +868,8 @@
   padding: 20px 15px;
   margin: 10vh auto 5vh;
   width: 75%;
-  background: rgba(65, 65, 65, 0.5);
-  outline: 3px solid rgba(65, 65, 65, 0.7);
+  background: rgba(77, 77, 77, 0.5019607843);
+  border: 3px solid rgba(77, 77, 77, 0.5019607843);
   outline-offset: 5px;
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
   font-weight: 600;
