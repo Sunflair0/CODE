@@ -543,6 +543,18 @@ input[type=radio] {
   font-size: clamp(10px, 2vw, 15px);
 }
 
+.video-player {
+/* margin-top: 13vh; */
+align-items: center;
+justify-content: center;
+width: 400px;
+border: 3px rgb(235, 128, 6) solid;
+}
+video {
+object-fit: cover;
+background-size: contain;
+}
+
 .projects {
   padding-bottom: 2rem;
 }
@@ -815,7 +827,7 @@ tr {
   padding-bottom: 2rem;
   min-height: 100vh;
   position: relative;
-  color: antiquewhite ;
+  color: antiquewhite;
   font-weight: 400;
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
@@ -832,26 +844,27 @@ tr {
 .resumé_link {
   text-shadow: none;
   text-decoration: underline;
-font-weight: normal;
+  font-weight: normal;
 }
 
 .resumé_link a {
   color: #ef7f31;
--webkit-text-decoration: underline #ef7f31 1px;
-          text-decoration: underline #ef7f31 1px;
-  
+  -webkit-text-decoration: underline #ef7f31 1px;
+  text-decoration: underline #ef7f31 1px;
+
 }
 
 
 .resumé_link:visited {
   color: rgb(203, 202, 243);
   -webkit-text-decoration: underline rgb(203, 202, 243);
-          text-decoration: underline rgb(203, 202, 243);
+  text-decoration: underline rgb(203, 202, 243);
 }
+
 .resumé_link:hover {
   color: #ff6b6b;
   -webkit-text-decoration: underline #ff6b6b;
-          text-decoration: underline #ff6b6b;
+  text-decoration: underline #ff6b6b;
 }
 
 .resumé p {
