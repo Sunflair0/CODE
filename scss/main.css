@@ -229,8 +229,8 @@
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(35, 39, 42, 0.9);
 }
 .about__bio-image {
-  background: #494e50;
- position: fixed;
+  background: 49400000000000010000000000000000000000000000000000000;
+  position: fixed;
   top: 0;
   height: 47.8vh;
   width: 100%;
@@ -277,9 +277,8 @@
 .about__bio-image .gray-line1 {
   height: 5px;
   width: 100%;
-  background: #494e50;
+  background: 49400000000000010000000000000000000000000000000000000;
 }
-
 .about__bio {
   height: 47.8vh;
   width: 100%;
@@ -542,8 +541,8 @@
   text-shadow: 0 0 4px rgb(44, 17, 21), 3px 3px 5px rgba(39, 39, 39, 0.9);
 }
 .resumé__actual {
-  padding: 20px 15px;
-  margin: 32vh auto 7vh;
+  padding: 40px 15px;
+  margin: 30vh auto 7vh;
   width: 70%;
   background: #494e50;
   outline: 3px solid #494e50;
@@ -817,15 +816,15 @@
 .story table,
 .story tr,
 .story td {
-  border: 3px solid rgba(77, 77, 77, 0.5);
+  border: 3px solid rgba(77, 77, 77, 0.5019607843);
   margin: 0 auto;
   padding: 4px;
 }
 .story tr:nth-child(even) {
-  background-color: rgba(35, 39, 42, 0.5);
+  background-color: rgba(35, 39, 42, 0.5019607843);
 }
 .story tr:nth-child(odd) {
-  background-color: rgba(77, 77, 77, 0.5);
+  background-color: rgba(77, 77, 77, 0.5019607843);
 }
 .story__link {
   text-shadow: none;
@@ -871,8 +870,8 @@
   padding: 20px 15px;
   margin: 10vh auto 5vh;
   width: 75%;
-  background: rgba(77, 77, 77, 0.5);
-  border: 3px solid rgba(77, 77, 77, 0.5);
+  background: rgba(77, 77, 77, 0.5019607843);
+  border: 3px solid rgba(77, 77, 77, 0.5019607843);
   outline-offset: 5px;
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
   font-weight: 600;
@@ -891,7 +890,7 @@
   color: #00ff95;
   width: 55%;
   display: flex;
-  background: repeating-linear-gradient(45deg, rgba(12, 12, 12, 0.75), rgba(36, 35, 35, 0.726), rgba(63, 63, 63, 0.9), transparent, rgba(41, 41, 41, 0.9), rgba(22, 22, 22, 0.85));
+  background: repeating-linear-gradient(45deg, rgba(12, 12, 12, 0.7607843137), rgba(36, 35, 35, 0.726), rgba(63, 63, 63, 0.8823529412), transparent, rgba(41, 41, 41, 0.8823529412), rgba(22, 22, 22, 0.8470588235));
   padding: 0 0.5rem;
   padding-bottom: 10px;
   font-size: clamp(9px, 2vw, 20px);
@@ -907,11 +906,11 @@
   margin-top: 20%;
   padding-bottom: 10px;
   font-family: "Times New Roman", Times, serif;
-  border: 1px solid rgba(31, 31, 31, 0.95);
+  border: 1px solid rgba(31, 31, 31, 0.9647058824);
   transform: translateY(-50%);
   border-radius: 50%;
   background: conic-gradient(#0f1312 0deg, transparent 0deg);
-  box-shadow: -6px 6px 5px -1px rgb(0, 0, 0), 3px -3px 3px -1px rgba(194, 169, 121, 0.4), 6px -6px 10px -1px rgba(219, 186, 137, 0.45);
+  box-shadow: -6px 6px 5px -1px rgb(0, 0, 0), 3px -3px 3px -1px rgba(194, 169, 121, 0.4235294118), 6px -6px 10px -1px rgba(219, 186, 137, 0.4509803922);
 }
 .skills__graph::after {
   content: "";
@@ -928,7 +927,7 @@
   display: flex;
   position: absolute;
   border-bottom: solid 1px hwb(234 1% 4%/0.75);
-  background: repeating-linear-gradient(45deg, rgba(32, 32, 32, 0.89), transparent, rgba(73, 78, 80, 0.4039215686), rgba(32, 32, 32, 0.8470588235));
+  background: repeating-linear-gradient(45deg, rgba(32, 32, 32, 0.8901960784), transparent, rgba(73, 78, 80, 0.4039215686), rgba(32, 32, 32, 0.8470588235));
   width: 44%;
   right: 0;
   height: 100%;
@@ -940,7 +939,7 @@
   width: 100%;
   padding: 30px 0;
   align-items: center;
-  background: radial-gradient(circle, rgb(118, 106, 91) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: radial-gradient(circle, rgb(70, 63, 53) 0%, rgba(3, 4, 16, 0.9019607843) 100%);
   border: 4px solid rgba(163, 143, 102, 0.65);
   border-left: 8px solid #111111;
   border-bottom: 8px solid #000000;
@@ -1053,7 +1052,7 @@ html::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb,
 html::-webkit-scrollbar-thumb {
   background-color: #494e50;
-  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.7725490196);
   border-radius: 10px;
   border: 2px solid rgb(38, 49, 37);
   background-clip: content-box;
