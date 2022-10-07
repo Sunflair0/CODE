@@ -544,15 +544,16 @@ input[type=radio] {
 }
 
 .video-player {
-/* margin-top: 13vh; */
-align-items: center;
-justify-content: center;
-width: 400px;
-border: 3px rgb(235, 128, 6) solid;
+  /* margin-top: 13vh; */
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  border: 3px rgb(235, 128, 6) solid;
 }
+
 video {
-object-fit: cover;
-background-size: contain;
+  object-fit: cover;
+  background-size: contain;
 }
 
 .projects {
@@ -1000,6 +1001,11 @@ button {
     margin-top: 2vh;
     font-size: small;
   }
+
+.video-player {
+/* margin-top: 13vh; */
+width: 300px;
+}
 }
 
 @media screen and (min-width: 650px) {
@@ -1048,6 +1054,8 @@ button {
   .skills__graph::after {
     transform: translate(10px, 9.5px);
   }
+
+
 }
 
 @media screen and (min-width: 768px) {
