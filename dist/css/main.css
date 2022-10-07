@@ -736,7 +736,7 @@ tr {
 }
 
 .story tr:nth-child(even) {
-  background-color: #26262680;
+  background-color: #23272a80;
 }
 
 .story tr:nth-child(odd) {
@@ -786,7 +786,7 @@ tr {
 
 .intro_mask {
   position: fixed;
-  background-color: #262626;
+  background-color: #23272a;
   top: 0vh;
   height: 8vh;
   width: 100%;
@@ -799,7 +799,7 @@ tr {
   padding: 20px;
   padding-right: 0;
   height: auto;
-  background-color: #262626;
+  background-color: #23272a;
   z-index: 2;
 }
 
