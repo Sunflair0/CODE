@@ -526,6 +526,7 @@
   opacity: 0;
   margin-left: 100%;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .projects__btns input[type=radio] {
