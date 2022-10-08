@@ -1130,6 +1130,7 @@ button {
   .nav .menu-nav__link {
     text-shadow: none;
     font-size: 1.5rem;
+transition: none;
   }
 
   .about__bio {
