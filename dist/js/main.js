@@ -96,7 +96,7 @@ function skillChoice() {
         skill_readout_percent.textContent = skills__graph.style.background = `conic-gradient(#02ffdd ${counter * 3.6}deg, transparent 0deg)`;
         skill_readout_percent.innerHTML = counter + "%";
 
-       document.getElementById("skill_readout_label").hidden = false;
+        document.getElementById("skill_readout_label").hidden = false;
         skill_readout_label.innerHTML = skill_readout_label_id;
     }, percent / 10);
     return;
@@ -104,17 +104,22 @@ function skillChoice() {
 
 
 // /////video section
+  let video = document.getElementById('video');
 
-function preview_select(){
+function preview_select() {
 
-let video = document.getElementById('video');
- let preview = document.querySelector('[name="preview"]:checked').value;
-console.log(preview);
+    let toggle__fade = document.getElementsByClassName("toggle__fade");  
+    let preview = document.querySelector('[name="preview"]:checked').value;
 
-
-video.style.cssText = "opacity: 1; display: visible";
-video.src = `/Portfolio2021/dist/videos/${preview}`;
-return
+    toggle__fade.style.cssText = "color: transparent; border: none";
+    video.style.cssText = "opacity: 1; display: visible";
+    video.src = `/Portfolio2021/dist/videos/${preview}`;
+    return
 };
 
+function videoClose() {
+let vidClose = document.getElementsByClassName("video-close");
 
+video.style.cssText = "opacity: 0; display: hidden";
+vidClose.style.cssText = "opacity: 1";
+}
