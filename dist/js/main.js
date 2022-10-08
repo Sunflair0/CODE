@@ -105,8 +105,9 @@ function skillChoice() {
 
 // /////video section
 let video = document.getElementById('video');
-let vidClose = document.getElementsByClassName("video-close");
-
+let vidClose = document.getElementbyId("video-close");
+let vidPlayer = document.getElementsByClassName("video-player");
+let btn = document.querySelector("button");
 
 function preview_select() {
 
@@ -120,7 +121,9 @@ function preview_select() {
     return
 };
 
+btn.addEventListener("click", videoClose);
 function videoClose() {
     video.style.cssText = "opacity: 0; display: hidden";
-    vidClose.style.cssText = "opacity: 0";
-}
+    vidPlayer.style.cssText = "opacity: 0";
+};
+
