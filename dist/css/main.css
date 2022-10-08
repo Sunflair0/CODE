@@ -556,6 +556,24 @@ video {
   background-size: contain;
 }
 
+.projects__btns input[type=radio]{
+cursor: pointer;
+transform: translateY(-4px);
+opacity: 0;
+
+}
+
+.fas.fa-eye{
+color: black;
+transform: translate(4px, 9px);
+transition: all .3s ease-in-out;
+z-index: 0;
+cursor: pointer;
+}
+.fas.fa-eye:hover{
+color: white;
+}
+
 .projects {
   padding-bottom: 2rem;
 }

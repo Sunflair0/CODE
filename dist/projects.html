@@ -51,24 +51,24 @@
 
 
 
-                       
-                    </video>    
-</div>
-                    <div class="project__greeting"  id="project">
-                        <span style="--i:1">H</span>
-                        <span style="--i:2">e</span>
-                        <span style="--i:3">l</span>
-                        <span style="--i:4">l</span>
-                        <span style="--i:5">o</span>
-                        <span style="--i:6">&nbsp</span>
-                        <span style="--i:7">a</span>
-                        <span style="--i:8">g</span>
-                        <span style="--i:9">a</span>
-                        <span style="--i:10">i</span>
-                        <span style="--i:11">n</span>
-                        <span style="--i:12">!</span>
-                    </div>
-                
+
+                    </video>
+                </div>
+                <div class="project__greeting" id="project">
+                    <span style="--i:1">H</span>
+                    <span style="--i:2">e</span>
+                    <span style="--i:3">l</span>
+                    <span style="--i:4">l</span>
+                    <span style="--i:5">o</span>
+                    <span style="--i:6">&nbsp</span>
+                    <span style="--i:7">a</span>
+                    <span style="--i:8">g</span>
+                    <span style="--i:9">a</span>
+                    <span style="--i:10">i</span>
+                    <span style="--i:11">n</span>
+                    <span style="--i:12">!</span>
+                </div>
+
                 <h1 class="text-secondary">MY PROJECTS</h1>
                 <div class="orange-line"></div>
                 <div class="gray-line"></div>
@@ -78,12 +78,13 @@
                     <div class="projects__item">
                         <img src="/Portfolio2021/dist/img/black.png" alt="Blackjack-ish Game">
                         <div class="projects__btns">
-                            <a href="#" target="_projects" class="projects__btn">
-                                <i class="fas fa-video">&#8202 Preview</i>
-                            </a>
+                            <div class="projects__btn">
+                                <i class="fas fa-eye">&#8202 Preview</i>
+                                <input type="radio" name="preview" onchange="preview_select()" value="black">
+                            </div>
                             <a href="https://sunflair0.github.io/JBISH/dist/index.html" target="_projects"
                                 class="projects__btn">
-                                <i class="fas fa-eye">&#8202 To Project</i> </a>
+                                <i class="fas fa-video">&#8202 To Project</i> </a>
                             <a href="https://github.com/Sunflair0/JBISH" target="_githubs" class="projects__btn">
                                 <i class="fa fa-github">&#8202 Github</i></a>
                             <a href="storyBlack.html" target="_stories" class="projects__btn">
@@ -94,12 +95,13 @@
                     <div class="projects__item">
                         <img src="/Portfolio2021/dist/img/Dwhack.png" alt="Cash Grab Game">
                         <div class="projects__btns">
-                            <a href="#" target="_projects" class="projects__btn">
-                                <i class="fas fa-video">&#8202 Preview</i>
-                            </a>
+                            <div class="projects__btn">
+                                <i class="fas fa-eye">&#8202 Preview</i>
+                                <input type="radio" name="preview" onchange="preview_select()" value="cash">
+                            </div>
                             <a href="https://sunflair0.github.io/cash-grab/dist/index.html" target="_projects"
                                 class="projects__btn">
-                                <i class="fas fa-eye">&#8202 To Project</i>
+                                <i class="fas fa-video">&#8202 To Project</i>
                             </a>
                             <a href="https://github.com/Sunflair0/cash-grab" target="_githubs" class="projects__btn">
                                 <i class="fa fa-github">&#8202 Github</i>
@@ -109,15 +111,17 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="projects__item">
                         <img src="/Portfolio2021/dist/img/space.png" alt="SpaceTours loginpage">
                         <div class="projects__btns">
-                            <a href="#" target="_projects" class="projects__btn">
-                                <i class="fas fa-video">&#8202 Preview</i>
-                            </a>
+                            <div class="projects__btn">
+                                <i class="fas fa-eye">&#8202 Preview</i>
+                                <input type="radio" name="preview" onchange="preview_select()" value="space">
+                            </div>
                             <a href="https://apinasa1.herokuapp.com/loginpage/" target="_projects"
                                 class="projects__btn">
-                                <i class="fas fa-eye">&#8202 To Project</i>
+                                <i class="fas fa-video">&#8202 To Project</i>
                             </a>
                             <a href="https://github.com/Sunflair0/apinasa" target="_githubs" class="projects__btn">
                                 <i class="fa fa-github">&#8202 Github</i>
@@ -130,11 +134,12 @@
                     <div class="projects__item">
                         <img src="/Portfolio2021/dist/img/iow1.png" alt="In Other Words loginpage">
                         <div class="projects__btns">
+                            <div class="projects__btn">
+                                <i class="fas fa-eye">&#8202 Preview</i>
+                                <input type="radio" name="preview" class=" " onchange="preview_select()" value="iow">
+                            </div>
                             <a href="#" target="_projects" class="projects__btn">
-                                <i class="fas fa-video">&#8202 Preview</i>
-                            </a>
-                            <a href="#" target="_projects" class="projects__btn">
-                                <i class="fas fa-eye">&#8202 To Project</i>
+                                <i class="fas fa-video">&#8202 To Project</i>
                             </a>
                             <a href="https://github.com/Sunflair0/in_other_words" target="_githubs"
                                 class="projects__btn">

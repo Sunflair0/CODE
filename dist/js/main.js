@@ -80,7 +80,7 @@ function skillChoice() {
     clearInterval();
     let counter = 0;
 
-    let percent = document.querySelector('[id]:checked').value;
+    let percent = document.querySelector('[name="skill"]:checked').value;
     let skill_readout_label_id = document.querySelector('[name="skill"]:checked').id;
     skills__graph = document.querySelector(".skills__graph");
     skill_readout_percent = document.querySelector("#skill_readout_percent");
@@ -102,5 +102,13 @@ function skillChoice() {
     return;
 }
 
+
+// /////video section
+
+function preview_select(){
+ let preview = document.querySelector('[name="preview"]:checked').value;
+console.log(preview);
+return
+};
 
 
