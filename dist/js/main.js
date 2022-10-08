@@ -119,7 +119,7 @@ function preview_select() {
     return
 };
 
-vidClose.addEventListener("click", videoClose);
+vidClose[0].addEventListener("click", videoClose);
 function videoClose() {
     video.style.cssText = "opacity: 0; display: hidden";
     vidClose[0].style.cssText = "opacity: 0";
