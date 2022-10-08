@@ -584,7 +584,7 @@
 }
 .resumé__actual {
   padding: 40px 15px;
-  margin: 30vh auto 7vh;
+  margin: 34vh auto 7vh;
   width: 70%;
   background: #494e50;
   outline: 3px solid #494e50;
@@ -737,9 +737,6 @@
     text-shadow: none;
     width: 75px;
     padding: 5px 10px;
-  }
-  .resumé__actual {
-    margin: 34vh auto 7vh;
   }
   .skills__graph {
     font-size: clamp(1px, 3vw, 32px);
