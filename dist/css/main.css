@@ -550,9 +550,6 @@ input[type=radio] {
   margin-bottom: -4.5vh;
 }
 
-.video-player button{
-opacity: 0
-}
 
 #video {
   object-fit: cover;
@@ -572,14 +569,15 @@ opacity: 0
 
 .projects__btns input[type=radio] {
   cursor: pointer;
-  transform: translateY(-4px);
+  transform: translateY(-7px);
   opacity: 0;
 }
 
 .projects__btn .fas.fa-eye {
   color: rgb(0, 0, 0);
-  transform: translate(4px, 9px);
+  transform: translate(4px, 7px);
   transition: all .3s ease-in-out;
+  width: 100%;
   cursor: pointer;
 }
 
