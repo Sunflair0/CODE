@@ -560,17 +560,16 @@ video {
 cursor: pointer;
 transform: translateY(-4px);
 opacity: 0;
-
 }
 
-.fas.fa-eye{
+.projects__btn.fas.fa-eye{
 color: black;
 transform: translate(4px, 9px);
 transition: all .3s ease-in-out;
 z-index: 0;
 cursor: pointer;
 }
-.fas.fa-eye:hover{
+.projects__btn .fas.fa-eye:hover{
 color: white;
 }
 

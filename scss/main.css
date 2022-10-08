@@ -505,6 +505,38 @@
   margin-top: 12vh;
 }
 
+.video-player {
+  /* margin-top: 13vh; */
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  border: 3px rgb(235, 128, 6) solid;
+}
+
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: contain;
+}
+
+.projects__btns input[type=radio] {
+  cursor: pointer;
+  transform: translateY(-4px);
+  opacity: 0;
+}
+
+.projects__btn.fas.fa-eye {
+  color: black;
+  transform: translate(4px, 9px);
+  transition: all 0.3s ease-in-out;
+  z-index: 0;
+  cursor: pointer;
+}
+
+.projects__btn .fas.fa-eye:hover {
+  color: white;
+}
+
 .intro_mask {
   position: fixed;
   background-color: #23272a;
