@@ -107,8 +107,8 @@ function skillChoice() {
 
 function preview_select(){
  let preview = document.querySelector('[name="preview"]:checked').value;
-
-document.getElementById('video').src = `/dist/videos/${preview}`;
+console.log(preview);
+document.getElementById('video').src = `/Portfolio2021/dist/videos/${preview}`;
 return
 };
 
