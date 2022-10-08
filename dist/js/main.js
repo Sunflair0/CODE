@@ -109,7 +109,7 @@ function preview_select(){
 let video = document.getElementById('video');
  let preview = document.querySelector('[name="preview"]:checked').value;
 console.log(preview);
-video.setAttribute('display','visible');
+video.style.cssText = "opacity: 1; display: visible";
 video.src = `/Portfolio2021/dist/videos/${preview}`;
 return
 };
