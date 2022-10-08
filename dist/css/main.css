@@ -565,7 +565,7 @@ input[type=radio] {
   margin-left: 100%;
   cursor: pointer;
   transition: all .3s ease-in-out;
-  z-index: 5;
+  z-index: 25;
 }
 
 .projects__btns input[type=radio] {
