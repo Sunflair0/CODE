@@ -345,7 +345,7 @@
   padding-bottom: 2rem;
 }
 .projects__bio-image {
-  height: 47.8vh;
+  height: 54vh;
   width: 100%;
   background: #494e50;
   background-size: cover;
@@ -794,6 +794,7 @@
   .nav .menu-nav__link {
     text-shadow: none;
     font-size: 1.5rem;
+    transition: none;
   }
   .about__bio {
     font-size: 1.5em;
