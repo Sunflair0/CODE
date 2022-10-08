@@ -546,7 +546,7 @@ input[type=radio] {
 .video-player {
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 370px;
   margin-bottom: -11.5vh
 }
 
@@ -1030,10 +1030,6 @@ button {
     margin-top: 2vh;
     font-size: small;
   }
-
-  .video-player {
-    width: 300px;
-  }
 }
 
 @media screen and (min-width: 650px) {
@@ -1162,6 +1158,11 @@ button {
   .skills__graph__box {
     padding: 50px 0;
   }
+
+ .video-player {
+    margin-bottom: -12.5vh;
+  }
+}
 
   .contact__list {
     grid-template-columns: repeat(2, 1fr);
