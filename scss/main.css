@@ -508,8 +508,8 @@
 .video-player {
   align-items: center;
   justify-content: center;
-  width: 200px;
-  margin-bottom: -4.5vh;
+  width: 270px;
+  margin-bottom: -11.5vh;
 }
 
 #video {
@@ -519,7 +519,7 @@
   opacity: 0;
   transition: all 0.3s ease-in-out;
   display: hidden;
-  margin-bottom: -2.5vh;
+  margin-top: 1.5vh;
 }
 
 .video-close {
@@ -713,9 +713,6 @@
     margin-top: 2vh;
     font-size: small;
   }
-  .video-player {
-    width: 300px;
-  }
 }
 @media screen and (min-width: 650px) {
   .home__top {
@@ -737,6 +734,7 @@
     transform: rotate(0deg) translate(0, 0);
   }
   .story__link {
+    text-shadow: none;
     width: 75px;
     padding: 5px 10px;
   }
@@ -752,6 +750,9 @@
   }
   .skills__graph::after {
     transform: translate(10px, 9.5px);
+  }
+  .video-player {
+    width: 370px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -791,6 +792,7 @@
     padding-right: 1.5rem;
   }
   .nav .menu-nav__link {
+    text-shadow: none;
     font-size: 1.5rem;
   }
   .about__bio {
@@ -816,10 +818,10 @@
     padding: 50px 0;
   }
   #video {
-    margin-bottom: -3vh;
+    margin-top: -1vh;
   }
-  .contact__list {
-    grid-template-columns: repeat(2, 1fr);
+  .video-player {
+    margin-bottom: -12.5vh;
   }
 }
 @media screen and (min-width: 1024px) {

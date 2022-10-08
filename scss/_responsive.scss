@@ -13,10 +13,6 @@
 		margin-top: 2vh;
 		font-size: small;
 	}
-
-  .video-player {
-    width: 300px;
-  }
 }
 
 @include media-sm {
@@ -45,6 +41,7 @@
 	}
 
 	.story__link {
+		text-shadow: none;
 		width: 75px;
 		padding: 5px 10px;
 	}
@@ -64,13 +61,13 @@
 	.skills__graph::after {
 		transform: translate(10px, 9.5px);
 	}
-//   #video {
-//     margin-bottom: -6vh;
-//   }
+
+	.video-player {
+		width: 370px;
+	}
 }
 
 @include media-md {
-
 	.home__name {
 		margin-top: -2vh;
 	}
@@ -116,6 +113,7 @@
 	}
 
 	.nav .menu-nav__link {
+		text-shadow: none;
 		font-size: 1.5rem;
 	}
 
@@ -148,12 +146,12 @@
 		padding: 50px 0;
 	}
 
-  #video {
-    margin-bottom: -3vh;
-  }
+	#video {
+		margin-top: -1vh;
+	}
 
-	.contact__list {
-		grid-template-columns: repeat(2, 1fr);
+	.video-player {
+		margin-bottom: -12.5vh;
 	}
 }
 
@@ -178,6 +176,7 @@
 		padding-top: 7px;
 	}
 
+
 	.contact__list {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -187,6 +186,7 @@
 		transform: translateY(-11%);
 	}
 }
+
 
 @include media-xl {
 	.projects {

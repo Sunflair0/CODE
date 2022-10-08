@@ -161,8 +161,8 @@
 .video-player {
     align-items: center;
     justify-content: center;
-    width: 200px;
-    margin-bottom: -4.5vh;
+    width: 270px;
+    margin-bottom: -11.5vh
 }
 
 #video {
@@ -171,7 +171,7 @@
     opacity: 0;
     transition: all .3s ease-in-out;
     display: hidden;
-    margin-bottom: -2.5vh;
+    margin-top: 1.5vh;
 }
 
 .video-close {
