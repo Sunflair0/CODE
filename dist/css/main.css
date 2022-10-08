@@ -547,7 +547,7 @@ input[type=radio] {
   align-items: center;
   justify-content: center;
   width: 400px;
-  margin-bottom: -7.5vh
+  margin-bottom: -11.5vh
 }
 
 
@@ -1033,7 +1033,6 @@ button {
 
   .video-player {
     width: 300px;
-    margin-bottom: -11.5vh;
   }
 }
 
@@ -1162,10 +1161,6 @@ button {
 
   .skills__graph__box {
     padding: 50px 0;
-  }
-
-  #video {
-    margin-bottom: -3vh;
   }
 
   .contact__list {
