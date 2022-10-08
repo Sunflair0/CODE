@@ -548,7 +548,6 @@ input[type=radio] {
   align-items: center;
   justify-content: center;
   width: 400px;
-  border: 3px rgb(235, 128, 6) solid;
 margin-bottom: -4.5vh;
 }
 
