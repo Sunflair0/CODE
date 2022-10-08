@@ -1033,6 +1033,7 @@ button {
 
   .video-player {
     width: 300px;
+    margin-bottom: -11;
   }
 }
 
