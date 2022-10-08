@@ -713,6 +713,9 @@
     margin-top: 2vh;
     font-size: small;
   }
+  .video-player {
+    width: 300px;
+  }
 }
 @media screen and (min-width: 650px) {
   .home__top {
@@ -813,7 +816,7 @@
     padding: 50px 0;
   }
   #video {
-    margin-bottom: -6vh;
+    margin-bottom: -3vh;
   }
   .contact__list {
     grid-template-columns: repeat(2, 1fr);

@@ -371,14 +371,14 @@
   transform: translateY(-50%);
   border-radius: 50%;
   background: conic-gradient(#0f1312 0deg, transparent 0deg);
-  box-shadow: -6px 6px 5px -1px rgb(0, 0, 0), 3px -3px 3px -1px rgba(194, 169, 121, 0.4235294118), 6px -6px 10px -1px rgba(219, 186, 137, 0.4509803922);
+  box-shadow: -6px 6px 5px -1px rgb(0, 0, 0), 3px -3px 3px -1px rgba(194, 169, 121, 0.42), 6px -6px 10px -1px rgba(219, 186, 137, 0.45);
 }
 
 .skills__graph::after {
   content: "";
   transform: translate(4.5px, 4.4px);
   position: absolute;
-  box-shadow: inset -6px 6px 10px -1px rgb(0, 0, 0), inset 6px -6px 5px -1px rgba(238, 210, 158, 0.1647058824), inset 6px -6px 20px -1px rgba(146, 125, 83, 0.5490196078);
+  box-shadow: inset -6px 6px 10px -1px rgb(0, 0, 0), inset 6px -6px 5px -1px rgba(238, 210, 158, 0.16), inset 6px -6px 20px -1px rgba(146, 125, 83, 0.5490196078);
   height: 80%;
   width: 80%;
   background: radial-gradient(circle, rgb(49, 42, 35) 0%, #2b2a2a 50%, #000000 100%);
@@ -550,16 +550,20 @@ input[type=radio] {
   margin-bottom: -4.5vh;
 }
 
+.video-player button{
+opacity: 0
+}
+
 #video {
   object-fit: cover;
   background-size: contain;
   opacity: 0;
   transition: all .3s ease-in-out;
   display: hidden;
-  margin-bottom: -11vh;
+  margin-bottom: 4.5vh;
 }
 
-#video-close {
+.video-close {
   opacity: 0;
   margin-left: 100%;
   cursor: pointer;
@@ -1030,7 +1034,6 @@ button {
   }
 
   .video-player {
-    /* margin-top: 13vh; */
     width: 300px;
   }
 }
@@ -1081,8 +1084,6 @@ button {
   .skills__graph::after {
     transform: translate(10px, 9.5px);
   }
-
-
 }
 
 @media screen and (min-width: 768px) {
@@ -1165,7 +1166,7 @@ button {
   }
 
   #video {
-    margin-bottom: -6vh;
+    margin-bottom: -3vh;
   }
 
   .contact__list {

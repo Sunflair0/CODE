@@ -13,6 +13,10 @@
 		margin-top: 2vh;
 		font-size: small;
 	}
+
+  .video-player {
+    width: 300px;
+  }
 }
 
 @include media-sm {
@@ -141,9 +145,9 @@
 		padding: 50px 0;
 	}
 
-	#video {
-		margin-bottom: -6vh;
-	}
+  #video {
+    margin-bottom: -3vh;
+  }
 
 	.contact__list {
 		grid-template-columns: repeat(2, 1fr);
