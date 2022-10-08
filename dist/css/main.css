@@ -1159,15 +1159,15 @@ button {
     padding: 50px 0;
   }
 
- .video-player {
+  .video-player {
     margin-bottom: -12.5vh;
   }
 }
 
-  .contact__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.contact__list {
+  grid-template-columns: repeat(2, 1fr);
 }
+
 
 @media screen and (min-width: 1024px) {
   .home__top {
