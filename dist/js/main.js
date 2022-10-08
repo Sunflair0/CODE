@@ -107,23 +107,24 @@ function skillChoice() {
 let video = document.getElementById('video');
 let vidClose = document.getElementbyId("video-close");
 let vidPlayer = document.getElementsByClassName("video-player");
+let toggle__fade = document.getElementsByClassName("toggle__fade");
 let btn = document.querySelector("button");
 
 function preview_select() {
-
-    let toggle__fade = document.getElementsByClassName("toggle__fade");
     let preview = document.querySelector('[name="preview"]:checked').value;
 
-    toggle__fade.style.cssText = "color: transparent; border: none";
+    toggle__fade[0].style.cssText = "color: transparent; text-shadow: none";
+    vidClose.style.cssText = "opacity: 1";
     video.style.cssText = "opacity: 1; display: visible";
     video.src = `/Portfolio2021/dist/videos/${preview}`;
-    vidClose.style.cssText = "opacity: 1";
     return
 };
 
 btn.addEventListener("click", videoClose);
 function videoClose() {
     video.style.cssText = "opacity: 0; display: hidden";
-    vidPlayer.style.cssText = "opacity: 0";
+    vidClose.style.cssText = "opacity: 0";
+    toggle__fade[0].style.cssText = "color: transparent; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
+    return
 };
 

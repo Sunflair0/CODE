@@ -559,7 +559,7 @@ input[type=radio] {
   margin-bottom: -11vh;
 }
 
-.video-close {
+#video-close {
   opacity: 0;
   margin-left: 100%;
   cursor: pointer;
