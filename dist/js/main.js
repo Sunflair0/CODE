@@ -112,7 +112,6 @@ let video = document.getElementById('video');
 console.log(preview);
 
 
-document.querySelector("#project").classList.contains("project__greeting")
 video.style.cssText = "opacity: 1; display: visible";
 video.src = `/Portfolio2021/dist/videos/${preview}`;
 return
