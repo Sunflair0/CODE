@@ -546,7 +546,7 @@ input[type=radio] {
 .video-player {
   align-items: center;
   justify-content: center;
-  width: 370px;
+  width: 270px;
   margin-bottom: -11.5vh
 }
 
@@ -565,6 +565,7 @@ input[type=radio] {
   margin-left: 100%;
   cursor: pointer;
   transition: all .3s ease-in-out;
+  z-index: 5;
 }
 
 .projects__btns input[type=radio] {
@@ -1077,6 +1078,10 @@ button {
 
   .skills__graph::after {
     transform: translate(10px, 9.5px);
+  }
+
+  .video-player {
+    width: 370px;
   }
 }
 
