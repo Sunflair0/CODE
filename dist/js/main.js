@@ -110,14 +110,13 @@ let vidPlayer = document.getElementsByClassName("video-player");
 let toggle__fade = document.getElementsByClassName("toggle__fade");
 
 
-function preview_select() {
+function previewSelect() {
     let preview = document.querySelector('[name="preview"]:checked').value;
 
     toggle__fade[0].style.cssText = "color: transparent; text-shadow: none";
     vidClose[0].style.cssText = "opacity: 1";
     video.style.cssText = "opacity: 1; display: visible";
     video.src = `/Portfolio2021/dist/videos/${preview}`;
-   return 
 };
 
 vidClose[0].addEventListener("click", videoClose);
@@ -125,9 +124,14 @@ function videoClose() {
     video.style.cssText = "opacity: 0; display: hidden";
     vidClose[0].style.cssText = "opacity: 0";
     toggle__fade[0].style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
-
-let reset = document.querySelector('input[type=radio][name=preview]:checked');
-reset.checked = false;
+    resetChecked();
 };
+
+function resetChecked() {
+    let reset = document.querySelector('input[type=radio][name=preview]:checked');
+    reset.checked = false;
+};
+
+
 
 
