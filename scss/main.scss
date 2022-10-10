@@ -94,15 +94,15 @@ footer {
     right: 1rem;
     text-align: right;
     padding: 1rem;
-    color: set-text-color($primary-color);
+  color: antiquewhite;
     transform: rotate(90deg) translate(-3rem, -5rem);
 }
 
 .orange-line {
-    top: 47vh;
-    height: 3px;
-    width: 100%;
-    background-color: $secondary-color;
+    top: 46.3vh;
+  height: 3px;
+  width: 100%;
+  background-color: #ef7f31;
 }
 
 button {

@@ -7,17 +7,73 @@
 	& table,
 	tr,
 	td {
-		border: 3px solid #4d4d4d80;
+		border: 3px solid rgba(77, 77, 77, 0.5);
 		margin: 0 auto;
 		padding: 4px;
 	}
 
+	&::after {
+		content: "";
+		position: fixed;
+		inset: 0;
+		background-image: url('/Portfolio2021/dist/img/tea.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+		opacity: .3;
+		z-index: -1;
+		height: 300vh;
+		width: 100%;
+	}
+
+	&ProjectName {
+		color: rgb(238, 151, 38);
+		font-style: italic;
+		cursor: pointer;
+		text-decoration: underline rgb(255, 136, 0);
+		transition: all 3s ease-in-out;
+
+		&:visited {
+			color: rgb(255, 208, 147);
+			text-decoration: underline rgb(255, 208, 147);
+		}
+
+		&:hover {
+			color: rgb(243, 68, 14);
+			text-decoration: underline rgb(255, 60, 0);
+		}
+	}
+
+	&_content p {
+		background-color: rgba(77, 77, 77, 0.5);
+		color: antiquewhite;
+		line-height: initial;
+		padding: 20px 15px;
+		margin: 10vh auto 5vh;
+		width: 75%;
+		outline: 3px solid rgba(77, 77, 77, 0.5);
+		outline-offset: 5px;
+		text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
+		font-weight: 400;
+
+		&:first-child {
+			display: flex;
+			justify-content: center;
+			border: 2px solid rgba(79, 79, 79, 0.55);
+			color: rgb(255, 255, 255);
+			font-size: 20px;
+		}
+	}
+
 	& tr:nth-child(even) {
-		background-color: #23272a80;
+		background-color: rgba(35, 39, 42, 0.5);
+		color: rgb(238, 151, 38);
 	}
 
 	& tr:nth-child(odd) {
-		background-color: #4d4d4d80;
+		background-color: rgba(35, 39, 42, 0.5);
+		color: antiquewhite;
 	}
 
 	&__link {
@@ -25,53 +81,50 @@
 		color: rgb(0, 0, 0);
 		border-radius: 20px;
 		text-align: center;
-		height: auto;
-		width: 50px;
-		padding: 3px 7px;
+		padding: 4px 15px;
+		padding-bottom: 6px;
 		background-color: #ef7f31;
 		box-shadow: inset 0 0 10px black;
 		font-weight: 600;
 		transition: .2s all;
 		bottom: 0;
 		position: fixed;
+		margin: 20px 10px;
 
-		&__link:hover {
+		&:hover {
 			scale: 1.1;
-			border: #000000 solid 1px;
+			border: hsla(265, 85%, 51%, 0.9) solid 1px;
 		}
 
 		a {
-			color: black;
-
-			&::after {
-				content: "";
-				position: fixed;
-				inset: 0;
-				background-image: url('/Portfolio2021/dist/img/tea.png');
-				background-repeat: no-repeat;
-				background-position: center center;
-				background-size: cover;
-				background-attachment: fixed;
-				opacity: .3;
-				z-index: -1;
-				height: 300vh;
-				width: 100%;
-			}
-
+			font-size: clamp(12px, 3vw, 16px);
+			padding-bottom: 10px;
+			text-shadow: none;
+			color: rgb(0, 0, 0);
 		}
 	}
 }
 
-.story_content p {
-	color: rgb(241, 226, 206);
-	display: flex;
-	line-height: initial;
-	padding: 20px 15px;
-	margin: 10vh auto 5vh;
-	width: 75%;
-	background: #4d4d4d80;
-	border: 3px solid #4d4d4d80;
-	outline-offset: 5px;
-	text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
-	font-weight: 600;
+.table_story {
+	border: 3px solid rgba(77, 77, 77, 0.5);
+	margin: 0 auto;
+	padding: 3px;
+	width: 60%;
+
+	& td,
+	tr {
+		line-height: normal;
+		padding: 10px;
+	}
+
+	& td:first-child {
+		border-right: 3px rgb(35, 39, 42) solid;
+	}
+}
+
+#storyHeart {
+	color: rgba(252, 44, 44, 0.86);
+	font-size: 17px;
+	position: relative;
+	top: 2px;
 }

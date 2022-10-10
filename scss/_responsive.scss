@@ -41,7 +41,6 @@
 	}
 
 	.story__link {
-		text-shadow: none;
 		width: 75px;
 		padding: 5px 10px;
 	}
@@ -183,7 +182,6 @@
 		transform: translateY(-11%);
 	}
 }
-
 
 @include media-xl {
 	.projects {

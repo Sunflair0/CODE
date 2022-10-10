@@ -131,8 +131,8 @@
 
         &__link:visited {
             text-shadow: none;
-            color: set-text-color($secondary-accent-color);
-            text-decoration: underline set-text-color($secondary-accent-color);
+  color: rgb(148, 147, 247);
+  text-decoration: underline #7119ed;
             background-color: rgba(98, 98, 98, 0.5);
         }
     }

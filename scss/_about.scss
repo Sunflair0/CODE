@@ -9,18 +9,17 @@
         3px 3px 5px rgba($primary-color, .9);
 
     &__bio-image {
-        background: 494e50;
+        background: #494e50;
         position: fixed;
         top: 0;
-        height: 47.8vh;
+        height: 49vh;
         width: 100%;
-        z-index: 1;
+        z-index: 10;
 
         p {
             margin-bottom: 1rem;
             font-weight: 500;
             line-height: 1.2em;
-            user-select: none;
 
             &:first-child {
                 margin-top: -1vh;
@@ -28,12 +27,12 @@
 
             a {
                 text-decoration: underline #ef7f31 1px;
-                font-weight: normal;
             }
 
             a:visited {
                 color: rgb(203, 202, 243);
-                text-decoration: underline rgb(203, 202, 243);
+                -webkit-text-decoration: underline rgb(148, 147, 247);
+                text-decoration: underline rgb(148, 147, 247);
             }
 
             a:hover {
@@ -43,7 +42,7 @@
         }
 
         .orange-line {
-            top: 47.8vh;
+            top: 49vh;
             height: 3px;
             width: 100%;
             background-color: $secondary-color;
@@ -58,12 +57,12 @@
         .gray-line1 {
             height: 5px;
             width: 100%;
-            background: 494e50;
+            background: #494e50;
         }
     }
 
     &__bio {
-        height: 47.8vh;
+        height: 49vh;
         width: 100%;
         text-align: center;
         font-size: clamp(1.3rem, 2vw, 2rem);
@@ -74,10 +73,10 @@
             width: 15px;
 
             &-thumb {
-                background-color: $secondary-color;
+                background-color: #494e50;
                 box-shadow: inset 0 0 7px #000000c5;
-                border-radius: 5px;
-                border: 2px solid #3c4923;
+                border-radius: 10px;
+                border: 2px solid rgb(38, 49, 37);
                 background-clip: content-box;
             }
 
@@ -92,8 +91,14 @@
             text-shadow: 3px 3px 4px rgb(46, 19, 0),
                 4px 4px 1px rgb(0, 0, 0);
 
+            & p {
+                padding-bottom: .75rem;
+                font-size: 1.5rem;
+            }
+
             &:first-child {
                 margin-top: 7vh;
+
             }
         }
     }
@@ -105,18 +110,22 @@
 
         .jobs {
             width: 60vw;
-            margin: 1rem auto 1rem;
+            margin: 2rem auto;
             display: grid;
             grid-template-columns: 1fr;
-            grid-gap: 2rem;
+            grid-gap: 1.2rem;
 
 
             &__job {
-                background: lighten($primary-color, 10%);
+                background: #494e50;
                 padding: 0.5rem;
-                border-bottom: 3px solid $secondary-color;
-                outline: 3px solid lighten($primary-color, 10%);
-                text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
+                border-bottom: 3px solid #ef7f31;
+                outline: 3px solid #494e50;
+                text-shadow: -1px -1px 0 rgb(20, 20, 20),
+                    1px -1px rgb(20, 20, 20),
+                    2px -1px 0 rgb(20, 20, 20),
+                    -1px 1px 0 rgb(20, 20, 20),
+                    1px 1px 0 rgb(20, 20, 20);
                 outline-offset: 5px;
 
                 h2 {
@@ -136,5 +145,11 @@
                 }
             }
         }
+    }
+
+    & .social-icons {
+        display: flex;
+        flex-direction: column;
+        font-size: clamp(10px, 2vw, 15px);
     }
 }

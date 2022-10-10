@@ -22,17 +22,17 @@
     }
 
     .orange-line {
-        top: 50vh;
-        height: 3px;
-        width: 100%;
-        background-color: $secondary-color;
+         top: 35vh;
+  height: 3px;
+  width: 100%;
+  background-color: #ef7f31;
     }
 
     .gray-line {
-        top: 50vh;
-        height: 5px;
-        width: 100%;
-        background: $primary-color;
+     top: 35vh;
+  height: 5px;
+  width: 100%;
+  background: #23272a;
     }
 
     .bottom {
@@ -94,16 +94,15 @@
         text-align: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-
     }
 
     &__btn {
         opacity: 0;
-        color: set-text-color($secondary-color);
+        color: #000;
         @include transition-ease;
 
         &:hover {
-            color: set-text-color(set-text-color($secondary-color));
+ color: antiquewhite;
         }
     }
 
@@ -153,11 +152,6 @@
     }
 }
 
-.preview__box {
-    border: rgb(140, 26, 67) 2px solid;
-    margin-top: 12vh;
-}
-
 .video-player {
     align-items: center;
     justify-content: center;
@@ -183,18 +177,17 @@
 
 .projects__btns input[type=radio] {
     cursor: pointer;
-    transform: translateY(-4px);
+     transform: translateY(-7px);
     opacity: 0;
 }
 
 .projects__btn.fas.fa-eye {
-    color: black;
-    transform: translate(4px, 9px);
-    transition: all .3s ease-in-out;
-    z-index: 0;
-    cursor: pointer;
+     transform: translate(4px, 7px);
+  transition: all .3s ease-in-out;
+  width: 100%;
+  cursor: pointer;
 }
 
 .projects__btn .fas.fa-eye:hover {
-    color: white;
+     color: antiquewhite;
 }
