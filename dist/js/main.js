@@ -29,18 +29,18 @@ function toggleMenu() {
 
 const vid_select = document.getElementById('')
 
-function selectVid() {
-    player.src = this.getAttribute('data-video-url');
-    player.load();
-    player.play();
-}
+// function selectVid() {
+//     player.src = this.getAttribute('data-video-url');
+//     player.load();
+//     player.play();
+// }
 
-var videoPlayOnSelect = document.querySelectorAll("button"),
-    player = document.getElementById("player");
+// var videoPlayOnSelect = document.querySelectorAll("button"),
+//     player = document.getElementById("player");
 
-for (var i = 0; i < videoPlayOnSelect.length; i++) {
-    videoPlayOnSelect[i].addEventListener("click", selectVid);
-}
+// for (var i = 0; i < videoPlayOnSelect.length; i++) {
+//     videoPlayOnSelect[i].addEventListener("click", selectVid);
+// }
 
 ///// // scroll fade
 const fadeElements = document.querySelectorAll(".section_content");
@@ -72,8 +72,6 @@ document.addEventListener("DOMContentLoaded", revealOnScroll);
 window.addEventListener('scroll', revealOnScroll);
 
 // /////skills progress bars
-
-
 const percent = 0;
 
 function skillChoice() {
@@ -108,7 +106,10 @@ let video = document.getElementById('video');
 let vidClose = document.getElementsByClassName("video-close");
 let vidPlayer = document.getElementsByClassName("video-player");
 let toggle__fade = document.getElementsByClassName("toggle__fade");
-
+let burger = document.getElementsByClassName("menu-btn");
+let nav_ = document.getElementsByClassName("nav");
+let open = document.getElementsByClassName("open");
+let menu = document.getElementsByClassName("menu-nav");
 
 function previewSelect() {
     let preview = document.querySelector('[name="preview"]:checked').value;
@@ -117,9 +118,11 @@ function previewSelect() {
     vidClose[0].style.cssText = "opacity: 1";
     video.style.cssText = "opacity: 1; display: visible";
     video.src = `/Portfolio2021/dist/videos/${preview}`;
+    menuToBurger();
 };
 
 vidClose[0].addEventListener("click", videoClose);
+
 function videoClose() {
     video.style.cssText = "opacity: 0; display: hidden";
     vidClose[0].style.cssText = "opacity: 0";
@@ -130,8 +133,27 @@ function videoClose() {
 function resetChecked() {
     let reset = document.querySelector('input[type=radio][name=preview]:checked');
     reset.checked = false;
+    burgerToMenu();
 };
 
+function menuToBurger() {
+    
+    nav_[0].style.display = "none";
+ 
+    burger[0].style.visibility = "visible";
+}
 
+function burgerToMenu() {
+    let w = document.documentElement.clientWidth || window.innerWidth;
 
+    if (w >= 768) {
+        nav_[0].style.display = "hidden";
+        burger[0].style.visibility = "hidden";
+        open[0].style.visibility = "hidden";
+    } else {
+        burger[0].style.visibility = "visible";
+        open[0].style.visibility = "visible";
+        // menu[0].style.visibility = "hidden";
 
+    }
+}

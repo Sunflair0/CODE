@@ -5,11 +5,7 @@ $primary-accent-color: antiquewhite;
 $secondary-accent-color: #7119ed;
 $secondary-accent-color2: #635264;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+
 
 @mixin outline {
     text-shadow: -1px 1px 0 #000,
@@ -32,6 +28,11 @@ $secondary-accent-color2: #635264;
     }
 }
 
+@mixin media-mh {
+    @media screen and (max-height: 640px) {
+        @content;
+    }
+}
 @mixin media-smh {
     @media screen and (max-height: 500px) {
         @content;

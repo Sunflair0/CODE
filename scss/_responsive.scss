@@ -1,3 +1,12 @@
+@include media-mh {
+#video {
+margin-left: 30%;
+}
+.video-close {
+margin-right: 30%;
+}
+    
+}
 @include media-smh {
 	.home__top {
 		margin-top: 5vh;
@@ -140,10 +149,6 @@
 
 	.skills__graph__box {
 		padding: 50px 0;
-	}
-
-	#video {
-		margin-top: -1vh;
 	}
 
 	.video-player {
