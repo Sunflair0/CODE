@@ -31,7 +31,7 @@
 		font-style: italic;
 		cursor: pointer;
 		text-decoration: underline rgb(255, 136, 0);
-		transition: all 3s ease-in-out;
+		transition: all .3s ease-in-out;
 
 		&:visited {
 			color: rgb(255, 208, 147);
@@ -44,24 +44,29 @@
 		}
 	}
 
-	&_content p {
-		background-color: rgba(77, 77, 77, 0.5);
-		color: antiquewhite;
-		line-height: initial;
-		padding: 20px 15px;
-		margin: 10vh auto 5vh;
-		width: 75%;
-		outline: 3px solid rgba(77, 77, 77, 0.5);
-		outline-offset: 5px;
-		text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
-		font-weight: 400;
+	&_content {
+		height: 100%;
+		border: 1px solid transparent;
 
-		&:first-child {
-			display: flex;
-			justify-content: center;
-			border: 2px solid rgba(79, 79, 79, 0.55);
-			color: rgb(255, 255, 255);
-			font-size: 20px;
+		& p {
+			background-color: rgba(77, 77, 77, 0.5);
+			color: antiquewhite;
+			line-height: initial;
+			padding: 20px 15px;
+			margin: 7vh auto;
+			width: 75%;
+			outline: 3px solid rgba(77, 77, 77, 0.5);
+			outline-offset: 5px;
+			text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
+			font-weight: 400;
+
+			&:first-child {
+				display: flex;
+				justify-content: center;
+				border: 2px solid rgba(79, 79, 79, 0.55);
+				color: rgb(255, 255, 255);
+				font-size: 20px;
+			}
 		}
 	}
 
@@ -71,8 +76,14 @@
 	}
 
 	& tr:nth-child(odd) {
-		background-color: rgba(35, 39, 42, 0.5);
+		background-color: rgba(79, 79, 79, 0.55);
 		color: antiquewhite;
+	}
+
+	& .lighter {
+		border: 2px solid rgba(79, 79, 79, 0.356);
+		background-color: rgba(35, 39, 42, 0.5);
+		color: rgb(238, 151, 38);
 	}
 
 	&__link {
@@ -88,7 +99,7 @@
 		transition: .2s all;
 		bottom: 0;
 		position: fixed;
-		margin: 20px 10px;
+		margin: 10px;
 
 		&:hover {
 			scale: 1.1;
