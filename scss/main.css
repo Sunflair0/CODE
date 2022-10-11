@@ -333,6 +333,44 @@
   font-size: clamp(10px, 2vw, 15px);
 }
 
+#arrow {
+  opacity: 0;
+  font-size: large;
+  margin-bottom: 10px;
+  transform: translate(100px, -5px);
+  -webkit-animation: arrow 2.5s infinite ease;
+          animation: arrow 2.5s infinite ease;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translate(50%, -5px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -5px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translate(50%, -5px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -5px);
+  }
+}
 .skills {
   background: #494e50;
   border: 3px #494e50 solid;
@@ -976,7 +1014,8 @@ input[type=radio] {
 @media screen and (max-height: 500px) {
   .home__top {
     margin-top: 5vh;
-
+    height: 29vh;
+    font-size: smaller;
   }
   .home__name {
     margin-top: -1.5vh;
@@ -1021,6 +1060,42 @@ input[type=radio] {
   }
   .video-player {
     width: 370px;
+  }
+  #arrow {
+    opacity: 0;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    transform: translate(100px, -12px);
+    -webkit-animation: arrow 2.5s infinite ease;
+    animation: arrow 2.5s infinite ease;
+  }
+  @-webkit-keyframes arrow {
+    0% {
+      opacity: 0;
+      transform: translate(50%, -12px);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -12px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -12px);
+    }
+  }
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translate(50%, -12px);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -12px);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -12px);
   }
 }
 @media screen and (min-width: 768px) {

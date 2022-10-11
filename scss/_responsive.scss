@@ -1,12 +1,14 @@
 @include media-mh {
-#video {
-margin-left: 30%;
+	#video {
+		margin-left: 30%;
+	}
+
+	.video-close {
+		margin-right: 30%;
+	}
+
 }
-.video-close {
-margin-right: 30%;
-}
-    
-}
+
 @include media-smh {
 	.home__top {
 		margin-top: 5vh;
@@ -69,7 +71,51 @@ margin-right: 30%;
 	.video-player {
 		width: 370px;
 	}
+
+	#arrow {
+		opacity: 0;
+		font-size: xx-large;
+		margin-bottom: 10px;
+		transform: translate(100px, -12px);
+		-webkit-animation: arrow 2.5s infinite ease;
+		animation: arrow 2.5s infinite ease;
+	}
+
+	@-webkit-keyframes arrow {
+		0% {
+			opacity: 0;
+			transform: translate(50%, -12px);
+		}
+
+		50% {
+			opacity: 1;
+			transform: translate(-50%, -12px);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translate(-50%, -12px);
+		}
+	}
 }
+
+@keyframes arrow {
+	0% {
+		opacity: 0;
+		transform: translate(50%, -12px);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translate(-50%, -12px);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -12px);
+	}
+}
+
 
 @include media-md {
 	.home__name {

@@ -153,3 +153,29 @@
         font-size: clamp(10px, 2vw, 15px);
     }
 }
+
+#arrow {
+  opacity: 0;
+  font-size: large;
+  margin-bottom: 10px;
+  transform: translate(100px, -5px);
+  animation: arrow 2.5s infinite ease;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translate(50%, -5px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -5px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -5px);
+  }
+
+}
