@@ -801,8 +801,8 @@ input[type=radio] {
   opacity: 0;
 }
 
-.projects__btn.fas.fa-eye {
-  transform: translate(4px, 7px);
+.projects__btn .fas.fa-eye {
+  transform: translate(4px, 7.3px);
   transition: all 0.3s ease-in-out;
   width: 100%;
   cursor: pointer;
