@@ -27,21 +27,6 @@ function toggleMenu() {
     }
 }
 
-const vid_select = document.getElementById('')
-
-// function selectVid() {
-//     player.src = this.getAttribute('data-video-url');
-//     player.load();
-//     player.play();
-// }
-
-// var videoPlayOnSelect = document.querySelectorAll("button"),
-//     player = document.getElementById("player");
-
-// for (var i = 0; i < videoPlayOnSelect.length; i++) {
-//     videoPlayOnSelect[i].addEventListener("click", selectVid);
-// }
-
 ///// // scroll fade
 const fadeElements = document.querySelectorAll(".section_content");
 const fadeJobs = document.querySelectorAll(".job_content");
@@ -106,10 +91,6 @@ let video = document.getElementById('video');
 let vidClose = document.getElementsByClassName("video-close");
 let vidPlayer = document.getElementsByClassName("video-player");
 let toggle__fade = document.getElementsByClassName("toggle__fade");
-let burger = document.getElementsByClassName("menu-btn");
-let nav_ = document.getElementsByClassName("nav");
-let open = document.getElementsByClassName("open");
-let menu = document.getElementsByClassName("menu-nav");
 
 function previewSelect() {
     let preview = document.querySelector('[name="preview"]:checked').value;
@@ -135,25 +116,3 @@ function resetChecked() {
     reset.checked = false;
     burgerToMenu();
 };
-
-function menuToBurger() {
-    
-    nav_[0].style.display = "none";
- 
-    burger[0].style.visibility = "visible";
-}
-
-function burgerToMenu() {
-    let w = document.documentElement.clientWidth || window.innerWidth;
-
-    if (w >= 768) {
-        nav_[0].style.display = "hidden";
-        burger[0].style.visibility = "hidden";
-        open[0].style.visibility = "hidden";
-    } else {
-        burger[0].style.visibility = "visible";
-        open[0].style.visibility = "visible";
-        // menu[0].style.visibility = "hidden";
-
-    }
-}

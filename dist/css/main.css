@@ -1129,10 +1129,18 @@ input[type=radio] {
 @media screen and (max-height: 640px) {
   #video {
     margin-left: 30%;
+    margin-bottom: -6vh;
   }
 
   .video-close {
-    margin-right: 30%;
+    margin-left: 130%;
+
+  }
+
+  .video-player {
+    justify-content: center;
+    margin-bottom: -2.5vh;
+    margin-right: 30vw;
   }
 }
 
