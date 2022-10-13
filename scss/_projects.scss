@@ -155,8 +155,7 @@
 .video-player {
     align-items: center;
     justify-content: center;
-    width: 270px;
-    margin-bottom: -11.5vh
+    width: 480px;
 }
 
 #video {
@@ -166,7 +165,6 @@ position: fixed;
     opacity: 0;
     transition: all .3s ease-in-out;
     display: hidden;
-    margin-top: 1.5vh;
 }
 
 .video-close {

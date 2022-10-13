@@ -774,8 +774,7 @@ input[type=radio] {
 .video-player {
   align-items: center;
   justify-content: center;
-  width: 270px;
-  margin-bottom: -11.5vh;
+  width: 480px;
 }
 
 #video {
@@ -785,7 +784,6 @@ input[type=radio] {
   opacity: 0;
   transition: all 0.3s ease-in-out;
   display: hidden;
-  margin-top: 1.5vh;
 }
 
 .video-close {
@@ -1128,8 +1126,8 @@ input[type=radio] {
 
 @media screen and (max-height: 640px) {
   #video {
-    margin-left: 30%;
-    margin-bottom: -6vh;
+    margin-left: 60%;
+    margin-bottom: -20vh;
   }
 
   .video-close {
