@@ -697,6 +697,7 @@ input[type=radio] {
   -o-object-fit: cover;
      object-fit: cover;
   background-size: contain;
+  margin-bottom: -7vh;
   opacity: 0;
   transition: all 0.3s ease-in-out;
   display: hidden;
@@ -1014,13 +1015,13 @@ input[type=radio] {
 @media screen and (max-height: 640px) {
   #video {
     margin-left: 30%;
-    margin-bottom: -20vh;
+    margin-bottom: -12vh;
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
   .video-close {
-    margin-left: 130%;
+    margin-left: 95%;
   }
   .video-player {
     justify-content: center;

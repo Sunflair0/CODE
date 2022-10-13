@@ -22,17 +22,17 @@
     }
 
     .orange-line {
-         top: 35vh;
-  height: 3px;
-  width: 100%;
-  background-color: #ef7f31;
+        top: 35vh;
+        height: 3px;
+        width: 100%;
+        background-color: #ef7f31;
     }
 
     .gray-line {
-     top: 35vh;
-  height: 5px;
-  width: 100%;
-  background: #23272a;
+        top: 35vh;
+        height: 5px;
+        width: 100%;
+        background: #23272a;
     }
 
     .bottom {
@@ -102,7 +102,7 @@
         @include transition-ease;
 
         &:hover {
- color: antiquewhite;
+            color: antiquewhite;
         }
     }
 
@@ -159,9 +159,10 @@
 }
 
 #video {
-position: fixed;
+    position: fixed;
     object-fit: cover;
     background-size: contain;
+    margin-bottom: -7vh;
     opacity: 0;
     transition: all .3s ease-in-out;
     display: hidden;
@@ -176,17 +177,17 @@ position: fixed;
 
 .projects__btns input[type=radio] {
     cursor: pointer;
-     transform: translateY(-7px);
+    transform: translateY(-7px);
     opacity: 0;
 }
 
 .projects__btn .fas.fa-eye {
-  transform: translate(4px, 7.3px);
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  cursor: pointer;
+    transform: translate(4px, 7.3px);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    cursor: pointer;
 }
 
 .projects__btn .fas.fa-eye:hover {
-     color: antiquewhite;
+    color: antiquewhite;
 }
