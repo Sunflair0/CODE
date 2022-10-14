@@ -154,28 +154,55 @@
     }
 }
 
-#arrow {
+
+#arrow1 {
   opacity: 0;
+  color: #26d1e8;
   font-size: large;
   margin-bottom: 10px;
-  transform: translate(100px, -5px);
-  animation: arrow 2.5s infinite ease;
+  -webkit-animation: arrow 2.5s infinite ease;
+  animation: arrow 2s 1s infinite ease;
+}
+
+#arrow2 {
+  opacity: 0;
+  color: #26d1e8;
+  font-size: large;
+  margin-bottom: 10px;
+  -webkit-animation: arrow 2.5s infinite ease;
+  animation: arrow 2s infinite ease;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+    transform: translate(100%, -5px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(-100%, -5px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-100%, -5px);
+  }
 }
 
 @keyframes arrow {
   0% {
     opacity: 0;
-    transform: translate(50%, -5px);
+    transform: translate(100%, -5px);
   }
 
   50% {
     opacity: 1;
-    transform: translate(-50%, -5px);
+    transform: translate(-100%, -5px);
   }
 
   100% {
     opacity: 0;
-    transform: translate(-50%, -5px);
+    transform: translate(-100%, -5px);
   }
-
 }

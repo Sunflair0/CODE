@@ -333,42 +333,50 @@
   font-size: clamp(10px, 2vw, 15px);
 }
 
-#arrow {
+#arrow1 {
   opacity: 0;
+  color: #26d1e8;
   font-size: large;
   margin-bottom: 10px;
-  transform: translate(100px, -5px);
   -webkit-animation: arrow 2.5s infinite ease;
-          animation: arrow 2.5s infinite ease;
+  animation: arrow 2s 1s infinite ease;
+}
+
+#arrow2 {
+  opacity: 0;
+  color: #26d1e8;
+  font-size: large;
+  margin-bottom: 10px;
+  -webkit-animation: arrow 2.5s infinite ease;
+  animation: arrow 2s infinite ease;
 }
 
 @-webkit-keyframes arrow {
   0% {
     opacity: 0;
-    transform: translate(50%, -5px);
+    transform: translate(100%, -5px);
   }
   50% {
     opacity: 1;
-    transform: translate(-50%, -5px);
+    transform: translate(-100%, -5px);
   }
   100% {
     opacity: 0;
-    transform: translate(-50%, -5px);
+    transform: translate(-100%, -5px);
   }
 }
-
 @keyframes arrow {
   0% {
     opacity: 0;
-    transform: translate(50%, -5px);
+    transform: translate(100%, -5px);
   }
   50% {
     opacity: 1;
-    transform: translate(-50%, -5px);
+    transform: translate(-100%, -5px);
   }
   100% {
     opacity: 0;
-    transform: translate(-50%, -5px);
+    transform: translate(-100%, -5px);
   }
 }
 .skills {
@@ -1079,13 +1087,10 @@ input[type=radio] {
   .video-player {
     width: 370px;
   }
-  #arrow {
-    opacity: 0;
+  #arrow1,
+#arrow2 {
     font-size: xx-large;
     margin-bottom: 10px;
-    transform: translate(100px, -12px);
-    -webkit-animation: arrow 2.5s infinite ease;
-    animation: arrow 2.5s infinite ease;
   }
   @-webkit-keyframes arrow {
     0% {
@@ -1094,26 +1099,26 @@ input[type=radio] {
     }
     50% {
       opacity: 1;
-      transform: translate(-50%, -12px);
+      transform: translate(-40%, -12px);
     }
     100% {
       opacity: 0;
-      transform: translate(-50%, -12px);
+      transform: translate(-40%, -12px);
     }
   }
-}
-@keyframes arrow {
-  0% {
-    opacity: 0;
-    transform: translate(50%, -12px);
-  }
-  50% {
-    opacity: 1;
-    transform: translate(-50%, -12px);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -12px);
+  @keyframes arrow {
+    0% {
+      opacity: 0;
+      transform: translate(50%, -12px);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-40%, -12px);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-40%, -12px);
+    }
   }
 }
 @media screen and (min-width: 768px) {
