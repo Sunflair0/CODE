@@ -154,23 +154,22 @@
     }
 }
 
-
 #arrow1 {
   opacity: 0;
-  color: #26d1e8;
+  color: #58E7BC;
   font-size: large;
   margin-bottom: 10px;
-  -webkit-animation: arrow 2.5s infinite ease;
-  animation: arrow 2s 1s infinite ease;
+  -webkit-animation: arrow 3s 1.5s infinite ease;
+  animation: arrow 3s 1.5s infinite ease;
 }
 
 #arrow2 {
   opacity: 0;
-  color: #26d1e8;
+  color: #58E7BC;
   font-size: large;
   margin-bottom: 10px;
-  -webkit-animation: arrow 2.5s infinite ease;
-  animation: arrow 2s infinite ease;
+  -webkit-animation: arrow 3s infinite ease;
+  animation: arrow 3s infinite ease;
 }
 
 @-webkit-keyframes arrow {

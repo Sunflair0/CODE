@@ -335,20 +335,20 @@
 
 #arrow1 {
   opacity: 0;
-  color: #26d1e8;
+  color: #58E7BC;
   font-size: large;
   margin-bottom: 10px;
-  -webkit-animation: arrow 2.5s infinite ease;
-  animation: arrow 2s 1s infinite ease;
+  -webkit-animation: arrow 3s 1.5s infinite ease;
+  animation: arrow 3s 1.5s infinite ease;
 }
 
 #arrow2 {
   opacity: 0;
-  color: #26d1e8;
+  color: #58E7BC;
   font-size: large;
   margin-bottom: 10px;
-  -webkit-animation: arrow 2.5s infinite ease;
-  animation: arrow 2s infinite ease;
+  -webkit-animation: arrow 3s infinite ease;
+  animation: arrow 3s infinite ease;
 }
 
 @-webkit-keyframes arrow {
@@ -1095,11 +1095,11 @@ input[type=radio] {
   @-webkit-keyframes arrow {
     0% {
       opacity: 0;
-      transform: translate(50%, -12px);
+      transform: translate(40%, -12px);
     }
     50% {
       opacity: 1;
-      transform: translate(-40%, -12px);
+      transform: translate(25%, -12px);
     }
     100% {
       opacity: 0;
@@ -1109,11 +1109,11 @@ input[type=radio] {
   @keyframes arrow {
     0% {
       opacity: 0;
-      transform: translate(50%, -12px);
+      transform: translate(40%, -12px);
     }
     50% {
       opacity: 1;
-      transform: translate(-40%, -12px);
+      transform: translate(25%, -12px);
     }
     100% {
       opacity: 0;

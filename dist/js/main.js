@@ -113,6 +113,42 @@ function videoClose() {
 
 function resetChecked() {
     let reset = document.querySelector('input[type=radio][name=preview]:checked');
-    reset.checked = false;
-    burgerToMenu();
+    if (reset) {
+        reset.checked = 'false'
+    }
+    menuToBurger();
 };
+
+// /////Menu when video-player active
+
+let w = document.documentElement.clientWidth || window.innerWidth;
+
+
+function menuToBurger() {
+    if (w >= 768) {
+nav.classList.add('open');
+        nav.style.visibility = "hidden";
+        
+        menuNav.style.cssText = "transform: translateY(100%); visibility: visible; display: flex; flex-flow: column wrap; align-items: center; justify-content: center; min-width: 100vw; height: 100vh; overflow: hidden; background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #23272a 60%, #23272a 100%); list-style-type: none; padding-right: 1rem; transition: all 0.3s ease-in-out; menu-left: 0;";
+        hamburger.style.visibility = "visible";
+        menuBtn.style.visibility = "visible";
+
+    }
+
+    else {
+        menuNav.style.cssText = "transform: translateY(100%)";
+    }
+}
+
+function burgerToMenu() {
+
+    if (w >= 768) {
+        nav.style.visibility = "visible";
+        menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%; background: transparent; text-align: left;"; menuBtn.style.visibility = "hidden";
+        hamburger.style.visibility = "hidden";
+        menuBtn.style.visibility = "hidden";
+
+    } else {
+        return;
+    }
+}
