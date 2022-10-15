@@ -1,22 +1,3 @@
-@include media-mh {
-	#video {
-		margin-left: 30%;
-		margin-bottom: -12vh;
-		max-width: fit-content;
-	}
-
-	.video-close {
-		margin-left: 95%;
-
-	}
-
-	.video-player {
-		justify-content: center;
-		margin-bottom: -2.5vh;
-		margin-right: 30vw;
-	}
-}
-
 @include media-smh {
 	.home__top {
 		margin-top: 5vh;
@@ -76,48 +57,51 @@
 		transform: translate(10px, 9.5px);
 	}
 
-	.video-player {
-		width: 370px;
+	#video {
+		height: 90%;
 	}
+
 
 	#arrow1,
 	#arrow2 {
 		font-size: xx-large;
-		margin-bottom: 10px;
+		transform: translate(10px, -12px);
 	}
 
 
 	@-webkit-keyframes arrow {
 		0% {
 			opacity: 0;
-			transform: translate(40%, -12px);
+			transform: translate(50%, -12px);
 		}
 
 		50% {
 			opacity: 1;
-			transform: translate(25%, -12px);
+			transform: translate(-60%, -12px);
+			color: #2bdd14;
 		}
 
 		100% {
 			opacity: 0;
-			transform: translate(-40%, -12px);
+			transform: translate(-60%, -12px);
 		}
 	}
 
 	@keyframes arrow {
 		0% {
 			opacity: 0;
-			transform: translate(40%, -12px);
+			transform: translate(50%, -12px);
 		}
 
 		50% {
 			opacity: 1;
-			transform: translate(25%, -12px);
+			transform: translate(-60%, -12px);
+			color: #2bdd14;
 		}
 
 		100% {
 			opacity: 0;
-			transform: translate(-40%, -12px);
+			transform: translate(-60%, -12px);
 		}
 	}
 }
@@ -200,10 +184,6 @@
 
 	.skills__graph__box {
 		padding: 50px 0;
-	}
-
-	.video-player {
-		margin-bottom: -12.5vh;
 	}
 }
 

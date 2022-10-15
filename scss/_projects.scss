@@ -153,26 +153,39 @@
 }
 
 .video-player {
+    display: block;
+    position: relative;
+    top: 11vh;
+    transform: translateY(-20%);
     align-items: center;
     justify-content: center;
-    width: 480px;
+    height: 100%;
+    width: 85%;
+    margin: auto 10vh;
 }
 
 #video {
-    position: fixed;
+    -o-object-fit: cover;
     object-fit: cover;
     background-size: contain;
-    margin-bottom: -7vh;
     opacity: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     display: hidden;
+    width: 100%;
+    height: 94%;
 }
 
 .video-close {
     opacity: 0;
-    margin-left: 100%;
+    margin-left: -4%;
     cursor: pointer;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    transform: translateY(-10vh);
 }
 
 .projects__btns input[type=radio] {
