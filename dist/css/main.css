@@ -1022,6 +1022,18 @@ input[type=radio] {
   z-index: 2;
 }
 
+.tldr__btn {
+height: 2rem;
+width: 5rem;
+margin-top: 24vh;
+margin-left: 85%;
+background: rgb(236, 85, 110);
+border: rgb(255, 255, 255) 2px solid;
+border-radius: 30px;
+z-index: 5;
+cursor: pointer;
+}
+
 .intro_margin {
   position: fixed;
   top: 8vh;
@@ -1051,7 +1063,7 @@ input[type=radio] {
 
 .resumé__actual {
   padding: 40px 15px;
-  margin: 34vh auto 7vh;
+  margin: 10vh auto 7vh;
   width: 70%;
   background: #494e50;
   outline: 3px solid #494e50;

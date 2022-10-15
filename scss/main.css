@@ -915,6 +915,12 @@ input[type=radio] {
   z-index: 2;
 }
 
+.tldr__btn button {
+  height: 2rem;
+  width: 5rem;
+  background: pink;
+}
+
 .intro_margin {
   position: fixed;
   top: 8vh;
