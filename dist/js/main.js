@@ -127,8 +127,8 @@ const nav__item = document.querySelector(".menu-nav__item");
 function menuToBurger() {
     showMenu = true;
     menuBtn.style.visibility = "visible";
-    nav.style.cssText = "position: fixed; top: 0; left: 0; width: 100vw; max-width: 100vw; opacity: .98; visibility: hidden; background: black; text-shadow: 3px 3px 2px #5e5d5d; z-index: 20; transition: all 0.2";
-    menuNav.style.cssText = "display:flex; flex-flow: column wrap; align-items: center; justify-content: center; min-width: 100%; height: 100vh; overflow: hidden; background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #23272a 60%, #23272a 100%); list-style-type: none; padding-right: 1rem; transition: all 0.3s ease-in-out";
+    nav.style.cssText = "position: fixed; top: 0; left: 0; width: 100vw; max-width: 100vw; opacity: .98; visibility: hidden; background: black; z-index: 20";
+    menuNav.style.cssText = "display: flex; flex-flow: column wrap; align-items: center; justify-content: center; min-width: 100%; height: 100vh; overflow: hidden; background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #23272a 60%, #23272a 100%); list-style-type: none; padding-right: 1rem; transition: all 0.3s ease-in-out";
     toggleMenu();
 }
 
@@ -136,7 +136,7 @@ function burgerToMenu() {
     if (w >= 768) {
         menuBtn.style.visibility = "hidden";
         nav.style.cssText = "visibility: visible; width: 80vw; max-width: 684px";
-        menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%;	background: transparent; text-align: left";
+        menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%; background: transparent; text-align: left";
  } else {
         showMenu = true;
         toggleMenu();
