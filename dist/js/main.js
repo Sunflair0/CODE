@@ -134,8 +134,8 @@ function menuToBurger() {
 
 function burgerToMenu() {
     if (w >= 768) {
-        menuBtn.style.visibility = "hidden";
-        nav.style.cssText = "visibility: visible; width: 80vw; max-width: 684px";
+        // menuBtn.style.visibility = "hidden";
+        nav.style.cssText = "visibility: visible; width: 82vw; max-width: 684px";
         menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%; background: transparent; text-align: left";
  } else {
         showMenu = true;
