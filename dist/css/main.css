@@ -811,10 +811,10 @@ input[type=radio] {
   transition: all 0.3s ease-in-out;
 }
 
-.center {
+.center-title {
   text-align: center;
   display: block;
-  transform: translateY(-10vh);
+  transform: translateY(-15vh);
 }
 
 .projects__btns input[type=radio] {
