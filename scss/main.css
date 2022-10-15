@@ -59,8 +59,8 @@
   text-shadow: 3px 3px 2px #5e5d5d;
   z-index: 20;
 }
-.nav.open {
-  visibility: visible;
+.nav .open {
+  visibility: visible !important;
   margin-left: -20px;
 }
 .nav .menu-nav {
@@ -781,6 +781,7 @@ input[type=radio] {
 }
 .story_content {
   height: 100%;
+  /* needed for full scroll of page */
   border: 1px solid transparent;
 }
 .story_content p {

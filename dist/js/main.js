@@ -108,47 +108,37 @@ function videoClose() {
     video.style.cssText = "opacity: 0; display: hidden";
     vidClose[0].style.cssText = "opacity: 0";
     toggle__fade[0].style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
+    burgerToMenu()
     resetChecked();
 };
 
 function resetChecked() {
     let reset = document.querySelector('input[type=radio][name=preview]:checked');
     if (reset) {
-        reset.checked = 'false'
+        reset.checked = false;
     }
-    menuToBurger();
 };
 
 // /////Menu when video-player active
 
 let w = document.documentElement.clientWidth || window.innerWidth;
-
+const nav__item = document.querySelector(".menu-nav__item");
 
 function menuToBurger() {
-    if (w >= 768) {
-nav.classList.add('open');
-        nav.style.visibility = "hidden";
-        
-        menuNav.style.cssText = "transform: translateY(100%); visibility: visible; display: flex; flex-flow: column wrap; align-items: center; justify-content: center; min-width: 100vw; height: 100vh; overflow: hidden; background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #23272a 60%, #23272a 100%); list-style-type: none; padding-right: 1rem; transition: all 0.3s ease-in-out; menu-left: 0;";
-        hamburger.style.visibility = "visible";
-        menuBtn.style.visibility = "visible";
-
-    }
-
-    else {
-        menuNav.style.cssText = "transform: translateY(100%)";
-    }
+    showMenu = true;
+    menuBtn.style.visibility = "visible";
+    nav.style.cssText = "position: fixed; top: 0; left: 0; width: 100vw; max-width: 100vw; opacity: .98; visibility: hidden; background: black; text-shadow: 3px 3px 2px #5e5d5d; z-index: 20; transition: all 0.2";
+    menuNav.style.cssText = "display:flex; flex-flow: column wrap; align-items: center; justify-content: center; min-width: 100%; height: 100vh; overflow: hidden; background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #23272a 60%, #23272a 100%); list-style-type: none; padding-right: 1rem; transition: all 0.3s ease-in-out";
+    toggleMenu();
 }
 
 function burgerToMenu() {
-
     if (w >= 768) {
-        nav.style.visibility = "visible";
-        menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%; background: transparent; text-align: left;"; menuBtn.style.visibility = "hidden";
-        hamburger.style.visibility = "hidden";
         menuBtn.style.visibility = "hidden";
-
-    } else {
-        return;
+        nav.style.cssText = "visibility: visible; width: 80vw; max-width: 684px";
+        menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%;	background: transparent; text-align: left";
+ } else {
+        showMenu = true;
+        toggleMenu();
     }
 }

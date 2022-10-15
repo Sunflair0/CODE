@@ -9,6 +9,7 @@
   width: 28px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  z-index: 100;
 }
 
 .menu-btn__burger {
@@ -19,6 +20,7 @@
   height: 3px;
   background: antiquewhite;
   transition: all 0.3s ease-in-out;
+
 }
 
 .menu-btn__burger::before {
@@ -67,7 +69,7 @@
   z-index: 20;
 }
 
-.nav.open {
+.nav .open {
   visibility: visible;
   margin-left: -20px;
 }
@@ -872,6 +874,7 @@ input[type=radio] {
 
 .story_content {
   height: 100%;
+  /* needed for full scroll of page */
   border: 1px solid transparent;
 }
 

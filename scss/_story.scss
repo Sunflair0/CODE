@@ -46,6 +46,7 @@
 
 	&_content {
 		height: 100%;
+		/* needed for full scroll of page */
 		border: 1px solid transparent;
 
 		& p {

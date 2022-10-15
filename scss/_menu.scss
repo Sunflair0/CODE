@@ -65,8 +65,8 @@
     text-shadow: 3px 3px 2px #5e5d5d;
     z-index: 20;
 
-    &.open {
-        visibility: visible;
+    & .open {
+        visibility: visible !important;
         margin-left: -20px;
     }
 
