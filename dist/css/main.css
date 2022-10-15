@@ -409,7 +409,7 @@
   50% {
     opacity: 1;
     transform: translate(-60%, -5px);
-    color: #2bdd14;
+    color: #43def3;
   }
 
   100% {
@@ -427,7 +427,7 @@
   50% {
     opacity: 1;
     transform: translate(-60%, -5px);
-    color: #2bdd14;
+    color: #43def3;
   }
 
   100% {
@@ -507,6 +507,8 @@
   border-bottom: 8px solid #000000;
   margin: auto;
   margin-top: 0;
+  outline: #281903bf 6px solid;
+  outline-offset: -12px;
 }
 
 .graph__words {
@@ -1229,7 +1231,7 @@ input[type=radio] {
     50% {
       opacity: 1;
       transform: translate(-60%, -12px);
-      color: #2bdd14;
+      color: #43def3;
     }
 
     100% {
@@ -1247,7 +1249,7 @@ input[type=radio] {
     50% {
       opacity: 1;
       transform: translate(-60%, -12px);
-      color: #2bdd14;
+      color: #43def3;
     }
 
     100% {
