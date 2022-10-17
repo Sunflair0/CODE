@@ -27,6 +27,9 @@ function toggleMenu() {
     }
 }
 
+
+
+
 ///// // scroll fade
 const fadeElements = document.querySelectorAll(".section_content");
 const fadeJobs = document.querySelectorAll(".job_content");
@@ -88,26 +91,26 @@ function skillChoice() {
 
 // /////video section
 let video = document.getElementById('video');
-let vidClose = document.getElementsByClassName("video-close");
-let vidPlayer = document.getElementsByClassName("video-player");
-let toggle__fade = document.getElementsByClassName("toggle__fade");
+let vidClose = document.querySelector(".video__close");
+let vidPlayer = document.getElementsByClassName("video__player");
+var toggle__fade = document.querySelector(".toggle__fade");
 
 function previewSelect() {
     let preview = document.querySelector('[name="preview"]:checked').value;
 
-    toggle__fade[0].style.cssText = "color: transparent; text-shadow: none";
-    vidClose[0].style.cssText = "opacity: 1";
+    toggle__fade.style.cssText = "color: transparent; text-shadow: none";
+    vidClose.style.cssText = "opacity: 1";
     video.style.cssText = "opacity: 1; display: visible";
     video.src = `/Portfolio2021/dist/videos/${preview}`;
     menuToBurger();
 };
 
-vidClose[0].addEventListener("click", videoClose);
+vidClose.addEventListener("click", videoClose);
 
 function videoClose() {
     video.style.cssText = "opacity: 0; display: hidden";
-    vidClose[0].style.cssText = "opacity: 0";
-    toggle__fade[0].style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
+    vidClose.style.cssText = "opacity: 0";
+    toggle__fade.style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
     burgerToMenu()
     resetChecked();
 };
@@ -140,5 +143,18 @@ function burgerToMenu() {
  } else {
         showMenu = true;
         toggleMenu();
+return;
     }
+}
+
+// /////TLDR button
+var tldr = document.querySelector('#tldr');
+
+var tldr_btn = document.querySelector('.tldr_btn');
+
+tldr.addEventListener('click', tldrPopUp);
+
+function tldrPopUp() {
+     tldr_btn.classList.add('tldrText__btn');
+console.log('hey there');
 }

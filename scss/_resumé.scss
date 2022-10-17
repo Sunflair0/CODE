@@ -7,17 +7,28 @@
   z-index: 2;
 }
 
-.tldr__btn button {
-height: 2rem;
-width: 5rem;
-background: pink;
+.tldr__btn {
+  text-shadow: none;
+  margin: 10px;
+  color: #2b2a2a;
+  text-align: center;
+  background-color: #ef7f31;
+  box-shadow: inset 0 0 10px black;
+  font-weight: 600;
+  transition: 0.2s all;
+  width: auto;
+  padding: 2px 10px;
+  font-size: clamp(12px, 1vw, 14px);
+  margin-left: 85%;
+  border: rgb(110, 106, 106) 1px solid;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
 .intro_margin {
   position: fixed;
   top: 8vh;
-  padding: 20px;
-  padding-right: 0;
+  padding: 10px 10px 0;
   height: auto;
   background-color: #23272a;
   z-index: 2;
@@ -41,7 +52,7 @@ background: pink;
 
   &__actual {
     padding: 40px 15px;
-    margin: 34vh auto 7vh;
+    margin: 40vh auto 7vh;
     width: 70%;
     background: #494e50;
     outline: 3px solid #494e50;
