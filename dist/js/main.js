@@ -1,3 +1,5 @@
+
+
 const menuBtn = document.querySelector('.menu-btn');
 const hamburger = document.querySelector('.menu-btn__burger');
 const nav = document.querySelector('.nav');
@@ -89,40 +91,6 @@ function skillChoice() {
 }
 
 
-// /////video section
-let video = document.getElementById('video');
-let vidClose = document.querySelector(".video__close");
-let vidPlayer = document.getElementsByClassName("video__player");
-var toggle__fade = document.querySelector(".toggle__fade");
-
-function previewSelect() {
-    let preview = document.querySelector('[name="preview"]:checked').value;
-
-    toggle__fade.style.cssText = "color: transparent; text-shadow: none";
-    vidClose.style.cssText = "opacity: 1";
-    video.style.cssText = "opacity: 1; display: visible";
-    video.src = `/Portfolio2021/dist/videos/${preview}`;
-    menuToBurger();
-};
-
-vidClose.addEventListener("click", videoClose);
-
-function videoClose() {
-    video.style.cssText = "opacity: 0; display: hidden";
-    vidClose.style.cssText = "opacity: 0";
-    toggle__fade.style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
-    burgerToMenu()
-    resetChecked();
-};
-
-function resetChecked() {
-    let reset = document.querySelector('input[type=radio][name=preview]:checked');
-    if (reset) {
-        reset.checked = false;
-    }
-};
-
-// /////Menu when video-player active
 
 let w = document.documentElement.clientWidth || window.innerWidth;
 const nav__item = document.querySelector(".menu-nav__item");
@@ -140,21 +108,83 @@ function burgerToMenu() {
         menuBtn.style.visibility = "hidden";
         nav.style.cssText = "visibility: visible; width: 82vw; max-width: 684px";
         menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%; background: transparent; text-align: left";
- } else {
+    } else {
         showMenu = true;
         toggleMenu();
-return;
+        return;
     }
 }
 
+// VIDEO IIFE
+let videoIife = (() => {
+
+    // // /////video section
+    let video = document.getElementById('video');
+    let vidClose = document.querySelector(".video__close");
+    //let vidPlayer = document.getElementsByClassName("video__player");
+    let toggle__fade = document.querySelector(".toggle__fade");
+
+    if(!video) console.log("video not found")
+    if(!vidClose) console.log("vidClose not found")
+    //if(!vidPlayer) console.log("vidPlayer not found")
+    if(!toggle__fade) console.log("toggle__fade not found")
+    if(video && vidClose && toggle__fade){
+
+        vidClose.addEventListener("click", videoClose);
+
+        function previewSelect() {
+            let preview = document.querySelector('[name="preview"]:checked').value;
+
+            toggle__fade.style.cssText = "color: transparent; text-shadow: none";
+            vidClose.style.cssText = "opacity: 1";
+            video.style.cssText = "opacity: 1; display: visible";
+            video.src = `/Portfolio2021/dist/videos/${preview}`;
+            menuToBurger();
+        };
+
+        function videoClose() {
+            video.style.cssText = "opacity: 0; display: hidden";
+            vidClose.style.cssText = "opacity: 0";
+            toggle__fade.style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
+            burgerToMenu()
+            resetChecked();
+        };
+
+        function resetChecked() {
+            let reset = document.querySelector('input[type=radio][name=preview]:checked');
+            if (reset) {
+                reset.checked = false;
+            }
+        };
+    }
+
+ 
+    return {
+        previewSelect: previewSelect
+    }
+
+})()
+
+// /////Menu when video-player active
+
+
 // /////TLDR button
-var tldr = document.querySelector('#tldr');
+let tldr = document.querySelector('#tldr');
+if(tldr){
+    console.log("FOUND tldr")
 
-var tldr_btn = document.querySelector('.tldr_btn');
+    tldr.addEventListener('click', tldrPopUp);
 
-tldr.addEventListener('click', tldrPopUp);
+    let tldr_btn = document.querySelector('.tldr__btn');
 
-function tldrPopUp() {
-     tldr_btn.classList.add('tldrText__btn');
-console.log('hey there');
+    function tldrPopUp() {
+        if(tldr_btn){
+            tldr_btn.classList.add('tldrText__btn');
+        }        
+        console.log('hey there, I was clicked');
+    }
 }
+else {
+    console.log("TLDR not found");
+}
+
