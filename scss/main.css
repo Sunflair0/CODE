@@ -993,19 +993,21 @@ input[type=radio] {
 }
 
 .tldrText__btn {
+  display: flex;
   align-items: center;
   position: absolute;
   background: white;
   outline: #4d5458 1px solid;
   outline-offset: -5px;
   padding: 5px;
-  right: 20%;
-  width: 200px;
-  transform: translateY(30px);
+  right: -35%;
+  width: 285px;
+  transform: translateY(-25%);
   border-radius: 9px;
   transition: all 0.3s ease;
   -webkit-animation: tldrPop 0.5s;
           animation: tldrPop 0.5s;
+  z-index: 5;
 }
 
 @-webkit-keyframes tldrPop {
