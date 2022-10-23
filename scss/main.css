@@ -1001,7 +1001,7 @@ input[type=radio] {
   outline-offset: -5px;
   padding: 5px;
   right: 50%;
-  width: 285px;
+  width: 260px;
   transform: translateY(-25%);
   border-radius: 9px;
   transition: all 0.3s ease;
