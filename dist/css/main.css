@@ -1469,7 +1469,7 @@ input[type=radio] {
   .tldrText__btn {
     right: 140%;
     width: 500px;
-    transform: translateY(-70px);
+    transform: translateY(-40px);
   }
 }
 
