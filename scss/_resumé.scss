@@ -4,7 +4,83 @@
   top: 0vh;
   height: 8vh;
   width: 100%;
-  z-index: 2;
+  z-index: 3;
+}
+
+.tldr__btn {
+  display: flex;
+  position: relative;
+  text-shadow: none;
+  margin: 10px;
+  color: #2b2a2a;
+  justify-content: center;
+  background-color: #ef7f31;
+  box-shadow: inset 0 0 7px black;
+  font-weight: 600;
+  transition: 0.2s all;
+  width: auto;
+  padding: 4px 10px;
+  font-size: clamp(12px, 1vw, 14px);
+  margin-left: 85%;
+  border: #743458fa 1px solid;
+  border-radius: 30px;
+  cursor: pointer;
+
+  &__inside_text {
+    width: 100%;
+
+    &::before {
+      content: attr(data-tldr_text);
+      display: inline-block;
+      line-height: 1.5;
+      font-size: clamp(10px, 2vh, 12px);
+      text-shadow: none;
+      color: black;
+      padding: 10px;
+    }
+  }
+
+  &:hover {
+    content: "";
+    color: antiquewhite;
+    outline: 1px #faebd7b3 solid;
+    background-color: #f18a40;
+    box-shadow: inset 0 0 10px #743458fa,
+      inset 0 0 5px #000000;
+    border: #743458fa 1px solid;
+    transition: 0.2s all;
+  }
+}
+
+.tldrText__btn {
+  align-items: center;
+  position: absolute;
+  background: white;
+  outline: #4d5458 1px solid;
+  outline-offset: -5px;
+  padding: 5px;
+  right: 20%;
+  width: 200px;
+  transform: translateY(30px);
+  border-radius: 9px;
+  transition: all .3s ease;
+  animation: tldrPop .5s;
+}
+
+@keyframes tldrPop {
+
+  0% {
+    scale: 0;
+  }
+
+  50% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1;
+  }
+
 }
 
 .tldr__btn {
@@ -23,14 +99,25 @@
   border: rgb(110, 106, 106) 1px solid;
   border-radius: 30px;
   cursor: pointer;
+
+  &:hover {
+    content: "fff";
+    background-color: #f18a40;
+    box-shadow: inset 0 0 10px #743458fa,
+      inset 0 0 5px #000000;
+    border: #743458fa 1px solid;
+    transition: 0.2s all;
+  }
 }
 
 .intro_margin {
   position: fixed;
-  top: 8vh;
-  padding: 10px 10px 0;
-  height: auto;
+  text-align: justify;
+  box-shadow: #23272a 0 0 10px 5px;
   background-color: #23272a;
+  top: 7vh;
+  padding: 1vh 7vh;
+  line-height: 1.3;
   z-index: 2;
 }
 
@@ -52,11 +139,17 @@
 
   &__actual {
     padding: 40px 15px;
-    margin: 40vh auto 7vh;
+    margin: 37vh auto 7vh;
     width: 70%;
     background: #494e50;
     outline: 3px solid #494e50;
     outline-offset: 5px;
+  }
+
+  &__span {
+    margin-left: 5%;
+    font-size: small;
+    color: rgb(148 147 247);
   }
 
   &_link {

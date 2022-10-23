@@ -90,8 +90,6 @@ function skillChoice() {
     return;
 }
 
-
-
 let w = document.documentElement.clientWidth || window.innerWidth;
 const nav__item = document.querySelector(".menu-nav__item");
 
@@ -124,11 +122,11 @@ let videoIife = (() => {
     //let vidPlayer = document.getElementsByClassName("video__player");
     let toggle__fade = document.querySelector(".toggle__fade");
 
-    if(!video) console.log("video not found")
-    if(!vidClose) console.log("vidClose not found")
+    if (!video) console.log("video not found")
+    if (!vidClose) console.log("vidClose not found")
     //if(!vidPlayer) console.log("vidPlayer not found")
-    if(!toggle__fade) console.log("toggle__fade not found")
-    if(video && vidClose && toggle__fade){
+    if (!toggle__fade) console.log("toggle__fade not found")
+    if (video && vidClose && toggle__fade) {
 
         vidClose.addEventListener("click", videoClose);
 
@@ -141,6 +139,8 @@ let videoIife = (() => {
             video.src = `/Portfolio2021/dist/videos/${preview}`;
             menuToBurger();
         };
+
+// /////Menu when video-player active
 
         function videoClose() {
             video.style.cssText = "opacity: 0; display: hidden";
@@ -158,29 +158,30 @@ let videoIife = (() => {
         };
     }
 
- 
     return {
-        previewSelect: previewSelect
+        previewSelect
     }
 
 })()
 
-// /////Menu when video-player active
-
 
 // /////TLDR button
-let tldr = document.querySelector('#tldr');
-if(tldr){
-    console.log("FOUND tldr")
+let tldr_btn = document.querySelector('.tldr__btn');
 
-    tldr.addEventListener('click', tldrPopUp);
 
-    let tldr_btn = document.querySelector('.tldr__btn');
+if (tldr_btn) {
+    console.log("FOUND tldr_btn")
+
+    tldr_btn.addEventListener('click', tldrPopUp);
+
+    let tldr = document.querySelector('#tldr');
+    let tldr_text = document.querySelector('#tldr_text');
 
     function tldrPopUp() {
-        if(tldr_btn){
-            tldr_btn.classList.add('tldrText__btn');
-        }        
+        if (tldr) {
+            tldr.classList.toggle('tldrText__btn');
+            tldr_text.classList.toggle('tldr__btn__inside_text');
+        }
         console.log('hey there, I was clicked');
     }
 }

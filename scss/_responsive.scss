@@ -185,6 +185,13 @@
 	.skills__graph__box {
 		padding: 50px 0;
 	}
+
+	.tldrText__btn {
+		right: 140%;
+		width: 500px;
+		transform: translateY(-30px);
+	}
+
 }
 
 @include media-lg {
