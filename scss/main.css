@@ -75,7 +75,6 @@
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
-  transition: all 0.3s ease-in-out;
 }
 .nav .menu-nav.open {
   transform: translateY(0);
