@@ -119,12 +119,11 @@ let videoIife = (() => {
     // // /////video section
     let video = document.getElementById('video');
     let vidClose = document.querySelector(".video__close");
-    //let vidPlayer = document.getElementsByClassName("video__player");
+    let centerTitle = document.querySelector(".center-title");
     let toggle__fade = document.querySelector(".toggle__fade");
 
     if (!video) console.log("video not found")
     if (!vidClose) console.log("vidClose not found")
-    //if(!vidPlayer) console.log("vidPlayer not found")
     if (!toggle__fade) console.log("toggle__fade not found")
     if (video && vidClose && toggle__fade) {
 
@@ -140,11 +139,12 @@ let videoIife = (() => {
             menuToBurger();
         };
 
-// /////Menu when video-player active
+        // /////Menu when video-player active
 
         function videoClose() {
             video.style.cssText = "opacity: 0; display: hidden";
             vidClose.style.cssText = "opacity: 0";
+            centerTitle.style.transform = "translateY(-20vh)";
             toggle__fade.style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
             burgerToMenu()
             resetChecked();
