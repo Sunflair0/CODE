@@ -946,7 +946,7 @@ input[type=radio] {
   position: fixed;
   background-color: #23272a;
   top: 0vh;
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   z-index: 3;
 }
