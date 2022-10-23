@@ -996,7 +996,7 @@ input[type=radio] {
   outline: #4d5458 1px solid;
   outline-offset: -5px;
   padding: 5px;
-  right: -50%;
+  right: 50%;
   width: 285px;
   transform: translateY(-25%);
   border-radius: 9px;
