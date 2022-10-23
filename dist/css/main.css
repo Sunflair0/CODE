@@ -646,7 +646,6 @@ input[type=radio] {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  z-index: 5;
 }
 
 .projects .text-secondary {
@@ -660,6 +659,7 @@ input[type=radio] {
   height: 3px;
   width: 100%;
   background-color: #ef7f31;
+  z-index: 5;
 }
 
 .projects .gray-line {
@@ -667,6 +667,7 @@ input[type=radio] {
   height: 5px;
   width: 100%;
   background: #23272a;
+  z-index: 5;
 }
 
 .projects .bottom {
@@ -816,24 +817,24 @@ input[type=radio] {
 .video__player {
   display: block;
   position: relative;
-  top: 11vh;
-  transform: translateY(-20%);
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 85%;
-  margin: auto 10vh;
+  top: 0vh;
+  height: 75%;
+  width: auto;
+  margin: auto 5.5vh;
+  z-index: 0;
 }
 
 #video {
   -o-object-fit: cover;
   object-fit: cover;
+/* position:absolute; */
   background-size: contain;
   opacity: 0;
   transition: all 0.3s ease-in-out;
   display: hidden;
   width: 100%;
-  height: 94%;
+  height: auto;
+ max-height: 300px;
 }
 
 .video__close {
@@ -844,9 +845,10 @@ input[type=radio] {
 }
 
 .center-title {
+    position: inherit;
   text-align: center;
   display: block;
-  transform: translateY(-15vh);
+  transform: translateY(0vh);
 }
 
 .projects__btns input[type=radio] {
@@ -1335,10 +1337,6 @@ input[type=radio] {
 
   .skills__graph::after {
     transform: translate(10px, 9.5px);
-  }
-
-  #video {
-    height: 90%;
   }
 
   #arrow1,
