@@ -817,11 +817,9 @@ input[type=radio] {
 .video__player {
   display: block;
   position: relative;
-  top: 0vh;
   height: 75%;
   width: auto;
-  margin: auto 5.5vh;
-  z-index: 0;
+  margin: auto 6vh;
 }
 
 #video {
@@ -834,7 +832,7 @@ input[type=radio] {
   display: hidden;
   width: 100%;
   height: auto;
- max-height: 300px;
+  max-height: 300px;
 }
 
 .video__close {
@@ -848,7 +846,6 @@ input[type=radio] {
     position: inherit;
   text-align: center;
   display: block;
-  transform: translateY(0vh);
 }
 
 .projects__btns input[type=radio] {

@@ -155,12 +155,9 @@
 .video-player {
     display: block;
     position: relative;
-    top: 11vh;
-    transform: translateY(-20%);
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    height: 75%;
     width: auto;
+    margin: auto 6vh;
 }
 
 #video {
@@ -170,8 +167,9 @@
     opacity: 0;
     transition: all 0.3s ease-in-out;
     display: hidden;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-height: 300px;
 }
 
 .video-close {
@@ -184,7 +182,6 @@
 .center-title {
     text-align: center;
     display: block;
-    transform: translateY(-15vh);
 }
 
 .projects__btns input[type=radio] {
