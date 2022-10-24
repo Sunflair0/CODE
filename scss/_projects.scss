@@ -169,7 +169,7 @@
     display: hidden;
     width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 200px;
 }
 
 .video-close {
@@ -182,6 +182,7 @@
 .center-title {
     text-align: center;
     display: block;
+    margin-top: -12vh;
 }
 
 .projects__btns input[type=radio] {

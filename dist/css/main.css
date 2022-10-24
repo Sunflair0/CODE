@@ -830,7 +830,7 @@ input[type=radio] {
   display: hidden;
   width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 150px;
 }
 
 .video__close {
@@ -843,6 +843,7 @@ input[type=radio] {
 .center-title {
   text-align: center;
   display: block;
+  margin-top: -23vh;
 }
 
 .projects__btns input[type=radio] {
@@ -1288,6 +1289,28 @@ input[type=radio] {
   .home__bottom {
     margin-top: 2vh;
     font-size: small;
+  }
+}
+
+@media screen and (min-height: 701px) {
+  #video {
+    max-height: 300px;
+  }
+}
+@media screen and (max-height: 700px) {
+  #video {
+    max-height: 275px;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  #video {
+    max-height: 250px;
+  }
+}
+@media screen and (max-height: 475px) {
+  #video {
+    max-height: 200px;
   }
 }
 

@@ -119,12 +119,10 @@ let videoIife = (() => {
     // // /////video section
     let video = document.getElementById('video');
     let vidClose = document.querySelector(".video__close");
-    //let vidPlayer = document.getElementsByClassName("video__player");
     let toggle__fade = document.querySelector(".toggle__fade");
 
     if (!video) console.log("video not found")
     if (!vidClose) console.log("vidClose not found")
-    //if(!vidPlayer) console.log("vidPlayer not found")
     if (!toggle__fade) console.log("toggle__fade not found")
     if (video && vidClose && toggle__fade) {
 
