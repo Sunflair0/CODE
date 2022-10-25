@@ -217,29 +217,38 @@
   text-align: center;
   background: #23272a;
 }
+
 .home__top {
   margin-top: 23.8vh;
   height: 20vh;
   -webkit-animation: fade__up 1.5s forwards ease-in-out;
-          animation: fade__up 1.5s forwards ease-in-out;
+  animation: fade__up 1.5s forwards ease-in-out;
 }
+
 .home__name {
   font-size: clamp(40px, 10vw, 5rem);
   padding-bottom: 1rem;
   margin-bottom: 7rem;
   -webkit-animation: fade__up 1.5s forwards ease-out;
-          animation: fade__up 1.5s forwards ease-out;
+  animation: fade__up 1.5s forwards ease-out;
 }
+
 .home__name--last {
   color: #ef7f31;
   font-weight: 700;
 }
+
 .home__bottom {
   margin-top: 3vh;
   align-items: center;
   text-align: center;
   font-size: clamp(20px, 3vw, 30px);
 }
+
+.home__bottom h2 {
+  font-size: clamp(16px, 2vw, 24px);
+}
+
 .home_ .social-icons {
   display: flex;
   flex-direction: column;
@@ -251,6 +260,7 @@
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -262,11 +272,13 @@
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
+
 .mepic {
   display: flex;
   aspect-ratio: auto 4/3;
@@ -280,11 +292,12 @@
   outline-offset: -4px;
   border-radius: 50%;
   -webkit-animation: mepic 0.5s 1.75s forwards ease-in-out;
-          animation: mepic 0.5s 1.75s forwards ease-in-out;
+  animation: mepic 0.5s 1.75s forwards ease-in-out;
 }
+
 .mepic_mask {
   position: relative;
-  margin-top: 5vh;
+  margin-top: 4vh;
   width: 38%;
   margin-left: auto;
   margin-right: auto;
@@ -295,6 +308,7 @@
     opacity: 0;
     scale: 0;
   }
+
   to {
     opacity: 1;
     scale: 1;
@@ -306,6 +320,7 @@
     opacity: 0;
     scale: 0;
   }
+
   to {
     opacity: 1;
     scale: 1;

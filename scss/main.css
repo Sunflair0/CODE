@@ -176,6 +176,9 @@
   text-align: center;
   font-size: clamp(20px, 3vw, 30px);
 }
+.home__bottom h2 {
+  font-size: clamp(16px, 2vw, 24px);
+}
 .home_ .social-icons {
   display: flex;
   flex-direction: column;
@@ -220,7 +223,7 @@
 }
 .mepic_mask {
   position: relative;
-  margin-top: 5vh;
+  margin-top: 4vh;
   width: 38%;
   margin-left: auto;
   margin-right: auto;

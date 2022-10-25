@@ -98,9 +98,6 @@ let videoIife = (() => {
     let vidClose = document.querySelector(".video__close");
     let toggle__fade = document.querySelector(".toggle__fade");
 
-    if (!video) console.log("video not found")
-    if (!vidClose) console.log("vidClose not found")
-    if (!toggle__fade) console.log("toggle__fade not found")
     if (video && vidClose && toggle__fade) {
 
         vidClose.addEventListener("click", videoClose);
@@ -142,7 +139,6 @@ let videoIife = (() => {
 let tldr_btn = document.querySelector('.tldr__btn');
 
 if (tldr_btn) {
-    console.log("FOUND tldr_btn")
 
     tldr_btn.addEventListener('click', tldrPopUp);
 
@@ -154,9 +150,9 @@ if (tldr_btn) {
             tldr.classList.toggle('tldrText__btn');
             tldr_text.classList.toggle('tldr__btn__inside_text');
         }
-        console.log('hey there, I was clicked');
+
     }
 }
 else {
-    console.log("TLDR not found");
+   return;
 }
