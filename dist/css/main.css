@@ -251,7 +251,7 @@ width: 250px; */
   /* animation: mepic 2s all; */
   width: 60%;
   border: 3px rgb(94, 94, 58) solid;
-  background-image: url(/dist/img/mepic.jpg);
+  background-image: url(/Portfolio2021/dist/img/mepic.jpg);
 
   box-shadow: inset 10px 10px 2px rgba(224, 8, 8, 0.411),
     10px 10px 2px rgba(224, 8, 8, 0.432);
