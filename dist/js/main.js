@@ -155,5 +155,5 @@ if (tldr_btn) {
     }
 }
 else {
-   console.log('');
+  console.log("tldr not found");
 }
