@@ -66,18 +66,18 @@
     z-index: 20;
 
     & .open {
-        visibility: visible !important;
+        visibility: visible;
         margin-left: -20px;
     }
 
     .menu-nav {
+overflow: hidden;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
         min-width: 100vw;
-        height: 100vh;
-        overflow: hidden;
+        height: 100vh;        
         background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, $primary-color 60%, $primary-color 100%);
         list-style-type: none;
         padding-right: 1rem;

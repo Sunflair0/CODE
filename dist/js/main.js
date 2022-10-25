@@ -90,29 +90,6 @@ function skillChoice() {
     return;
 }
 
-let w = document.documentElement.clientWidth || window.innerWidth;
-const nav__item = document.querySelector(".menu-nav__item");
-
-function menuToBurger() {
-    showMenu = true;
-    menuBtn.style.visibility = "visible";
-    nav.style.cssText = "position: fixed; top: 0; left: 0; width: 100vw; max-width: 100vw; opacity: .98; visibility: hidden; background: black; z-index: 20";
-    menuNav.style.cssText = "display: flex; flex-flow: column wrap; align-items: center; justify-content: center; min-width: 100%; height: 100vh; overflow: hidden; background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #23272a 60%, #23272a 100%); list-style-type: none; padding-right: 1rem; transition: all 0.3s ease-in-out";
-    toggleMenu();
-}
-
-function burgerToMenu() {
-    if (w >= 768) {
-        menuBtn.style.visibility = "hidden";
-        nav.style.cssText = "visibility: visible; width: 82vw; max-width: 684px";
-        menuNav.style.cssText = "display: block; transform: translateY(0); height: 100%; background: transparent; text-align: left";
-    } else {
-        showMenu = true;
-        toggleMenu();
-        return;
-    }
-}
-
 // VIDEO IIFE
 let videoIife = (() => {
 
@@ -134,17 +111,15 @@ let videoIife = (() => {
             toggle__fade.style.cssText = "color: transparent; text-shadow: none";
             vidClose.style.cssText = "opacity: 1";
             video.style.cssText = "opacity: 1; display: visible";
-            video.src = `/dist/videos/${preview}`;
-            menuToBurger();
+            video.src = `/dist/videos/${preview}`;           
         };
 
-// /////Menu when video-player active
+        // /////Menu when video-player active
 
         function videoClose() {
             video.style.cssText = "opacity: 0; display: hidden";
             vidClose.style.cssText = "opacity: 0";
             toggle__fade.style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
-            burgerToMenu()
             resetChecked();
         };
 
@@ -157,15 +132,14 @@ let videoIife = (() => {
     }
 
     return {
-        previewSelect
+        previewSelect,
+        videoClose
     }
-
 })()
 
 
 // /////TLDR button
 let tldr_btn = document.querySelector('.tldr__btn');
-
 
 if (tldr_btn) {
     console.log("FOUND tldr_btn")
@@ -186,4 +160,3 @@ if (tldr_btn) {
 else {
     console.log("TLDR not found");
 }
-
