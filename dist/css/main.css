@@ -209,12 +209,48 @@
   font-size: clamp(10px, 2vw, 15px);
 }
 
+
+.home {
+  margin-top: 88px;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: #23272a;
+}
+.home__top {
+  margin-top: 23.8vh;
+  height: 20vh;
+  -webkit-animation: fade__up 1.5s forwards ease-in-out;
+          animation: fade__up 1.5s forwards ease-in-out;
+}
+.home__name {
+  font-size: clamp(40px, 10vw, 5rem);
+  padding-bottom: 1rem;
+  margin-bottom: 7rem;
+  -webkit-animation: fade__up 1.5s forwards ease-out;
+          animation: fade__up 1.5s forwards ease-out;
+}
+.home__name--last {
+  color: #ef7f31;
+  font-weight: 700;
+}
+.home__bottom {
+  margin-top: 3vh;
+  align-items: center;
+  text-align: center;
+  font-size: clamp(20px, 3vw, 30px);
+}
+.home_ .social-icons {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(10px, 2vw, 15px);
+}
+
 @-webkit-keyframes fade__up {
   from {
     transform: translateY(50px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
@@ -226,46 +262,53 @@
     transform: translateY(50px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
-.mepic_mask {
-  /* height: 200px;
-width: 250px; */
-  position: relative;
-  z-index: 10;
-}
-
-
 .mepic {
-  opacity: 1;
-  height: 100%;
   display: flex;
+  aspect-ratio: auto 4/3;
+  opacity: 0;
+  scale: 0;
+  background: linear-gradient(to top right, transparent 70%, rgba(0, 0, 0, 0.1) 80%), url("/dist/img/mepic.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  outline: 3px rgb(35, 39, 42) solid;
+  outline-offset: -4px;
+  border-radius: 50%;
+  -webkit-animation: mepic 0.5s 1.75s forwards ease-in-out;
+          animation: mepic 0.5s 1.75s forwards ease-in-out;
+}
+.mepic_mask {
+  position: relative;
+  margin-top: 8vh;
+  width: 38%;
   margin-left: auto;
   margin-right: auto;
-  /* position: absolute; */
-  /* animation: mepic 2s all; */
-  width: 60%;
-  border: 3px rgb(94, 94, 58) solid;
-  background-image: url(/Portfolio2021/dist/img/mepic.jpg);
+}
 
-  box-shadow: inset 10px 10px 2px rgba(224, 8, 8, 0.411),
-    10px 10px 2px rgba(224, 8, 8, 0.432);
-  z-index: 2;
+@-webkit-keyframes mepic {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 @keyframes mepic {
-
   from {
     opacity: 0;
+    scale: 0;
   }
-
   to {
     opacity: 1;
+    scale: 1;
   }
 }
 
