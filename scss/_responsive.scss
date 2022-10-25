@@ -57,11 +57,6 @@
 		transform: translate(10px, 9.5px);
 	}
 
-	#video {
-		height: 90%;
-	}
-
-
 	#arrow1,
 	#arrow2 {
 		font-size: xx-large;
@@ -126,6 +121,7 @@
 
 	.resume__actual {
 		width: 60%;
+		margin: 37vh auto 7vh;
 	}
 
 	.menu-btn {
@@ -189,7 +185,7 @@
 	.tldrText__btn {
 		right: 140%;
 		width: 500px;
-		transform: translateY(-30px);
+		transform: translateY(-40px);
 	}
 
 }

@@ -116,6 +116,7 @@ let videoIife = (() => {
         function videoClose() {
             video.style.cssText = "opacity: 0; display: hidden";
             vidClose.style.cssText = "opacity: 0";
+            centerTitle.style.transform = "translateY(-20vh)";
             toggle__fade.style.cssText = "color: #ef7f31; text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px rgb(0, 0, 0), 2px -1px 0 rgba(27, 27, 27, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(39, 39, 39, 0.7)";
             resetChecked();
         };

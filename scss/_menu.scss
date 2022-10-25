@@ -82,7 +82,6 @@ overflow: hidden;
         list-style-type: none;
         padding-right: 1rem;
         transform: translateY(-100%);
-        @include transition-ease;
 
         &.open {
             transform: translateY(0);

@@ -708,7 +708,6 @@ input[type=radio] {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  z-index: 5;
 }
 
 .projects .text-secondary {
@@ -722,6 +721,7 @@ input[type=radio] {
   height: 3px;
   width: 100%;
   background-color: #ef7f31;
+  z-index: 5;
 }
 
 .projects .gray-line {
@@ -729,6 +729,7 @@ input[type=radio] {
   height: 5px;
   width: 100%;
   background: #23272a;
+  z-index: 5;
 }
 
 .projects .bottom {
@@ -886,6 +887,7 @@ input[type=radio] {
 #video {
   -o-object-fit: cover;
   object-fit: cover;
+/* position:absolute; */
   background-size: contain;
   opacity: 0;
   transition: all 0.3s ease-in-out;
@@ -1106,7 +1108,7 @@ input[type=radio] {
   position: fixed;
   background-color: #23272a;
   top: 0vh;
-  height: 8vh;
+  height: 10vh;
   width: 100%;
   z-index: 2;
 }
@@ -1139,8 +1141,8 @@ input[type=radio] {
   outline: #4d5458 1px solid;
   outline-offset: -5px;
   padding: 5px;
-  right: 140%;
-  width: 300px;
+  right: 30%;
+  width: 260px;
   transform: translateY(-25%);
   border-radius: 9px;
   transition: all .3s ease;
@@ -1206,7 +1208,7 @@ input[type=radio] {
   text-align: justify;
   box-shadow: #23272a 0 0 10px 5px;
   background-color: #23272a;
-  top: 7vh;
+  top: 7.5vh;
   padding: 1vh 7vh;
   line-height: 1.3;
   z-index: 2;
@@ -1231,7 +1233,7 @@ input[type=radio] {
 
 .resumé__actual {
   padding: 40px 15px;
-  margin: 37vh auto 7vh;
+  margin: 45vh auto 7vh;
   width: 70%;
   background: #494e50;
   outline: 3px solid #494e50;
@@ -1438,7 +1440,6 @@ input[type=radio] {
     transform: translate(10px, -12px);
   }
 
-
   @-webkit-keyframes arrow {
     0% {
       opacity: 0;
@@ -1500,6 +1501,7 @@ input[type=radio] {
   }
 
   .resume__actual {
+    margin: 37vh auto 7vh;
     width: 60%;
   }
 
@@ -1564,7 +1566,7 @@ input[type=radio] {
   .tldrText__btn {
     right: 140%;
     width: 500px;
-    transform: translateY(-70px);
+    transform: translateY(-40px);
   }
 }
 
