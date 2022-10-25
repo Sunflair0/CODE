@@ -703,7 +703,7 @@ input[type=radio] {
   width: 100%;
   background: #494e50;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   top: 0%;
   display: flex;
   flex-direction: column;
