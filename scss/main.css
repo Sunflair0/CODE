@@ -60,17 +60,17 @@
   z-index: 20;
 }
 .nav .open {
-  visibility: visible !important;
+  visibility: visible;
   margin-left: -20px;
 }
 .nav .menu-nav {
+  overflow: hidden;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   min-width: 100vw;
   height: 100vh;
-  overflow: hidden;
   background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, #23272a 60%, #23272a 100%);
   list-style-type: none;
   padding-right: 1rem;
@@ -748,19 +748,19 @@ input[type=radio] {
   display: hidden;
   width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 150px;
 }
 
 .video-close {
   opacity: 0;
   margin-left: -4%;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
 .center-title {
   text-align: center;
   display: block;
+  margin-top: -23vh;
 }
 
 .projects__btns input[type=radio] {

@@ -12,6 +12,10 @@
   z-index: 100;
 }
 
+.menu-btn2 {
+  visibility: visible;
+}
+
 .menu-btn__burger {
   position: absolute;
   right: 0;
@@ -58,12 +62,12 @@
 }
 
 .nav {
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   padding-left: 20px;
   opacity: 0.98;
-  visibility: hidden;
   background: black;
   text-shadow: 3px 3px 2px #5e5d5d;
   z-index: 20;
@@ -832,20 +836,20 @@ input[type=radio] {
   display: hidden;
   width: 100%;
   height: auto;
-  max-height: 300px;
+  max-height: 150px;
 }
 
 .video__close {
   opacity: 0;
   margin-left: -4%;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
 }
 
 .center-title {
-    position: inherit;
-  text-align: center;
   display: block;
+  position: relative;
+  text-align: center;
+  margin-top: -5vh;
 }
 
 .projects__btns input[type=radio] {
@@ -1294,6 +1298,30 @@ input[type=radio] {
   }
 }
 
+@media screen and (min-height: 701px) {
+  #video {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  #video {
+    max-height: 275px;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  #video {
+    max-height: 250px;
+  }
+}
+
+@media screen and (max-height: 475px) {
+  #video {
+    max-height: 200px;
+  }
+}
+
 @media screen and (min-width: 650px) {
   .home__top {
     margin-top: 23vh;
@@ -1334,6 +1362,18 @@ input[type=radio] {
 
   .skills__graph::after {
     transform: translate(10px, 9.5px);
+  }
+
+  #video {
+    height: 90%;
+  }
+
+  .center-title {
+    margin-top: -23vh;
+  }
+
+  .video__close {
+    margin-top: 6vh;
   }
 
   #arrow1,
