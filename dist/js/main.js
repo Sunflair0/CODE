@@ -143,7 +143,6 @@ let videoIife = (() => {
 let tldr_btn = document.querySelector('.tldr__btn');
 
 if (tldr_btn) {
-    console.log("FOUND tldr_btn")
 
     tldr_btn.addEventListener('click', tldrPopUp);
 
@@ -155,9 +154,9 @@ if (tldr_btn) {
             tldr.classList.toggle('tldrText__btn');
             tldr_text.classList.toggle('tldr__btn__inside_text');
         }
-        console.log('hey there, I was clicked');
+
     }
 }
 else {
-    console.log("TLDR not found");
+   console.log('');
 }

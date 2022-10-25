@@ -30,6 +30,11 @@
         align-items: center;
         text-align: center;
         font-size: clamp(20px, 3vw, 30px);
+
+        h2 {
+            font-size: clamp(16px, 2vw, 24px);
+        }
+
     }
 
     &_ .social-icons {
@@ -52,36 +57,39 @@
     }
 }
 
- .mepic {
+.mepic {
+    display: flex;
+    aspect-ratio: auto 4 / 3;
     opacity: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    animation: mepic 2s all;
-    background-size: contain;
-    position: relative;
+    scale: 0;
+    background: linear-gradient(to top right, transparent 70%, rgba(0, 0, 0, 0.1) 80%), url('/Portfolio2021/dist/img/mepic.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    outline: 3px rgb(35, 39, 42) solid;
+    outline-offset: -4px;
+    border-radius: 50%;
+    animation: mepic .5s 1.75s forwards ease-in-out;
+
+    &_mask {
+        position: relative;
+        margin-top: 4vh;
+        width: 38%;
+        max-width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @keyframes mepic {
 
     from {
         opacity: 0;
+        scale: 0;
     }
 
     to {
-        opacity: 0;
+        opacity: 1;
+        scale: 1;
     }
-
-}
-
-img {
-    border: 3px yellow solid;
-}
-
-.home__bottom img {
-    display: block;
-    color: yellowgreen;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
 }
