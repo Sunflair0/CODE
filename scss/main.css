@@ -225,6 +225,7 @@
   position: relative;
   margin-top: 4vh;
   width: 38%;
+  max-width: 210px;
   margin-left: auto;
   margin-right: auto;
 }
