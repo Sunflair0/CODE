@@ -169,19 +169,19 @@
     display: hidden;
     width: 100%;
     height: auto;
-    max-height: 300px;
+    max-height: 150px;
 }
 
 .video-close {
     opacity: 0;
     margin-left: -4%;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
 }
 
 .center-title {
     text-align: center;
     display: block;
+    margin-top: -23vh;
 }
 
 .projects__btns input[type=radio] {
