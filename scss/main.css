@@ -768,7 +768,7 @@ input[type=radio] {
 .center-title {
   text-align: center;
   display: block;
-  margin-top: -23vh;
+  margin-top: 0vh;
 }
 
 .projects__btns input[type=radio] {
