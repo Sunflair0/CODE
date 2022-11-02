@@ -17,14 +17,14 @@
 }
 
 .menu-btn__burger {
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 0.5rem;
+  top: 1.5rem;
+  right: 1rem;
   width: 28px;
   height: 3px;
   background: antiquewhite;
   transition: all 0.3s ease-in-out;
-
 }
 
 .menu-btn__burger::before {
@@ -888,7 +888,7 @@ input[type=radio] {
 #video {
   -o-object-fit: cover;
   object-fit: cover;
-/* position:absolute; */
+  /* position:absolute; */
   background-size: contain;
   opacity: 0;
   transition: all 0.3s ease-in-out;
