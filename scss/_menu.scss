@@ -9,11 +9,13 @@
     @include transition-ease;
 
     &__burger {
-        position: absolute;
-        right: 0;
-        top: .5rem;
+        position: fixed;
+        right: 1vh;
+        top: 1.5rem;
         width: 28px;
         height: 3px;
+        background: antiquewhite;
+        transition: all 0.3s ease-in-out;
         background: set-text-color($primary-color);
         @include transition-ease;
 
@@ -71,13 +73,13 @@
     }
 
     .menu-nav {
-overflow: hidden;
+        overflow: hidden;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
         justify-content: center;
         min-width: 100vw;
-        height: 100vh;        
+        height: 100vh;
         background: radial-gradient(circle at -50% 152%, #FFF506 33%, #FF5D00 40%, #E32D04 44%, $primary-color 60%, $primary-color 100%);
         list-style-type: none;
         padding-right: 1rem;
@@ -130,8 +132,8 @@ overflow: hidden;
 
         &__link:visited {
             text-shadow: none;
-  color: rgb(148, 147, 247);
-  text-decoration: underline #7119ed;
+            color: rgb(148, 147, 247);
+            text-decoration: underline #7119ed;
             background-color: rgba(98, 98, 98, 0.5);
         }
     }

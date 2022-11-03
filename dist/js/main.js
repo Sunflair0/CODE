@@ -112,7 +112,7 @@ let videoIife = (() => {
             toggle__fade.style.cssText = "color: transparent; text-shadow: none";
             vidClose.style.cssText = "opacity: 1";
             video.style.cssText = "opacity: 1; display: visible";
-            video.src = `/dist/videos/${preview}`;           
+            video.src = `/Portfolio2021/dist/videos/${preview}`;
         };
 
         // /////Menu when video-player active
@@ -159,5 +159,5 @@ if (tldr_btn) {
     }
 }
 else {
-  console.log("tldr not found");
+    console.log("tldr not found");
 }
