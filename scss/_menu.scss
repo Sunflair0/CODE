@@ -73,7 +73,7 @@
     }
 
     .menu-nav {
-        overflow: hidden;
+                overflow: hidden;
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -132,8 +132,8 @@
 
         &__link:visited {
             text-shadow: none;
-            color: rgb(148, 147, 247);
-            text-decoration: underline #7119ed;
+                      color: rgb(148, 147, 247);
+                      text-decoration: underline #7119ed;
             background-color: rgba(98, 98, 98, 0.5);
         }
     }
