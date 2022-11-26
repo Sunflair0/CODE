@@ -17,8 +17,6 @@
   height: 3px;
   background: antiquewhite;
   transition: all 0.3s ease-in-out;
-  background: antiquewhite;
-  transition: all 0.3s ease-in-out;
 }
 .menu-btn__burger::before {
   content: "";
@@ -212,7 +210,7 @@
   aspect-ratio: auto 4/3;
   opacity: 0;
   scale: 0;
-  background: linear-gradient(to top right, transparent 70%, rgba(0, 0, 0, 0.1) 80%), url("/Portfolio2021/dist/img/mepic.jpg");
+  background: linear-gradient(to top right, transparent 70%, rgba(0, 0, 0, 0.1) 80%), url("/dist/img/mepic.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1056,10 +1054,13 @@ input[type=radio] {
   cursor: pointer;
 }
 .tldr__btn:hover {
-  content: "fff";
+  content: "";
+  color: antiquewhite;
+  outline: 1px #faebd7b3 solid;
   background-color: #f18a40;
-  box-shadow: inset 0 0 10px rgba(116, 52, 88, 0.9803921569), inset 0 0 5px #000000;
-  border: rgba(116, 52, 88, 0.9803921569) 1px solid;
+  box-shadow: inset 0 0 10px #743458fa,
+    inset 0 0 5px #000000;
+  border: #743458fa 1px solid;
   transition: 0.2s all;
 }
 
@@ -1140,7 +1141,7 @@ input[type=radio] {
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
   z-index: -1;
 }
-.resumé ul {
+.resumé__actual ul {
   list-style: square;
   margin-left: 40px;
 }
