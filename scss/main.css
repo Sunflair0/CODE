@@ -17,6 +17,8 @@
   height: 3px;
   background: antiquewhite;
   transition: all 0.3s ease-in-out;
+  background: antiquewhite;
+  transition: all 0.3s ease-in-out;
 }
 .menu-btn__burger::before {
   content: "";
@@ -588,13 +590,13 @@ input[type=radio] {
   width: 100%;
   background: #494e50;
   background-size: cover;
-  position: absolute;
+  position: fixed;
   top: 0%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  z-index: 5;
+  z-index: 20;
 }
 .projects .text-secondary {
   font-size: 2rem;
@@ -1054,13 +1056,10 @@ input[type=radio] {
   cursor: pointer;
 }
 .tldr__btn:hover {
-  content: "";
-  color: antiquewhite;
-  outline: 1px #faebd7b3 solid;
+  content: "fff";
   background-color: #f18a40;
-  box-shadow: inset 0 0 10px #743458fa,
-    inset 0 0 5px #000000;
-  border: #743458fa 1px solid;
+  box-shadow: inset 0 0 10px rgba(116, 52, 88, 0.9803921569), inset 0 0 5px #000000;
+  border: rgba(116, 52, 88, 0.9803921569) 1px solid;
   transition: 0.2s all;
 }
 
@@ -1141,7 +1140,7 @@ input[type=radio] {
   text-shadow: -1px -1px 0 rgb(20, 20, 20), 1px -1px rgb(20, 20, 20), 2px -1px 0 rgb(20, 20, 20), -1px 1px 0 rgb(20, 20, 20), 1px 1px 0 rgb(20, 20, 20);
   z-index: -1;
 }
-.resumé__actual ul {
+.resumé ul {
   list-style: square;
   margin-left: 40px;
 }
