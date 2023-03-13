@@ -611,7 +611,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1.75fr 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 0.25fr;
+  grid-template-rows: 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 1.25fr 0.25fr;
 }
 
 .curved__line {
@@ -1543,7 +1543,7 @@ input[type=radio] {
   }
 
   .projects__items {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .projects .text-secondary {
